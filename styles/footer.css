@@ -1,0 +1,126 @@
+footer {
+  margin-top: 7rem;
+  padding: 7rem 0;
+  border: 1px solid var(--neutral-200);
+}
+
+.footer_grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  row-gap: 2.5rem;
+  column-gap: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_col_title {
+  color: var(--neutral-700);
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.25rem;
+  font-size: 0.8rem;
+}
+
+.footer_col_list {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.footer_col_list a,
+.footer_social a {
+  line-height: 1.25rem;
+  font-size: 0.8rem;
+  color: var(--neutral-600);
+}
+
+.footer_social {
+  display: flex;
+  flex-flow: column;
+  gap: 0.625rem;
+}
+
+.footer_social a {
+  color: var(--neutral-700);
+  display: flex;
+  align-items: center;
+}
+
+.footer_col_list a:hover,
+.footer_social a:hover {
+  color: #000;
+}
+
+.footer_social a span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.75rem;
+}
+
+.footer_col-main {
+  display: flex;
+  flex-flow: column;
+  gap: 1.25rem;
+}
+
+@media screen and (max-width: 1023px) {
+  footer {
+    padding: 4rem 0;
+  }
+  .footer_grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .footer_col-main {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-column: span 4 / span 4;
+  }
+  .footer_col-main .footer_col:nth-child(1) {
+    grid-column: span 1 / span 1;
+  }
+  .footer_col-main .footer_col:nth-child(2) {
+    grid-column: span 3 / span 3;
+  }
+  .footer_social_name {
+    display: none !important;
+  }
+  .footer_social {
+    flex-flow: row;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer_grid,
+  .footer_col-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer_col-main {
+    grid-column: span 2 / span 2;
+  }
+
+  .footer_col-main .footer_col:nth-child(2) {
+    grid-column: span 1 / span 1;
+  }
+}
+
+@media screen and (max-width: 301px) {
+  .footer_grid,
+  .footer_col-main {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .footer_col-main {
+    grid-column: span 1 / span 1;
+  }
+}
