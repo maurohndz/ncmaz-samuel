@@ -3,6 +3,9 @@ header {
   position: sticky;
   z-index: 1000;
   top: 0;
+  border-color: var(--neutral-100);
+  border-width: 2px;
+  border-style: solid;
 }
 
 .header_wrapper {
