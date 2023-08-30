@@ -1,8 +1,167 @@
-/* ************************* */
-/* ************************* */
-/* ************************* */
-/* ************************* */
-/* Subscription */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-50: #eef2ff;
+  --primary-100: #e0e7ff;
+  --primary-200: #c7d2fe;
+  --primary-300: #a5b4fc;
+  --primary-400: #818cf8;
+  --primary-500: #6366f1;
+  --primary-600: #4f46e5;
+  --primary-700: #4338ca;
+  --primary-800: #3730a3;
+  --primary-900: #312e81;
+  --secondary-50: #f0fdfa;
+  --secondary-100: #ccfbf1;
+  --secondary-200: #99f6e4;
+  --secondary-400: #2dd4bf;
+  --secondary-500: #14b8a6;
+  --secondary-600: #0d9488;
+  --secondary-700: #0f766e;
+  --secondary-800: #115e59;
+  --secondary-900: #134e4a;
+  --neutral-50: #f9fafb;
+  --neutral-100: #f3f4f6;
+  --neutral-200: #e5e7eb;
+  --neutral-300: #d1d5db;
+  --neutral-400: #9ca3af;
+  --neutral-500: #6b7280;
+  --neutral-600: #4b5563;
+  --neutral-700: #374151;
+  --neutral-800: #1f2937;
+  --neutral-900: #111827;
+
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+
+  --bg-basic: #ffffff;
+  --bg-main: #f8f8f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+/* GLOBALS */
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-main);
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.global_wrapper {
+  width: 100%;
+  max-width: 1313px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.logo a {
+  color: var(--primary-600);
+  display: inline-block;
+}
+/* GLOBALS */
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+/* FOOTER */
+footer {
+  margin-top: 7rem;
+  padding: 7rem 0;
+  border: 1px solid var(--neutral-200);
+}
+
+.footer_grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  row-gap: 2.5rem;
+  column-gap: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_col_title {
+  color: var(--neutral-700);
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.25rem;
+  font-size: 0.8rem;
+}
+
+.footer_col_list {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.footer_col_list a,
+.footer_social a {
+  line-height: 1.25rem;
+  font-size: 0.8rem;
+  color: var(--neutral-600);
+}
+
+.footer_social {
+  display: flex;
+  flex-flow: column;
+  gap: 0.625rem;
+}
+
+.footer_social a {
+  color: var(--neutral-700);
+  display: flex;
+  align-items: center;
+}
+
+.footer_col_list a:hover,
+.footer_social a:hover {
+  color: #000;
+}
+
+.footer_social a span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.75rem;
+}
+
+.footer_col-main {
+  display: flex;
+  flex-flow: column;
+  gap: 1.25rem;
+}
+/* FOOTER */
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+/* SUBSCRIPTION */
 #subscription {
   padding-top: 5rem;
 }
@@ -20,14 +179,13 @@
 }
 
 /* ************************* */
-/* ************************* */
 /* Subscription - main */
 .subs_main {
   position: relative;
   z-index: 2;
   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -4px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
+  background-color: var(--bg-basic);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   border-radius: 40px;
@@ -202,7 +360,6 @@
 }
 
 /* ************************* */
-/* ************************* */
 /* Subscription - newsletter */
 .subs_newsletter {
   display: flex;
@@ -329,13 +486,76 @@
   flex-grow: 1;
   max-width: 728px;
 }
+/* SUBSCRIPTION */
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
+@media screen and (max-width: 1279px) {
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* GLOBALS */
+  .global_wrapper {
+    max-width: 1024px;
+    padding: 0 1rem;
+  }
+  /* GLOBALS */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+}
 
 @media screen and (max-width: 1023px) {
-  /* ************************* */
-  /* ************************* */
-  /* ************************* */
-  /* ************************* */
-  /* Subscription */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* GLOBALS */
+  .global_wrapper {
+    max-width: 777px;
+    padding: 0 1rem;
+  }
+  /* GLOBALS */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* FOOTER */
+  footer {
+    padding: 4rem 0;
+  }
+  .footer_grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .footer_col-main {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-column: span 4 / span 4;
+  }
+  .footer_col-main .footer_col:nth-child(1) {
+    grid-column: span 1 / span 1;
+  }
+  .footer_col-main .footer_col:nth-child(2) {
+    grid-column: span 3 / span 3;
+  }
+  .footer_social_name {
+    display: none !important;
+  }
+  .footer_social {
+    flex-flow: row;
+  }
+  /* FOOTER */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* SUBSCRIPTION */
 
   /* ************************* */
   /* Subscription - main */
@@ -347,6 +567,7 @@
   .subs_main_title {
     font-size: 1.875rem;
   }
+
   .subs_main_title span {
     font-size: 1.5rem;
   }
@@ -379,33 +600,71 @@
   .subs_newsletter_input {
     width: 100%;
   }
+
   .subs_newsletter_btn {
     right: 7px;
   }
+  /* SUBSCRIPTION */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
 }
 
 @media screen and (max-width: 767px) {
-  /* ************************* */
-  /* ************************* */
-  /* ************************* */
-  /* ************************* */
-  /* Subscription */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* GLOBALS */
+  .global_wrapper {
+    max-width: 640px;
+  }
+  /* GLOBALS */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
 
-  /* ************************* */
-  /* ************************* */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* FOOTER */
+  .footer_grid,
+  .footer_col-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer_col-main {
+    grid-column: span 2 / span 2;
+  }
+
+  .footer_col-main .footer_col:nth-child(2) {
+    grid-column: span 1 / span 1;
+  }
+  /* FOOTER */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* SUBSCRIPTION */
+
   /* Subscription - main */
   .subs_card_features li {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+  /* SUBSCRIPTION */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
 }
 
 @media screen and (max-width: 639px) {
-  /* ************************* */
-  /* ************************* */
-  /* ************************* */
-  /* ************************* */
-  /* Subscription */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* SUBSCRIPTION */
 
   /* ************************* */
   /* ************************* */
@@ -420,4 +679,27 @@
   .subs_grid {
     margin-top: 3.5rem;
   }
+  /* SUBSCRIPTION */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+}
+
+@media screen and (max-width: 301px) {
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* FOOTER */
+  .footer_grid,
+  .footer_col-main {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .footer_col-main {
+    grid-column: span 1 / span 1;
+  }
+  /* FOOTER */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
 }
