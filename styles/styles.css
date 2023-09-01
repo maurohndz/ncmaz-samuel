@@ -161,6 +161,117 @@ footer ul {
 /* ********************************** */
 /* ********************************** */
 /* ********************************** */
+/* HERO */
+.hero {
+  position: relative;
+  background-color: #000;
+}
+
+.hero_content {
+  position: relative;
+  z-index: 10;
+  padding: 15rem 0;
+  color: #fff;
+}
+
+.hero_main {
+  max-width: 48rem;
+}
+
+.hero_title {
+  font-size: 3.75rem;
+  line-height: 4.13rem;
+  font-weight: 700;
+  color: var(--neutral-100);
+  margin: 0;
+  margin-top: 0.75rem;
+}
+
+.hero_text {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  color: var(--neutral-300);
+  margin: 0;
+  margin-top: 1.75rem;
+}
+
+.hero_buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.75rem;
+}
+
+.hero_btn {
+  color: var(--primary-50);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 99999px;
+  padding: 0.875rem 1.5rem;
+  font-weight: 500;
+  background-color: var(--primary-700);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.hero_btn-video {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: var(--neutral-900);
+  background-color: #ffffff;
+  gap: 0.5rem;
+}
+
+.hero_btn-video svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.hero_images {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: #000;
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+}
+
+.hero_image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
+  object-fit: cover;
+}
+
+.hero_images::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 11rem;
+  background-image: linear-gradient(to right, #000, transparent);
+}
+/* HERO */
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
 /* SUBSCRIPTION */
 #subscription {
   padding-top: 5rem;
@@ -491,6 +602,104 @@ footer ul {
 /* ********************************** */
 /* ********************************** */
 
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+/* BACKGROUND DESIGN */
+.background_design {
+  position: relative;
+}
+
+.background_design_colors {
+  padding-inline-start: 2.5rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  overflow: hidden;
+  flex-direction: column;
+  min-height: 0;
+  display: flex;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.background_design_color {
+  width: 24rem;
+  filter: blur(64px);
+  mix-blend-mode: multiply;
+  opacity: 0.2;
+  background-color: rgb(239 35 60/1);
+  border-radius: 9999px;
+  height: 20rem;
+}
+
+.background_design_color-blue {
+  background-color: rgb(4 134 139/1);
+  margin-inline-start: 2.5rem;
+  margin-top: -2.5rem;
+}
+
+.background_design_content {
+  position: relative;
+  z-index: 1;
+}
+/* BACKGROUND DESIGN */
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+/* ABOUT */
+.about {
+  padding: 7rem 0;
+}
+
+.about_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.about_content {
+  width: 100%;
+  max-width: 32rem;
+}
+
+.about_title {
+  font-size: 3rem;
+  line-height: 3.75rem;
+  font-weight: 600;
+  color: var(--neutral-900);
+  margin: 0;
+}
+
+.about_text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  color: var(--neutral-600);
+  margin: 0;
+}
+
+.about_images {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+}
+
+.about_image {
+  width: 100%;
+}
+/* ABOUT */
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
 @media screen and (max-width: 1279px) {
   /* ********************************** */
   /* ********************************** */
@@ -501,6 +710,40 @@ footer ul {
     padding: 0 1rem;
   }
   /* GLOBALS */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* HERO */
+  .hero_images {
+    width: 50%;
+  }
+  /* HERO */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* ABOUT */
+  .about_content {
+    max-width: 100%;
+  }
+
+  .about_title {
+    font-size: 2.25rem;
+    line-height: 2.8125rem;
+  }
+
+  .about_text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  /* ABOUT */
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
@@ -548,6 +791,18 @@ footer ul {
     flex-flow: row;
   }
   /* FOOTER */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* HERO */
+  .hero_content {
+    padding: 8rem 0;
+  }
+  /* HERO */
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
@@ -608,6 +863,31 @@ footer ul {
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* BACKGROUND DESIGN */
+  .background_design_color {
+    width: 20rem;
+    height: 20rem;
+  }
+  /* BACKGROUND DESIGN */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* ABOUT */
+  .about_wrapper {
+    flex-direction: column;
+  }
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* ABOUT */
 }
 
 @media screen and (max-width: 767px) {
@@ -647,6 +927,37 @@ footer ul {
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
+  /* HERO */
+  .hero_content {
+    padding: 2.5rem 0 5rem;
+  }
+
+  .hero_images {
+    width: 100%;
+  }
+
+  .hero_images::after {
+    display: none;
+  }
+
+  .hero_title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .hero_text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1.75rem;
+  }
+  /* HERO */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
   /* SUBSCRIPTION */
 
   /* Subscription - main */
@@ -661,6 +972,20 @@ footer ul {
 }
 
 @media screen and (max-width: 639px) {
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* HERO */
+  .hero_btn {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.75rem 1rem;
+  }
+  /* HERO */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
