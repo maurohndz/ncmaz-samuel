@@ -655,7 +655,7 @@ footer ul {
 /* ********************************** */
 /* ABOUT */
 .about {
-  padding: 7rem 0;
+  padding-top: 7rem;
 }
 
 .about_wrapper {
@@ -698,6 +698,96 @@ footer ul {
   width: 100%;
 }
 /* ABOUT */
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+/* FOUNDER */
+.founder {
+  padding: 7rem 0;
+}
+
+.founder_wrapper {
+  display: flex;
+  flex-flow: column;
+  gap: 3rem;
+}
+
+.founder_content {
+  max-width: 42rem;
+}
+
+.founder_title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--neutral-900);
+}
+
+.founder_text {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  margin: 0;
+  color: var(--neutral-500);
+  margin-top: 0.75rem;
+}
+
+.founder_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.founder_card {
+  max-width: 24rem;
+}
+
+.founder_card_image {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: calc(1 / 1 * 100%);
+}
+
+.founder_card_image img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
+  object-fit: cover;
+}
+
+.founder_card_content {
+  padding-top: 1rem;
+}
+
+.founder_card_content span {
+  display: block;
+}
+
+.founder_card_name {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: var(--neutral-900);
+}
+
+.founder_card_rol {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: var(--neutral-500);
+}
+/* FOUNDER */
 /* ********************************** */
 /* ********************************** */
 /* ********************************** */
@@ -904,6 +994,23 @@ footer ul {
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* FOUNDER */
+  .founder_title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .founder_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* FOUNDER */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
 }
 
 @media screen and (max-width: 767px) {
@@ -998,6 +1105,29 @@ footer ul {
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* FOUNDER */
+  .founder_title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .founder_card_name {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .founder_card_rol {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  /* FOUNDER */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
 }
 
 @media screen and (max-width: 639px) {
@@ -1034,6 +1164,23 @@ footer ul {
     margin-top: 3.5rem;
   }
   /* SUBSCRIPTION */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* FOUNDER */
+  .founder_text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .founder_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* FOUNDER */
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
