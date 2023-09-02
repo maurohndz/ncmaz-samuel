@@ -662,7 +662,6 @@ footer ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2.5rem;
 }
 
 .about_content {
@@ -684,12 +683,15 @@ footer ul {
   font-weight: 400;
   color: var(--neutral-600);
   margin: 0;
+  margin-top: 1.75rem;
 }
 
 .about_images {
   width: 100%;
   display: flex;
   flex-grow: 1;
+  margin-left: 2.5rem;
+  min-width: 550px;
 }
 
 .about_image {
@@ -884,10 +886,24 @@ footer ul {
   .about_wrapper {
     flex-direction: column;
   }
-  /* ********************************** */
-  /* ********************************** */
-  /* ********************************** */
+
+  .about_content {
+    text-align: center;
+  }
+
+  .about_text {
+    margin-top: 1.25rem;
+  }
+
+  .about_images {
+    margin: 0;
+    margin-top: 3.5rem;
+    min-width: auto;
+  }
   /* ABOUT */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
 }
 
 @media screen and (max-width: 767px) {
@@ -966,6 +982,19 @@ footer ul {
     line-height: 1.25rem;
   }
   /* SUBSCRIPTION */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* ABOUT */
+  .about_title {
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+  }
+  /* ABOUT */
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
