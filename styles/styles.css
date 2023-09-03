@@ -70,6 +70,44 @@ img {
   color: var(--primary-600);
   display: inline-block;
 }
+
+.section_label_link {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+  color: var(--neutral-400);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0.25rem 0.625rem;
+  --tw-bg-opacity: 1;
+  background-color: var(--neutral-700);
+  text-decoration: none;
+  border-radius: 9999px;
+  font-weight: 500;
+  position: relative;
+  z-index: 10;
+}
+
+.section_label-yellow {
+  color: rgb(133 77 14/1);
+  background-color: rgb(254 249 195/1);
+}
+
+.section_label-yellow:hover {
+  color: rgb(255 255 255/1);
+  background-color: rgb(133 77 14/1);
+}
+
+.section_label-purpule {
+  color: rgb(157 23 77/1);
+  background-color: rgb(252 231 243/1);
+}
+
+.section_label-purpule:hover {
+  color: rgb(255 255 255/1);
+  background-color: rgb(157 23 77/1);
+}
 /* GLOBALS */
 /* ********************************** */
 /* ********************************** */
@@ -602,11 +640,16 @@ editorPicks_comment:last-child {
 /* ********************************** */
 /* LISTEN PODCASTS */
 
-.listen_podcasts_content {
+.listen_podcasts {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.section_header {
   margin-bottom: 3.5rem;
 }
 
-.listen_podcasts_title {
+.section_header_title {
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 600;
@@ -614,7 +657,7 @@ editorPicks_comment:last-child {
   margin: 0;
 }
 
-.listen_podcasts_text {
+.section_header_text {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 400;
@@ -801,12 +844,13 @@ editorPicks_comment:last-child {
   -webkit-box-orient: vertical;
 }
 
-.lp_card_more {
+.section_actions {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 
-.lp_card_link {
+.section_actions_link {
   padding: 0.2rem 0.75rem;
   display: flex;
   align-items: center;
@@ -827,7 +871,7 @@ editorPicks_comment:last-child {
   gap: 0.25rem;
 }
 
-.lp_card_link:last-child {
+.section_actions_link:last-child {
   margin-left: auto;
   width: 2rem;
   height: 2rem;
@@ -836,21 +880,21 @@ editorPicks_comment:last-child {
   padding: 0;
 }
 
-.lp_card_link:last-child svg {
+.section_actions_link:last-child svg {
   width: 18px;
   height: 18px;
 }
 
-.lp_card_link:hover {
+.section_actions_link:hover {
   background-color: var(--neutral-100);
 }
 
-.lp_card_link:nth-child(1):hover {
+.section_actions_link:nth-child(1):hover {
   background-color: rgb(255 241 242/1);
   color: rgb(225 29 72/1);
 }
 
-.lp_card_link:nth-child(2):hover {
+.section_actions_link:nth-child(2):hover {
   background-color: rgb(240 253 250/1);
   color: rgb(13 148 136/1);
 }
@@ -952,6 +996,177 @@ editorPicks_comment:last-child {
   margin-left: 2px;
 }
 /* LISTEN PODCASTS */
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+/* LISTEN AUDIO*/
+.listen_audio_grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.listen_audio_item {
+  position: relative;
+  --tw-aspect-w: 4;
+  --tw-aspect-h: 3;
+  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+}
+
+.listen_audio_item_link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/**/
+.la_item_actions {
+  position: absolute;
+  z-index: 2;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+}
+
+.la_item_picture {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.la_item_picture::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--neutral-900);
+  opacity: 0.4;
+  border-radius: 1.5rem;
+}
+
+.la_item_img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.la_item_icon {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid rgb(255 255 255/1);
+  color: rgb(255 255 255/1);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  cursor: pointer;
+}
+
+.la_item_icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.la_item_icon:hover {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
+  transform: scale(1.05);
+}
+
+.la_item_info {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.la_item_info_label {
+  margin-bottom: 0.75rem;
+}
+
+.la_item_info_main,
+.la_item_info_label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.la_item_title {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: rgb(255 255 255/1);
+  font-weight: 600;
+  max-width: max-content;
+  display: inline-block;
+}
+
+.la_item_title a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+.la_item_author {
+  margin-top: 0.625rem;
+  color: var(--neutral-200);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.1px;
+}
+
+.la_item_author span {
+  font-weight: 400;
+}
+
+.la_item_actions {
+  opacity: 0;
+  visibility: hidden;
+  transition-duration: 0.3s;
+}
+
+.listen_audio_item:hover .la_item_actions {
+  opacity: 1;
+  visibility: visible;
+}
+/* LISTEN AUDIO*/
 /* ********************************** */
 /* ********************************** */
 /* ********************************** */
@@ -1659,24 +1874,36 @@ editorPicks_comment:last-child {
   /* ********************************** */
   /* ********************************** */
   /* LISTEN PODCASTS */
-  .listen_podcasts_title {
+  .section_header_title {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
 
   .listen_podcasts_item {
-    grid-column: span 6/span 6;
+    grid-column: span 6 / span 6;
   }
 
   .listen_podcasts_card {
-    grid-column: span 3/span 3;
+    grid-column: span 3 / span 3;
   }
 
   .lp_card_title {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
-  
+
+  /* LISTEN PODCASTS */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* LISTEN PODCASTS */
+  .listen_audio_grid{
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
   /* LISTEN PODCASTS */
   /* ********************************** */
   /* ********************************** */
@@ -1910,12 +2137,12 @@ editorPicks_comment:last-child {
   /* ********************************** */
   /* ********************************** */
   /* LISTEN PODCASTS */
-  .listen_podcasts_title {
+  .section_header_title {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
-  .listen_podcasts_text {
+  .section_header_text {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
@@ -2020,13 +2247,13 @@ editorPicks_comment:last-child {
   /* ********************************** */
   /* ********************************** */
   /* LISTEN PODCASTS */
-  .listen_podcasts_text {
+  .section_header_text {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 
   .listen_podcasts_card {
-    grid-column: span 6/span 6;
+    grid-column: span 6 / span 6;
   }
 
   .lp_card_title {
@@ -2043,6 +2270,19 @@ editorPicks_comment:last-child {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+  /* LISTEN PODCASTS */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* LISTEN PODCASTS */
+  .listen_audio_grid{
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    gap: 1.5rem;
   }
   /* LISTEN PODCASTS */
   /* ********************************** */
