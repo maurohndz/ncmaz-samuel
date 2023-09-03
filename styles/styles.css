@@ -108,6 +108,145 @@ img {
   color: rgb(255 255 255/1);
   background-color: rgb(157 23 77/1);
 }
+
+/* ********************************** */
+/* SECTION LISTEN */
+.section_listen_grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.section_listen_item {
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border: 1px solid var(--neutral-200);
+  color: var(--neutral-900);
+  background-color: rgb(255 255 255/1);
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.section_listen_mask {
+  display: flex;
+  flex-shrink: 0;
+  width: 25%;
+}
+
+.section_listen_picture {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0;
+  --tw-aspect-w: 1;
+  --tw-aspect-h: 1;
+  border-radius: 9999px;
+  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.section_listen_img {
+  position: absolute;
+  border-radius: 9999px;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
+  object-fit: cover;
+}
+
+.section_listen_content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.section_listen_title {
+  margin: 0;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 75ms;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.section_listen_title a {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+}
+
+.section_listen_desc {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: var(--neutral-500);
+}
+
+.section_listen_btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: max-content;
+  border-radius: 9999px;
+  padding-right: 0.6rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  font-family: "Poppins", sans-serif;
+  margin-top: .75rem;
+}
+
+.section_listen_btn:hover {
+  background-color: var(--primary-50);
+  font-weight: 400;
+}
+
+.section_listen_play {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-50);
+  color: var(--primary-600);
+}
+
+.section_listen_play svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+/* SECTION LISTEN */
+/* ********************************** */
+
 /* GLOBALS */
 /* ********************************** */
 /* ********************************** */
@@ -1008,6 +1147,7 @@ editorPicks_comment:last-child {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .listen_audio_item {
@@ -1766,6 +1906,15 @@ editorPicks_comment:last-child {
     max-width: 777px;
     padding: 0 1rem;
   }
+
+  /* ********************************** */
+  /* SECTION LISTEN */
+  .section_listen_grid {
+    gap: 1.5rem;
+  }
+  /* SECTION LISTEN */
+  /* ********************************** */
+
   /* GLOBALS */
   /* ********************************** */
   /* ********************************** */
@@ -1901,8 +2050,9 @@ editorPicks_comment:last-child {
   /* ********************************** */
   /* ********************************** */
   /* LISTEN PODCASTS */
-  .listen_audio_grid{
-    grid-template-columns: repeat(2,minmax(0,1fr));
+  .listen_audio_grid,
+  .section_listen_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   /* LISTEN PODCASTS */
   /* ********************************** */
@@ -2031,6 +2181,15 @@ editorPicks_comment:last-child {
   .global_wrapper {
     max-width: 640px;
   }
+
+  /* ********************************** */
+  /* SECTION LISTEN */
+  .section_listen_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* SECTION LISTEN */
+  /* ********************************** */
+
   /* GLOBALS */
   /* ********************************** */
   /* ********************************** */
@@ -2207,6 +2366,38 @@ editorPicks_comment:last-child {
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
+  /* GLOBALS */
+  .global_wrapper {
+    max-width: 640px;
+  }
+
+  /* ********************************** */
+  /* SECTION LISTEN */
+  .section_listen_grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .section_listen_title {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .section_listen_btn {
+    line-height: 1rem;
+    font-size: 0.875rem;
+  }
+  /* SECTION LISTEN */
+  /* ********************************** */
+
+  /* GLOBALS */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
   /* HERO */
   .hero_btn {
     font-size: 0.875rem;
@@ -2280,9 +2471,10 @@ editorPicks_comment:last-child {
   /* ********************************** */
   /* ********************************** */
   /* LISTEN PODCASTS */
-  .listen_audio_grid{
-    grid-template-columns: repeat(1,minmax(0,1fr));
+  .listen_audio_grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 1.5rem;
+    margin-bottom: 1.5rem;
   }
   /* LISTEN PODCASTS */
   /* ********************************** */
