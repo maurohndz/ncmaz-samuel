@@ -496,7 +496,7 @@ footer ul {
   top: 1rem;
   bottom: 1rem;
   padding: 2rem;
-  background: rgba(256, 256, 256, .8);
+  background: rgba(256, 256, 256, 0.8);
   backdrop-filter: blur(24px);
   z-index: 2;
   right: 1rem;
@@ -581,7 +581,7 @@ editorPicks_comment:last-child {
 .editorPicks_comment_name a {
   font-size: 0.875rem;
   line-height: 1.25rem;
-  color: #6b7280;
+  color: var(--neutral-500);
 }
 
 .editorPicks_comment_name a {
@@ -589,10 +589,369 @@ editorPicks_comment:last-child {
   color: var(--neutral-700);
 }
 
-.editorPicks_comment_name a:hover{
+.editorPicks_comment_name a:hover {
   color: #000;
 }
 /* EDITOR PICKS */
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+/* LISTEN PODCASTS */
+
+.listen_podcasts_content {
+  margin-bottom: 3.5rem;
+}
+
+.listen_podcasts_title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  color: var(--neutral-900);
+  margin: 0;
+}
+
+.listen_podcasts_text {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  margin: 0;
+  color: var(--neutral-500);
+  margin-top: 0.75rem;
+}
+
+/**/
+.listen_podcasts_grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.listen_podcasts_item {
+  grid-column: span 2 / span 2;
+  position: relative;
+}
+
+/**/
+.lp_card_picture {
+  text-decoration: none;
+  border-radius: 1.5rem;
+  display: block;
+  --tw-aspect-w: 3;
+  --tw-aspect-h: 3;
+  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  position: relative;
+  z-index: 0;
+}
+
+.lp_card_image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
+  z-index: 1;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.lp_card_picture::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--neutral-900);
+  opacity: 0.3;
+  z-index: 2;
+  border-radius: 1.5rem;
+}
+
+.lp_card_label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+  color: var(--neutral-400);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0.25rem 0.625rem;
+  --tw-bg-opacity: 1;
+  background-color: var(--neutral-700);
+  text-decoration: none;
+  border-radius: 9999px;
+  font-weight: 500;
+}
+
+.lp_card_label-yellow {
+  color: rgb(133 77 14/1);
+  background-color: rgb(254 249 195/1);
+}
+
+.lp_card_label-yellow:hover {
+  color: rgb(255 255 255/1);
+  background-color: rgb(133 77 14/1);
+}
+
+.lp_card_label-purpule {
+  color: rgb(157 23 77/1);
+  background-color: rgb(252 231 243/1);
+}
+
+.lp_card_label-purpule:hover {
+  color: rgb(255 255 255/1);
+  background-color: rgb(157 23 77/1);
+}
+
+/**/
+.lp_card_body {
+  width: 90%;
+  margin-top: -8rem;
+  position: relative;
+  z-index: 10;
+}
+
+.lp_card_play {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+  gap: 1rem;
+}
+
+.lp_card_play_btn {
+  min-width: 3.5rem;
+  min-height: 3.5rem;
+  border-radius: 9999px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lp_card_play_btn svg {
+  width: 2rem;
+  height: 2rem;
+  color: var(--primary-500);
+  margin-left: 3px;
+}
+
+.lp_card_info {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  border-start-start-radius: 0;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.lp_card_title {
+  margin: 0;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 75ms;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: var(--neutral-900);
+  font-weight: 600;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 2.4rem;
+  cursor: pointer;
+}
+
+.lp_card_title a {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-overflow: ellipsis;
+}
+
+.lp_card_text {
+  margin: 0;
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--neutral-500);
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.lp_card_more {
+  display: flex;
+  align-items: center;
+}
+
+.lp_card_link {
+  padding: 0.2rem 0.75rem;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  color: var(--neutral-700);
+  background-color: var(--neutral-50);
+  font-size: 0.75rem;
+  line-height: 1;
+  border-radius: 999px;
+  cursor: pointer;
+  gap: 0.25rem;
+}
+
+.lp_card_link:last-child {
+  margin-left: auto;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.lp_card_link:last-child svg {
+  width: 18px;
+  height: 18px;
+}
+
+.lp_card_link:hover {
+  background-color: var(--neutral-100);
+}
+
+.lp_card_link:nth-child(1):hover {
+  background-color: rgb(255 241 242/1);
+  color: rgb(225 29 72/1);
+}
+
+.lp_card_link:nth-child(2):hover {
+  background-color: rgb(240 253 250/1);
+  color: rgb(13 148 136/1);
+}
+
+/* */
+.listen_podcasts_list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.lp_list_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem;
+  background-color: var(--neutral-100);
+  border-radius: 9999px;
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+
+.lp_list_item:hover {
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+    0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.lp_list_link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.lp_list_picture {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999px;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  position: relative;
+}
+
+.lp_list_img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  border-radius: 9999px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
+  object-fit: cover;
+}
+
+.lp_list_title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: var(--neutral-900);
+}
+
+.lp_list_ep {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--neutral-600);
+}
+
+.lp_list_play {
+  background-color: #fff;
+  color: var(--primary-600);
+  border-radius: 9999px;
+  border: none;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.lp_list_play svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 2px;
+}
+/* LISTEN PODCASTS */
 /* ********************************** */
 /* ********************************** */
 /* ********************************** */
@@ -1299,6 +1658,33 @@ editorPicks_comment:last-child {
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
+  /* LISTEN PODCASTS */
+  .listen_podcasts_title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .listen_podcasts_item {
+    grid-column: span 6/span 6;
+  }
+
+  .listen_podcasts_card {
+    grid-column: span 3/span 3;
+  }
+
+  .lp_card_title {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  
+  /* LISTEN PODCASTS */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
   /* SUBSCRIPTION */
 
   /* ************************* */
@@ -1507,7 +1893,7 @@ editorPicks_comment:last-child {
     position: initial;
     height: 24rem;
     margin-top: 1.25rem;
-    background-color: #F3F4F6;
+    background-color: #f3f4f6;
   }
 
   .editorPicks_comment_link {
@@ -1516,6 +1902,24 @@ editorPicks_comment:last-child {
   }
 
   /* EDITOR PICKS */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* LISTEN PODCASTS */
+  .listen_podcasts_title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .listen_podcasts_text {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  /* LISTEN PODCASTS */
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
@@ -1608,6 +2012,39 @@ editorPicks_comment:last-child {
     padding: 0.625rem 1.25rem;
   }
   /* EDITOR PICKS */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* LISTEN PODCASTS */
+  .listen_podcasts_text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .listen_podcasts_card {
+    grid-column: span 6/span 6;
+  }
+
+  .lp_card_title {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .lp_list_picture {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .lp_list_title {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  /* LISTEN PODCASTS */
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
