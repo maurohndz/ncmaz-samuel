@@ -17,44 +17,82 @@
     <!-- ############################### -->
     <!-- ############################### -->
     <!-- HERO -->
-    <section id="hero" class="hero">
-      <div class="hero_content">
-        <div class="global_wrapper">
-          <div class="hero_main">
-            <h1 class="hero_title">The hidden world of whale culture</h1>
-            <p class="hero_text">
-              From singing competitions to food preferences, scientists are
-              learning whales have cultural differences once thought to be
-              unique to humans.
-            </p>
-            <div class="hero_buttons">
-              <a href="" class="hero_btn">Read More</a>
-              <button href="" class="hero_btn hero_btn-video">
-                Play video
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  class="w-5 h-5 ms-2 rtl:rotate-180"
+    <section class="hero_wrapper">
+      <div id="hero" class="hero">
+        <div class="hero_content">
+          <div class="global_wrapper">
+            <div class="hero_main">
+              <h1 class="hero_title">The hidden world of whale culture</h1>
+              <p class="hero_text">
+                From singing competitions to food preferences, scientists are
+                learning whales have cultural differences once thought to be
+                unique to humans.
+              </p>
+              <div class="hero_buttons">
+                <a href="" class="hero_btn">Read More</a>
+                <button
+                  href=""
+                  class="hero_btn hero_btn-video"
+                  id="video_modal_btn"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
+                  Play video
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                    class="w-5 h-5 ms-2 rtl:rotate-180"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
+        <div class="hero_images">
+          <img
+            src="../images/pexels-photo-4666750.jpeg"
+            alt=""
+            class="hero_image"
+          />
+        </div>
       </div>
-      <div class="hero_images">
-        <img
-          src="../images/pexels-photo-4666750.jpeg"
-          alt=""
-          class="hero_image"
-        />
+      <div class="video_modal" id="hero_video_modal">
+        <div class="video_modal_content">
+          <div class="video_modal_header">
+            <button id="video_modal_btn-close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                class="w-5 h-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="video_modal_main">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/5izFl8PhsAA?si=ZTCgZQpF8QJ_LQEm"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
       </div>
     </section>
     <!-- HERO -->
@@ -75,7 +113,9 @@
           </div>
 
           <div class="editorPicks_menu">
-            <button class="editorPicks_menu_btn editorPicks_menu_btn-active">All items</button>
+            <button class="editorPicks_menu_btn editorPicks_menu_btn-active">
+              All items
+            </button>
             <button class="editorPicks_menu_btn">Garden</button>
             <button class="editorPicks_menu_btn">Fitness</button>
             <button class="editorPicks_menu_btn">Design</button>
@@ -280,17 +320,19 @@
                   class="mg_card_image"
                 />
               </a>
-  
+
               <div class="mg_card_label">
-                <a href="bacs" class="section_label_link section_label-yellow ">Jewelry</a>
+                <a href="bacs" class="section_label_link section_label-yellow"
+                  >Jewelry</a
+                >
               </div>
-  
+
               <div class="mg_card_body">
                 <div class="mg_card_play">
                   <div class="mg_card_music">
                     <img src="../images/musicWave.png" alt="" />
                   </div>
-  
+
                   <div class="mg_card_play_btn">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -307,14 +349,14 @@
                     </svg>
                   </div>
                 </div>
-  
+
                 <div class="mg_card_info">
                   <a class="mg_card_title">Lenovo’s smarter devices</a>
                   <p class="mg_card_text">
                     Aenean lectus. Pellentesque eget nunc. Donec quis orci eget
                     orci vehicula condimentum.
                   </p>
-  
+
                   <div class="section_actions">
                     <button class="section_actions_link">
                       <svg
@@ -399,17 +441,19 @@
                   class="mg_card_image"
                 />
               </a>
-  
+
               <div class="mg_card_label">
-                <a href="bacs" class="section_label_link section_label-purpule ">Jewelry</a>
+                <a href="bacs" class="section_label_link section_label-purpule"
+                  >Jewelry</a
+                >
               </div>
-  
+
               <div class="mg_card_body">
                 <div class="mg_card_play">
                   <div class="mg_card_music">
                     <img src="../images/musicWave.png" alt="" />
                   </div>
-  
+
                   <div class="mg_card_play_btn">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -426,14 +470,14 @@
                     </svg>
                   </div>
                 </div>
-  
+
                 <div class="mg_card_info">
                   <a class="mg_card_title">Lenovo’s smarter devices</a>
                   <p class="mg_card_text">
                     Aenean lectus. Pellentesque eget nunc. Donec quis orci eget
                     orci vehicula condimentum.
                   </p>
-  
+
                   <div class="section_actions">
                     <button class="section_actions_link">
                       <svg
@@ -786,19 +830,30 @@
                       stroke-linejoin="round"
                     ></path></svg
                 ></span>
-                <a href="listen_audio_item_link" class="listen_audio_item_link"></a>
+                <a
+                  href="listen_audio_item_link"
+                  class="listen_audio_item_link"
+                ></a>
               </div>
               <div class="la_item_info">
-                  <div class="la_item_info_label">
-                    <div class="section_label">
-                      <a href="bacs" class="section_label_link section_label-purpule ">Jewelry</a>
-                    </div>
+                <div class="la_item_info_label">
+                  <div class="section_label">
+                    <a
+                      href="bacs"
+                      class="section_label_link section_label-purpule"
+                      >Jewelry</a
+                    >
                   </div>
+                </div>
 
-                  <div class="la_item_info_main">
-                    <h3 class="la_item_title"><a href="Take a 3D tour">Take a 3D tour</a></h3>
-                    <a href="lol" class="la_item_author">Birrell Chariot<span> · May 20, 2021</span></a>
-                  </div>
+                <div class="la_item_info_main">
+                  <h3 class="la_item_title">
+                    <a href="Take a 3D tour">Take a 3D tour</a>
+                  </h3>
+                  <a href="lol" class="la_item_author"
+                    >Birrell Chariot<span> · May 20, 2021</span></a
+                  >
+                </div>
               </div>
             </div>
 
@@ -921,19 +976,30 @@
                       stroke-linejoin="round"
                     ></path></svg
                 ></span>
-                <a href="listen_audio_item_link" class="listen_audio_item_link"></a>
+                <a
+                  href="listen_audio_item_link"
+                  class="listen_audio_item_link"
+                ></a>
               </div>
               <div class="la_item_info">
-                  <div class="la_item_info_label">
-                    <div class="section_label">
-                      <a href="bacs" class="section_label_link section_label-purpule ">Jewelry</a>
-                    </div>
+                <div class="la_item_info_label">
+                  <div class="section_label">
+                    <a
+                      href="bacs"
+                      class="section_label_link section_label-purpule"
+                      >Jewelry</a
+                    >
                   </div>
+                </div>
 
-                  <div class="la_item_info_main">
-                    <h3 class="la_item_title"><a href="Take a 3D tour">Take a 3D tour</a></h3>
-                    <a href="lol" class="la_item_author">Birrell Chariot<span> · May 20, 2021</span></a>
-                  </div>
+                <div class="la_item_info_main">
+                  <h3 class="la_item_title">
+                    <a href="Take a 3D tour">Take a 3D tour</a>
+                  </h3>
+                  <a href="lol" class="la_item_author"
+                    >Birrell Chariot<span> · May 20, 2021</span></a
+                  >
+                </div>
               </div>
             </div>
 
@@ -1056,19 +1122,30 @@
                       stroke-linejoin="round"
                     ></path></svg
                 ></span>
-                <a href="listen_audio_item_link" class="listen_audio_item_link"></a>
+                <a
+                  href="listen_audio_item_link"
+                  class="listen_audio_item_link"
+                ></a>
               </div>
               <div class="la_item_info">
-                  <div class="la_item_info_label">
-                    <div class="section_label">
-                      <a href="bacs" class="section_label_link section_label-purpule ">Jewelry</a>
-                    </div>
+                <div class="la_item_info_label">
+                  <div class="section_label">
+                    <a
+                      href="bacs"
+                      class="section_label_link section_label-purpule"
+                      >Jewelry</a
+                    >
                   </div>
+                </div>
 
-                  <div class="la_item_info_main">
-                    <h3 class="la_item_title"><a href="Take a 3D tour">Take a 3D tour</a></h3>
-                    <a href="lol" class="la_item_author">Birrell Chariot<span> · May 20, 2021</span></a>
-                  </div>
+                <div class="la_item_info_main">
+                  <h3 class="la_item_title">
+                    <a href="Take a 3D tour">Take a 3D tour</a>
+                  </h3>
+                  <a href="lol" class="la_item_author"
+                    >Birrell Chariot<span> · May 20, 2021</span></a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -1077,17 +1154,37 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img">
+                  <img
+                    src="../images/pexels-photo-844923.jpeg"
+                    alt=""
+                    class="section_listen_img"
+                  />
                 </a>
               </div>
 
               <div class="section_listen_content">
-                <h3 class="section_listen_title"><a href="">To cool datacenter servers</a></h3>
-                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+                <h3 class="section_listen_title">
+                  <a href="">To cool datacenter servers</a>
+                </h3>
+                <span class="section_listen_desc"
+                  >40 Episode · 110 minutes</span
+                >
 
                 <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 rtl:rotate-180"><path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd"></path></svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      class="w-5 h-5 rtl:rotate-180"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1097,17 +1194,37 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img">
+                  <img
+                    src="../images/pexels-photo-844923.jpeg"
+                    alt=""
+                    class="section_listen_img"
+                  />
                 </a>
               </div>
 
               <div class="section_listen_content">
-                <h3 class="section_listen_title"><a href="">To cool datacenter servers</a></h3>
-                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+                <h3 class="section_listen_title">
+                  <a href="">To cool datacenter servers</a>
+                </h3>
+                <span class="section_listen_desc"
+                  >40 Episode · 110 minutes</span
+                >
 
                 <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 rtl:rotate-180"><path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd"></path></svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      class="w-5 h-5 rtl:rotate-180"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1117,17 +1234,37 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img">
+                  <img
+                    src="../images/pexels-photo-844923.jpeg"
+                    alt=""
+                    class="section_listen_img"
+                  />
                 </a>
               </div>
 
               <div class="section_listen_content">
-                <h3 class="section_listen_title"><a href="">To cool datacenter servers</a></h3>
-                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+                <h3 class="section_listen_title">
+                  <a href="">To cool datacenter servers</a>
+                </h3>
+                <span class="section_listen_desc"
+                  >40 Episode · 110 minutes</span
+                >
 
                 <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 rtl:rotate-180"><path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd"></path></svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      class="w-5 h-5 rtl:rotate-180"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1137,17 +1274,37 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img">
+                  <img
+                    src="../images/pexels-photo-844923.jpeg"
+                    alt=""
+                    class="section_listen_img"
+                  />
                 </a>
               </div>
 
               <div class="section_listen_content">
-                <h3 class="section_listen_title"><a href="">To cool datacenter servers</a></h3>
-                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+                <h3 class="section_listen_title">
+                  <a href="">To cool datacenter servers</a>
+                </h3>
+                <span class="section_listen_desc"
+                  >40 Episode · 110 minutes</span
+                >
 
                 <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 rtl:rotate-180"><path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd"></path></svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      class="w-5 h-5 rtl:rotate-180"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1157,17 +1314,37 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img">
+                  <img
+                    src="../images/pexels-photo-844923.jpeg"
+                    alt=""
+                    class="section_listen_img"
+                  />
                 </a>
               </div>
 
               <div class="section_listen_content">
-                <h3 class="section_listen_title"><a href="">To cool datacenter servers</a></h3>
-                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+                <h3 class="section_listen_title">
+                  <a href="">To cool datacenter servers</a>
+                </h3>
+                <span class="section_listen_desc"
+                  >40 Episode · 110 minutes</span
+                >
 
                 <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 rtl:rotate-180"><path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd"></path></svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      class="w-5 h-5 rtl:rotate-180"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1177,17 +1354,37 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img">
+                  <img
+                    src="../images/pexels-photo-844923.jpeg"
+                    alt=""
+                    class="section_listen_img"
+                  />
                 </a>
               </div>
 
               <div class="section_listen_content">
-                <h3 class="section_listen_title"><a href="">To cool datacenter servers</a></h3>
-                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+                <h3 class="section_listen_title">
+                  <a href="">To cool datacenter servers</a>
+                </h3>
+                <span class="section_listen_desc"
+                  >40 Episode · 110 minutes</span
+                >
 
                 <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 rtl:rotate-180"><path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd"></path></svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      class="w-5 h-5 rtl:rotate-180"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1197,17 +1394,37 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img">
+                  <img
+                    src="../images/pexels-photo-844923.jpeg"
+                    alt=""
+                    class="section_listen_img"
+                  />
                 </a>
               </div>
 
               <div class="section_listen_content">
-                <h3 class="section_listen_title"><a href="">To cool datacenter servers</a></h3>
-                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+                <h3 class="section_listen_title">
+                  <a href="">To cool datacenter servers</a>
+                </h3>
+                <span class="section_listen_desc"
+                  >40 Episode · 110 minutes</span
+                >
 
                 <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 rtl:rotate-180"><path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd"></path></svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      class="w-5 h-5 rtl:rotate-180"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1217,17 +1434,37 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img">
+                  <img
+                    src="../images/pexels-photo-844923.jpeg"
+                    alt=""
+                    class="section_listen_img"
+                  />
                 </a>
               </div>
 
               <div class="section_listen_content">
-                <h3 class="section_listen_title"><a href="">To cool datacenter servers</a></h3>
-                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+                <h3 class="section_listen_title">
+                  <a href="">To cool datacenter servers</a>
+                </h3>
+                <span class="section_listen_desc"
+                  >40 Episode · 110 minutes</span
+                >
 
                 <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 rtl:rotate-180"><path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd"></path></svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      class="w-5 h-5 rtl:rotate-180"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1237,17 +1474,37 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img">
+                  <img
+                    src="../images/pexels-photo-844923.jpeg"
+                    alt=""
+                    class="section_listen_img"
+                  />
                 </a>
               </div>
 
               <div class="section_listen_content">
-                <h3 class="section_listen_title"><a href="">To cool datacenter servers</a></h3>
-                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+                <h3 class="section_listen_title">
+                  <a href="">To cool datacenter servers</a>
+                </h3>
+                <span class="section_listen_desc"
+                  >40 Episode · 110 minutes</span
+                >
 
                 <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 rtl:rotate-180"><path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd"></path></svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      class="w-5 h-5 rtl:rotate-180"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1382,5 +1639,7 @@
         <!-- ############################### -->
       </div>
     </div>
+
+    <script src="../js/script.js"></script>
   </body>
 </html>
