@@ -1,1645 +1,1100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/styles.css" />
-  </head>
-  <body>
-    <!--
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="../styles/styles.css" />
+</head>
+
+<body>
+	<!--
       Contiene:
         - Apartado de la ballena y el apartado "Editor Picks" (http://34.244.182.145:3000/home-4)
         - Listen to podcasts live y Listen to audio live (http://34.244.182.145:3000/home-3)
         - About us y Founder (http://34.244.182.145:3000/about) 
     -->
 
-    <!-- ############################### -->
-    <!-- ############################### -->
-    <!-- HERO -->
-    <section class="hero_wrapper">
-      <div id="hero" class="hero">
-        <div class="hero_content">
-          <div class="global_wrapper">
-            <div class="hero_main">
-              <h1 class="hero_title">The hidden world of whale culture</h1>
-              <p class="hero_text">
-                From singing competitions to food preferences, scientists are
-                learning whales have cultural differences once thought to be
-                unique to humans.
-              </p>
-              <div class="hero_buttons">
-                <a href="" class="hero_btn">Read More</a>
-                <button
-                  href=""
-                  class="hero_btn hero_btn-video"
-                  id="video_modal_btn"
-                >
-                  Play video
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    aria-hidden="true"
-                    class="w-5 h-5 ms-2 rtl:rotate-180"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="hero_images">
-          <img
-            src="../images/pexels-photo-4666750.jpeg"
-            alt=""
-            class="hero_image"
-          />
-        </div>
-      </div>
-      <div class="video_modal" id="hero_video_modal">
-        <div class="video_modal_content">
-          <div class="video_modal_header">
-            <button id="video_modal_btn-close">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-                class="w-5 h-5"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <div class="video_modal_main">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/5izFl8PhsAA?si=ZTCgZQpF8QJ_LQEm"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- HERO -->
-    <!-- ############################### -->
-    <!-- ############################### -->
-
-    <!-- ############################### -->
-    <!-- ############################### -->
-    <!-- EDITOR PICKS -->
-    <section id="editorPicks" class="editorPicks">
-      <div class="global_wrapper">
-        <div class="editorPicks_wrapper">
-          <div class="editorPicks_content">
-            <h2 class="editorPicks_title">🧩 Editor Picks</h2>
-            <p class="editorPicks_text">
-              Discover the most outstanding articles in all topics of life.
-            </p>
-          </div>
-
-          <div class="editorPicks_menu">
-            <button class="editorPicks_menu_btn editorPicks_menu_btn-active">
-              All items
-            </button>
-            <button class="editorPicks_menu_btn">Garden</button>
-            <button class="editorPicks_menu_btn">Fitness</button>
-            <button class="editorPicks_menu_btn">Design</button>
-            <button class="editorPicks_menu_btn editorPicks_menu_btn-all">
-              <span>View all</span
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-                class="ms-3 w-6 h-6 rtl:rotate-180"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                ></path>
-              </svg>
-            </button>
-          </div>
-
-          <div class="editorPicks_main">
-            <div class="editorPicks_post">
-              <div class="editorPicks_post_image">
-                <img
-                  src="../images/photo-1465310477141-6fb93167a273.jpeg"
-                  alt=""
-                />
-              </div>
-
-              <div class="editorPicks_post_content">
-                <h4 class="editorPicks_post_title">
-                  <a href="">
-                    Microsoft announces a five-year commitment to create bigger
-                    opportunities for people with disabilities
-                  </a>
-                </h4>
-                <p class="editorPicks_post_text">
-                  Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla
-                  tellus.
-                </p>
-                <div class="editorPicks_post_button">
-                  <div class="editorPicks_post_author_img">
-                    <img src="../images/9.jpeg" alt="" />
-                  </div>
-                  <div class="editorPicks_post_info">
-                    <a href="" class="editorPicks_post_author"
-                      >Pillifant Vern</a
-                    >
-                    <span class="editorPicks_post_date"
-                      >May 20, 2021 <span>· 3 min read</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="editorPicks_comments">
-              <ul class="editorPicks_comments_list">
-                <li class="editorPicks_comment">
-                  <a href="" class="editorPicks_comment_link"
-                    >360-degree video: How Microsoft deployed a datacenter to
-                    the bottom of the ocean</a
-                  >
-                  <div class="editorPicks_comment_author">
-                    <div class="editorPicks_comment_img">
-                      <img src="../images/9.jpeg" alt="" />
-                    </div>
-                    <span class="editorPicks_comment_name">
-                      <a href="">Pillifant Vern</a>
-                      <span>· May 20, 2021</span></span
-                    >
-                  </div>
-                </li>
-
-                <li class="editorPicks_comment">
-                  <a href="" class="editorPicks_comment_link"
-                    >360-degree video: How Microsoft deployed a datacenter to
-                    the bottom of the ocean</a
-                  >
-                  <div class="editorPicks_comment_author">
-                    <div class="editorPicks_comment_img">
-                      <img src="../images/9.jpeg" alt="" />
-                    </div>
-                    <span class="editorPicks_comment_name">
-                      <a href="">Pillifant Vern</a>
-                      <span>· May 20, 2021</span></span
-                    >
-                  </div>
-                </li>
-
-                <li class="editorPicks_comment">
-                  <a href="" class="editorPicks_comment_link"
-                    >360-degree video: How Microsoft deployed a datacenter to
-                    the bottom of the ocean</a
-                  >
-                  <div class="editorPicks_comment_author">
-                    <div class="editorPicks_comment_img">
-                      <img src="../images/9.jpeg" alt="" />
-                    </div>
-                    <span class="editorPicks_comment_name">
-                      <a href="">Pillifant Vern</a>
-                      <span>· May 20, 2021</span></span
-                    >
-                  </div>
-                </li>
-
-                <li class="editorPicks_comment">
-                  <a href="" class="editorPicks_comment_link"
-                    >360-degree video: How Microsoft deployed a datacenter to
-                    the bottom of the ocean</a
-                  >
-                  <div class="editorPicks_comment_author">
-                    <div class="editorPicks_comment_img">
-                      <img src="../images/9.jpeg" alt="" />
-                    </div>
-                    <span class="editorPicks_comment_name">
-                      <a href="">Pillifant Vern</a>
-                      <span>· May 20, 2021</span></span
-                    >
-                  </div>
-                </li>
-
-                <li class="editorPicks_comment">
-                  <a href="" class="editorPicks_comment_link"
-                    >360-degree video: How Microsoft deployed a datacenter to
-                    the bottom of the ocean</a
-                  >
-                  <div class="editorPicks_comment_author">
-                    <div class="editorPicks_comment_img">
-                      <img src="../images/9.jpeg" alt="" />
-                    </div>
-                    <span class="editorPicks_comment_name">
-                      <a href="">Pillifant Vern</a>
-                      <span>· May 20, 2021</span></span
-                    >
-                  </div>
-                </li>
-
-                <li class="editorPicks_comment">
-                  <a href="" class="editorPicks_comment_link"
-                    >360-degree video: How Microsoft deployed a datacenter to
-                    the bottom of the ocean</a
-                  >
-                  <div class="editorPicks_comment_author">
-                    <div class="editorPicks_comment_img">
-                      <img src="../images/9.jpeg" alt="" />
-                    </div>
-                    <span class="editorPicks_comment_name">
-                      <a href="">Pillifant Vern</a>
-                      <span>· May 20, 2021</span></span
-                    >
-                  </div>
-                </li>
-
-                <li class="editorPicks_comment">
-                  <a href="" class="editorPicks_comment_link"
-                    >360-degree video: How Microsoft deployed a datacenter to
-                    the bottom of the ocean</a
-                  >
-                  <div class="editorPicks_comment_author">
-                    <div class="editorPicks_comment_img">
-                      <img src="../images/9.jpeg" alt="" />
-                    </div>
-                    <span class="editorPicks_comment_name">
-                      <a href="">Pillifant Vern</a>
-                      <span>· May 20, 2021</span></span
-                    >
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- EDITOR PICKS -->
-    <!-- ############################### -->
-    <!-- ############################### -->
-
-    <!-- ############################### -->
-    <!-- ############################### -->
-    <!-- LISTEN PODCASTS -->
-    <section id="listen_podcasts" class="listen_podcasts">
-      <div class="global_wrapper">
-        <div class="listen_podcasts_wrapper">
-          <div class="section_header">
-            <h2 class="section_header_title">Listen to podcasts live</h2>
-            <p class="section_header_text">
-              Click on music icon and enjoy music or podcast
-            </p>
-          </div>
-
-          <div class="section_music_grid">
-            <div class="section_music_item section_music_card">
-              <a href="" class="mg_card_picture">
-                <img
-                  src="../images/pexels-photo-6843304.jpeg"
-                  alt=""
-                  class="mg_card_image"
-                />
-              </a>
-
-              <div class="mg_card_label">
-                <a href="bacs" class="section_label_link section_label-yellow"
-                  >Jewelry</a
-                >
-              </div>
-
-              <div class="mg_card_body">
-                <div class="mg_card_play">
-                  <div class="mg_card_music">
-                    <img src="../images/musicWave.png" alt="" />
-                  </div>
-
-                  <div class="mg_card_play_btn">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="ms-0.5 w-8 h-8 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-
-                <div class="mg_card_info">
-                  <a class="mg_card_title">Lenovo’s smarter devices</a>
-                  <p class="mg_card_text">
-                    Aenean lectus. Pellentesque eget nunc. Donec quis orci eget
-                    orci vehicula condimentum.
-                  </p>
-
-                  <div class="section_actions">
-                    <button class="section_actions_link">
-                      <svg
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1"
-                          d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      <span>38</span>
-                    </button>
-                    <a href="" class="section_actions_link"
-                      ><svg
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1"
-                          d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z"
-                        ></path>
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z"
-                        ></path>
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z"
-                        ></path>
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z"
-                        ></path>
-                      </svg>
-                      <span>110</span></a
-                    >
-                    <button class="section_actions_link">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        fill="none"
-                        stroke="currentColor"
-                        class="w-[18px] h-[18px]"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-                        ></path>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="section_music_item section_music_card">
-              <a href="" class="mg_card_picture">
-                <img
-                  src="../images/pexels-photo-6843304.jpeg"
-                  alt=""
-                  class="mg_card_image"
-                />
-              </a>
-
-              <div class="mg_card_label">
-                <a href="bacs" class="section_label_link section_label-purpule"
-                  >Jewelry</a
-                >
-              </div>
-
-              <div class="mg_card_body">
-                <div class="mg_card_play">
-                  <div class="mg_card_music">
-                    <img src="../images/musicWave.png" alt="" />
-                  </div>
-
-                  <div class="mg_card_play_btn">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="ms-0.5 w-8 h-8 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-
-                <div class="mg_card_info">
-                  <a class="mg_card_title">Lenovo’s smarter devices</a>
-                  <p class="mg_card_text">
-                    Aenean lectus. Pellentesque eget nunc. Donec quis orci eget
-                    orci vehicula condimentum.
-                  </p>
-
-                  <div class="section_actions">
-                    <button class="section_actions_link">
-                      <svg
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1"
-                          d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      <span>38</span>
-                    </button>
-                    <a href="" class="section_actions_link"
-                      ><svg
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1"
-                          d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z"
-                        ></path>
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z"
-                        ></path>
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z"
-                        ></path>
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z"
-                        ></path>
-                      </svg>
-                      <span>110</span></a
-                    >
-                    <button class="section_actions_link">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        fill="none"
-                        stroke="currentColor"
-                        class="w-[18px] h-[18px]"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-                        ></path>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="section_music_item">
-              <ul class="listen_podcasts_list">
-                <li class="lp_list_item">
-                  <a class="lp_list_link" href="">
-                    <div class="lp_list_picture">
-                      <img
-                        alt=""
-                        src="../images//pexels-photo-2156327.jpeg"
-                        class="lp_list_img"
-                      />
-                    </div>
-
-                    <div class="lp_list_main">
-                      <h2 class="lp_list_title">How architects visualize</h2>
-                      <span class="lp_list_ep">40 Episode · 110 minutes</span>
-                    </div>
-                  </a>
-
-                  <button class="lp_list_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="ms-0.5 w-8 h-8 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                </li>
-
-                <li class="lp_list_item">
-                  <a class="lp_list_link" href="">
-                    <div class="lp_list_picture">
-                      <img
-                        alt=""
-                        src="../images//pexels-photo-2156327.jpeg"
-                        class="lp_list_img"
-                      />
-                    </div>
-
-                    <div class="lp_list_main">
-                      <h2 class="lp_list_title">How architects visualize</h2>
-                      <span class="lp_list_ep">40 Episode · 110 minutes</span>
-                    </div>
-                  </a>
-
-                  <button class="lp_list_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="ms-0.5 w-8 h-8 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                </li>
-
-                <li class="lp_list_item">
-                  <a class="lp_list_link" href="">
-                    <div class="lp_list_picture">
-                      <img
-                        alt=""
-                        src="../images//pexels-photo-2156327.jpeg"
-                        class="lp_list_img"
-                      />
-                    </div>
-
-                    <div class="lp_list_main">
-                      <h2 class="lp_list_title">How architects visualize</h2>
-                      <span class="lp_list_ep">40 Episode · 110 minutes</span>
-                    </div>
-                  </a>
-
-                  <button class="lp_list_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="ms-0.5 w-8 h-8 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                </li>
-
-                <li class="lp_list_item">
-                  <a class="lp_list_link" href="">
-                    <div class="lp_list_picture">
-                      <img
-                        alt=""
-                        src="../images//pexels-photo-2156327.jpeg"
-                        class="lp_list_img"
-                      />
-                    </div>
-
-                    <div class="lp_list_main">
-                      <h2 class="lp_list_title">How architects visualize</h2>
-                      <span class="lp_list_ep">40 Episode · 110 minutes</span>
-                    </div>
-                  </a>
-
-                  <button class="lp_list_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="ms-0.5 w-8 h-8 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- LISTEN PODCASTS -->
-    <!-- ############################### -->
-    <!-- ############################### -->
-
-    <!-- ############################### -->
-    <!-- ############################### -->
-    <!-- LISTEN TO AUDIO LIVE -->
-    <section id="listen_audio" class="listen_audio">
-      <div class="global_wrapper">
-        <div class="listen_audio_wrapper">
-          <div class="section_header">
-            <h2 class="section_header_title">Listen to audio live</h2>
-            <p class="section_header_text">
-              Click on music icon and enjoy music or podcast
-            </p>
-          </div>
-
-          <div class="listen_audio_grid">
-            <div class="listen_audio_item">
-              <div class="la_item_actions">
-                <div class="section_actions">
-                  <button class="section_actions_link">
-                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                      <path
-                        fill-rule="evenodd"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="1"
-                        d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>38</span>
-                  </button>
-                  <a href="" class="section_actions_link"
-                    ><svg
-                      width="24"
-                      height="24"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="1"
-                        d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z"
-                      ></path>
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z"
-                      ></path>
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z"
-                      ></path>
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z"
-                      ></path>
-                    </svg>
-                    <span>110</span></a
-                  >
-                  <button class="section_actions_link">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      fill="none"
-                      stroke="currentColor"
-                      class="w-[18px] h-[18px]"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-                      ></path>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="la_item_picture">
-                <img
-                  src="../images/pexels-photo-4407688.jpeg"
-                  alt=""
-                  class="la_item_img"
-                />
-                <span class="la_item_icon"
-                  ><svg
-                    class="w-6 h-6"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.28016 22C8.00328 22 9.40016 20.6031 9.40016 18.88C9.40016 17.1569 8.00328 15.76 6.28016 15.76C4.55703 15.76 3.16016 17.1569 3.16016 18.88C3.16016 20.6031 4.55703 22 6.28016 22Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M20.8404 7.96009V4.60009C20.8404 2.00009 19.2104 1.64009 17.5604 2.09009L11.3204 3.79009C10.1804 4.10009 9.40039 5.00009 9.40039 6.30009V8.47009V9.93009V18.8701"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M20.8398 16.8V12"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M17.7196 19.9199C19.4427 19.9199 20.8396 18.5231 20.8396 16.7999C20.8396 15.0768 19.4427 13.6799 17.7196 13.6799C15.9965 13.6799 14.5996 15.0768 14.5996 16.7999C14.5996 18.5231 15.9965 19.9199 17.7196 19.9199Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M9.40039 9.5199L20.8404 6.3999"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path></svg
-                ></span>
-                <a
-                  href="listen_audio_item_link"
-                  class="listen_audio_item_link"
-                ></a>
-              </div>
-              <div class="la_item_info">
-                <div class="la_item_info_label">
-                  <div class="section_label">
-                    <a
-                      href="bacs"
-                      class="section_label_link section_label-purpule"
-                      >Jewelry</a
-                    >
-                  </div>
-                </div>
-
-                <div class="la_item_info_main">
-                  <h3 class="la_item_title">
-                    <a href="Take a 3D tour">Take a 3D tour</a>
-                  </h3>
-                  <a href="lol" class="la_item_author"
-                    >Birrell Chariot<span> · May 20, 2021</span></a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="listen_audio_item">
-              <div class="la_item_actions">
-                <div class="section_actions">
-                  <button class="section_actions_link">
-                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                      <path
-                        fill-rule="evenodd"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="1"
-                        d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>38</span>
-                  </button>
-                  <a href="" class="section_actions_link"
-                    ><svg
-                      width="24"
-                      height="24"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="1"
-                        d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z"
-                      ></path>
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z"
-                      ></path>
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z"
-                      ></path>
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z"
-                      ></path>
-                    </svg>
-                    <span>110</span></a
-                  >
-                  <button class="section_actions_link">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      fill="none"
-                      stroke="currentColor"
-                      class="w-[18px] h-[18px]"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-                      ></path>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="la_item_picture">
-                <img
-                  src="../images/pexels-photo-4407688.jpeg"
-                  alt=""
-                  class="la_item_img"
-                />
-                <span class="la_item_icon"
-                  ><svg
-                    class="w-6 h-6"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.28016 22C8.00328 22 9.40016 20.6031 9.40016 18.88C9.40016 17.1569 8.00328 15.76 6.28016 15.76C4.55703 15.76 3.16016 17.1569 3.16016 18.88C3.16016 20.6031 4.55703 22 6.28016 22Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M20.8404 7.96009V4.60009C20.8404 2.00009 19.2104 1.64009 17.5604 2.09009L11.3204 3.79009C10.1804 4.10009 9.40039 5.00009 9.40039 6.30009V8.47009V9.93009V18.8701"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M20.8398 16.8V12"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M17.7196 19.9199C19.4427 19.9199 20.8396 18.5231 20.8396 16.7999C20.8396 15.0768 19.4427 13.6799 17.7196 13.6799C15.9965 13.6799 14.5996 15.0768 14.5996 16.7999C14.5996 18.5231 15.9965 19.9199 17.7196 19.9199Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M9.40039 9.5199L20.8404 6.3999"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path></svg
-                ></span>
-                <a
-                  href="listen_audio_item_link"
-                  class="listen_audio_item_link"
-                ></a>
-              </div>
-              <div class="la_item_info">
-                <div class="la_item_info_label">
-                  <div class="section_label">
-                    <a
-                      href="bacs"
-                      class="section_label_link section_label-purpule"
-                      >Jewelry</a
-                    >
-                  </div>
-                </div>
-
-                <div class="la_item_info_main">
-                  <h3 class="la_item_title">
-                    <a href="Take a 3D tour">Take a 3D tour</a>
-                  </h3>
-                  <a href="lol" class="la_item_author"
-                    >Birrell Chariot<span> · May 20, 2021</span></a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="listen_audio_item">
-              <div class="la_item_actions">
-                <div class="section_actions">
-                  <button class="section_actions_link">
-                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                      <path
-                        fill-rule="evenodd"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="1"
-                        d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span>38</span>
-                  </button>
-                  <a href="" class="section_actions_link"
-                    ><svg
-                      width="24"
-                      height="24"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="1"
-                        d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z"
-                      ></path>
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z"
-                      ></path>
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z"
-                      ></path>
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z"
-                      ></path>
-                    </svg>
-                    <span>110</span></a
-                  >
-                  <button class="section_actions_link">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      fill="none"
-                      stroke="currentColor"
-                      class="w-[18px] h-[18px]"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-                      ></path>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="la_item_picture">
-                <img
-                  src="../images/pexels-photo-4407688.jpeg"
-                  alt=""
-                  class="la_item_img"
-                />
-                <span class="la_item_icon"
-                  ><svg
-                    class="w-6 h-6"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.28016 22C8.00328 22 9.40016 20.6031 9.40016 18.88C9.40016 17.1569 8.00328 15.76 6.28016 15.76C4.55703 15.76 3.16016 17.1569 3.16016 18.88C3.16016 20.6031 4.55703 22 6.28016 22Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M20.8404 7.96009V4.60009C20.8404 2.00009 19.2104 1.64009 17.5604 2.09009L11.3204 3.79009C10.1804 4.10009 9.40039 5.00009 9.40039 6.30009V8.47009V9.93009V18.8701"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M20.8398 16.8V12"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M17.7196 19.9199C19.4427 19.9199 20.8396 18.5231 20.8396 16.7999C20.8396 15.0768 19.4427 13.6799 17.7196 13.6799C15.9965 13.6799 14.5996 15.0768 14.5996 16.7999C14.5996 18.5231 15.9965 19.9199 17.7196 19.9199Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M9.40039 9.5199L20.8404 6.3999"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path></svg
-                ></span>
-                <a
-                  href="listen_audio_item_link"
-                  class="listen_audio_item_link"
-                ></a>
-              </div>
-              <div class="la_item_info">
-                <div class="la_item_info_label">
-                  <div class="section_label">
-                    <a
-                      href="bacs"
-                      class="section_label_link section_label-purpule"
-                      >Jewelry</a
-                    >
-                  </div>
-                </div>
-
-                <div class="la_item_info_main">
-                  <h3 class="la_item_title">
-                    <a href="Take a 3D tour">Take a 3D tour</a>
-                  </h3>
-                  <a href="lol" class="la_item_author"
-                    >Birrell Chariot<span> · May 20, 2021</span></a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="section_listen_grid">
-            <div class="section_listen_item">
-              <div class="section_listen_mask">
-                <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
-                </a>
-              </div>
-
-              <div class="section_listen_content">
-                <h3 class="section_listen_title">
-                  <a href="">To cool datacenter servers</a>
-                </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
-                >
-
-                <button class="section_listen_btn">
-                  <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </span>
-                  <span>Listen now</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="section_listen_item">
-              <div class="section_listen_mask">
-                <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
-                </a>
-              </div>
-
-              <div class="section_listen_content">
-                <h3 class="section_listen_title">
-                  <a href="">To cool datacenter servers</a>
-                </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
-                >
-
-                <button class="section_listen_btn">
-                  <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </span>
-                  <span>Listen now</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="section_listen_item">
-              <div class="section_listen_mask">
-                <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
-                </a>
-              </div>
-
-              <div class="section_listen_content">
-                <h3 class="section_listen_title">
-                  <a href="">To cool datacenter servers</a>
-                </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
-                >
-
-                <button class="section_listen_btn">
-                  <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </span>
-                  <span>Listen now</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="section_listen_item">
-              <div class="section_listen_mask">
-                <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
-                </a>
-              </div>
-
-              <div class="section_listen_content">
-                <h3 class="section_listen_title">
-                  <a href="">To cool datacenter servers</a>
-                </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
-                >
-
-                <button class="section_listen_btn">
-                  <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </span>
-                  <span>Listen now</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="section_listen_item">
-              <div class="section_listen_mask">
-                <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
-                </a>
-              </div>
-
-              <div class="section_listen_content">
-                <h3 class="section_listen_title">
-                  <a href="">To cool datacenter servers</a>
-                </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
-                >
-
-                <button class="section_listen_btn">
-                  <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </span>
-                  <span>Listen now</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="section_listen_item">
-              <div class="section_listen_mask">
-                <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
-                </a>
-              </div>
-
-              <div class="section_listen_content">
-                <h3 class="section_listen_title">
-                  <a href="">To cool datacenter servers</a>
-                </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
-                >
-
-                <button class="section_listen_btn">
-                  <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </span>
-                  <span>Listen now</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="section_listen_item">
-              <div class="section_listen_mask">
-                <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
-                </a>
-              </div>
-
-              <div class="section_listen_content">
-                <h3 class="section_listen_title">
-                  <a href="">To cool datacenter servers</a>
-                </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
-                >
-
-                <button class="section_listen_btn">
-                  <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </span>
-                  <span>Listen now</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="section_listen_item">
-              <div class="section_listen_mask">
-                <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
-                </a>
-              </div>
-
-              <div class="section_listen_content">
-                <h3 class="section_listen_title">
-                  <a href="">To cool datacenter servers</a>
-                </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
-                >
-
-                <button class="section_listen_btn">
-                  <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </span>
-                  <span>Listen now</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="section_listen_item">
-              <div class="section_listen_mask">
-                <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
-                </a>
-              </div>
-
-              <div class="section_listen_content">
-                <h3 class="section_listen_title">
-                  <a href="">To cool datacenter servers</a>
-                </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
-                >
-
-                <button class="section_listen_btn">
-                  <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </span>
-                  <span>Listen now</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- LISTEN TO AUDIO LIVE -->
-    <!-- ############################### -->
-    <!-- ############################### -->
-
-    <!--  -->
-    <div class="background_design">
-      <div class="background_design_colors">
-        <span class="background_design_color"></span>
-        <span
-          class="background_design_color background_design_color-blue"
-        ></span>
-      </div>
-
-      <div class="background_design_content">
-        <!-- ############################### -->
-        <!-- ############################### -->
-        <!-- ABOUT US -->
-        <section id="about" class="about">
-          <div class="global_wrapper">
-            <div class="about_wrapper">
-              <div class="about_content">
-                <h2 class="about_title">👋 About Us.</h2>
-                <p class="about_text">
-                  We’re impartial and independent, and every day we create
-                  distinctive, world-class programmes and content which inform,
-                  educate and entertain millions of people in the around the
-                  world.
-                </p>
-              </div>
-              <div class="about_images">
-                <img
-                  src="../images/about-hero-right.png"
-                  alt=""
-                  class="about_image"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- ABOUT US -->
-        <!-- ############################### -->
-        <!-- ############################### -->
-
-        <!-- ############################### -->
-        <!-- ############################### -->
-        <!-- FOUNDER -->
-        <section id="founder" class="founder">
-          <div class="global_wrapper">
-            <div class="founder_wrapper">
-              <div class="founder_content">
-                <h2 class="founder_title">⛱ Founder</h2>
-                <p class="founder_text">
-                  We’re impartial and independent, and every day we create
-                  distinctive, world-class programmes and content
-                </p>
-              </div>
-              <div class="founder_grid">
-                <div class="founder_card">
-                  <div class="founder_card_image">
-                    <img
-                      src="../images/photo-1472099645785-5658abf4ff4e.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="founder_card_content">
-                    <span class="founder_card_name">Niamh O'Shea</span>
-                    <span class="founder_card_rol"
-                      >Co-founder and Chief Executive</span
-                    >
-                  </div>
-                </div>
-
-                <div class="founder_card">
-                  <div class="founder_card_image">
-                    <img
-                      src="../images/photo-1472099645785-5658abf4ff4e.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="founder_card_content">
-                    <span class="founder_card_name">Niamh O'Shea</span>
-                    <span class="founder_card_rol"
-                      >Co-founder and Chief Executive</span
-                    >
-                  </div>
-                </div>
-
-                <div class="founder_card">
-                  <div class="founder_card_image">
-                    <img
-                      src="../images/photo-1472099645785-5658abf4ff4e.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="founder_card_content">
-                    <span class="founder_card_name">Niamh O'Shea</span>
-                    <span class="founder_card_rol"
-                      >Co-founder and Chief Executive</span
-                    >
-                  </div>
-                </div>
-
-                <div class="founder_card">
-                  <div class="founder_card_image">
-                    <img
-                      src="../images/photo-1472099645785-5658abf4ff4e.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="founder_card_content">
-                    <span class="founder_card_name">Niamh O'Shea</span>
-                    <span class="founder_card_rol"
-                      >Co-founder and Chief Executive</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- FOUNDER -->
-        <!-- ############################### -->
-        <!-- ############################### -->
-      </div>
-    </div>
-
-    <script src="../js/script.js"></script>
-  </body>
+	<!-- ############################### -->
+	<!-- ############################### -->
+	<!-- HERO -->
+	<section class="hero_wrapper">
+		<div id="hero" class="hero">
+			<div class="hero_content">
+				<div class="global_wrapper">
+					<div class="hero_main">
+						<h1 class="hero_title">The hidden world of whale culture</h1>
+						<p class="hero_text">
+							From singing competitions to food preferences, scientists are
+							learning whales have cultural differences once thought to be
+							unique to humans.
+						</p>
+						<div class="hero_buttons">
+							<a href="" class="hero_btn">Read More</a>
+							<button href="" class="hero_btn hero_btn-video" id="video_modal_btn">
+								Play video
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+									aria-hidden="true" class="w-5 h-5 ms-2 rtl:rotate-180">
+									<path fill-rule="evenodd"
+										d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+										clip-rule="evenodd"></path>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hero_images">
+				<img src="../images/pexels-photo-4666750.jpeg" alt="" class="hero_image" />
+			</div>
+		</div>
+		<div class="video_modal" id="hero_video_modal">
+			<div class="video_modal_content">
+				<div class="video_modal_header">
+					<button id="video_modal_btn-close">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+							aria-hidden="true" class="w-5 h-5">
+							<path fill-rule="evenodd"
+								d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+								clip-rule="evenodd"></path>
+						</svg>
+					</button>
+				</div>
+				<div class="video_modal_main">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/5izFl8PhsAA?si=ZTCgZQpF8QJ_LQEm"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- HERO -->
+	<!-- ############################### -->
+	<!-- ############################### -->
+
+	<!-- ############################### -->
+	<!-- ############################### -->
+	<!-- EDITOR PICKS -->
+	<section id="editorPicks" class="editorPicks">
+		<div class="global_wrapper">
+			<div class="editorPicks_wrapper">
+				<div class="editorPicks_content">
+					<h2 class="editorPicks_title">🧩 Editor Picks</h2>
+					<p class="editorPicks_text">
+						Discover the most outstanding articles in all topics of life.
+					</p>
+				</div>
+
+				<div class="editorPicks_menu">
+					<button class="editorPicks_menu_btn editorPicks_menu_btn-active">All items</button>
+					<button class="editorPicks_menu_btn">Garden</button>
+					<button class="editorPicks_menu_btn">Fitness</button>
+					<button class="editorPicks_menu_btn">Design</button>
+					<button class="editorPicks_menu_btn editorPicks_menu_btn-all">
+						<span>View all</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+							stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+							class="ms-3 w-6 h-6 rtl:rotate-180">
+							<path stroke-linecap="round" stroke-linejoin="round"
+								d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+						</svg>
+					</button>
+				</div>
+
+				<div class="editorPicks_main">
+					<div class="editorPicks_post">
+						<div class="editorPicks_post_image">
+							<img src="../images/photo-1465310477141-6fb93167a273.jpeg" alt="" />
+						</div>
+
+						<div class="editorPicks_post_content">
+							<h4 class="editorPicks_post_title">
+								<a href="">
+									Microsoft announces a five-year commitment to create bigger
+									opportunities for people with disabilities
+								</a>
+							</h4>
+							<p class="editorPicks_post_text">
+								Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla
+								tellus.
+							</p>
+							<div class="editorPicks_post_button">
+								<div class="editorPicks_post_author_img">
+									<img src="../images/9.jpeg" alt="" />
+								</div>
+								<div class="editorPicks_post_info">
+									<a href="" class="editorPicks_post_author">Pillifant Vern</a>
+									<span class="editorPicks_post_date">May 20, 2021 <span>· 3 min read</span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="editorPicks_comments">
+						<ul class="editorPicks_comments_list">
+							<li class="editorPicks_comment">
+								<a href="" class="editorPicks_comment_link">360-degree video: How Microsoft deployed a
+									datacenter to
+									the bottom of the ocean</a>
+								<div class="editorPicks_comment_author">
+									<div class="editorPicks_comment_img">
+										<img src="../images/9.jpeg" alt="" />
+									</div>
+									<span class="editorPicks_comment_name">
+										<a href="">Pillifant Vern</a>
+										<span>· May 20, 2021</span></span>
+								</div>
+							</li>
+
+							<li class="editorPicks_comment">
+								<a href="" class="editorPicks_comment_link">360-degree video: How Microsoft deployed a
+									datacenter to
+									the bottom of the ocean</a>
+								<div class="editorPicks_comment_author">
+									<div class="editorPicks_comment_img">
+										<img src="../images/9.jpeg" alt="" />
+									</div>
+									<span class="editorPicks_comment_name">
+										<a href="">Pillifant Vern</a>
+										<span>· May 20, 2021</span></span>
+								</div>
+							</li>
+
+							<li class="editorPicks_comment">
+								<a href="" class="editorPicks_comment_link">360-degree video: How Microsoft deployed a
+									datacenter to
+									the bottom of the ocean</a>
+								<div class="editorPicks_comment_author">
+									<div class="editorPicks_comment_img">
+										<img src="../images/9.jpeg" alt="" />
+									</div>
+									<span class="editorPicks_comment_name">
+										<a href="">Pillifant Vern</a>
+										<span>· May 20, 2021</span></span>
+								</div>
+							</li>
+
+							<li class="editorPicks_comment">
+								<a href="" class="editorPicks_comment_link">360-degree video: How Microsoft deployed a
+									datacenter to
+									the bottom of the ocean</a>
+								<div class="editorPicks_comment_author">
+									<div class="editorPicks_comment_img">
+										<img src="../images/9.jpeg" alt="" />
+									</div>
+									<span class="editorPicks_comment_name">
+										<a href="">Pillifant Vern</a>
+										<span>· May 20, 2021</span></span>
+								</div>
+							</li>
+
+							<li class="editorPicks_comment">
+								<a href="" class="editorPicks_comment_link">360-degree video: How Microsoft deployed a
+									datacenter to
+									the bottom of the ocean</a>
+								<div class="editorPicks_comment_author">
+									<div class="editorPicks_comment_img">
+										<img src="../images/9.jpeg" alt="" />
+									</div>
+									<span class="editorPicks_comment_name">
+										<a href="">Pillifant Vern</a>
+										<span>· May 20, 2021</span></span>
+								</div>
+							</li>
+
+							<li class="editorPicks_comment">
+								<a href="" class="editorPicks_comment_link">360-degree video: How Microsoft deployed a
+									datacenter to
+									the bottom of the ocean</a>
+								<div class="editorPicks_comment_author">
+									<div class="editorPicks_comment_img">
+										<img src="../images/9.jpeg" alt="" />
+									</div>
+									<span class="editorPicks_comment_name">
+										<a href="">Pillifant Vern</a>
+										<span>· May 20, 2021</span></span>
+								</div>
+							</li>
+
+							<li class="editorPicks_comment">
+								<a href="" class="editorPicks_comment_link">360-degree video: How Microsoft deployed a
+									datacenter to
+									the bottom of the ocean</a>
+								<div class="editorPicks_comment_author">
+									<div class="editorPicks_comment_img">
+										<img src="../images/9.jpeg" alt="" />
+									</div>
+									<span class="editorPicks_comment_name">
+										<a href="">Pillifant Vern</a>
+										<span>· May 20, 2021</span></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- EDITOR PICKS -->
+	<!-- ############################### -->
+	<!-- ############################### -->
+
+	<!-- ############################### -->
+	<!-- ############################### -->
+	<!-- LISTEN PODCASTS -->
+	<section id="listen_podcasts" class="listen_podcasts">
+		<div class="global_wrapper">
+			<div class="listen_podcasts_wrapper">
+				<div class="section_header">
+					<h2 class="section_header_title">Listen to podcasts live</h2>
+					<p class="section_header_text">
+						Click on music icon and enjoy music or podcast
+					</p>
+				</div>
+
+				<div class="section_music_grid">
+					<div class="section_music_item section_music_card">
+						<a href="" class="mg_card_picture">
+							<img src="../images/pexels-photo-6843304.jpeg" alt="" class="mg_card_image" />
+						</a>
+
+						<div class="mg_card_label">
+							<a href="bacs" class="section_label_link section_label-yellow">Jewelry</a>
+						</div>
+
+						<div class="mg_card_body">
+							<div class="mg_card_play">
+								<div class="mg_card_music">
+									<img src="../images/musicWave.png" alt="" />
+								</div>
+
+								<div class="mg_card_play_btn">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+										aria-hidden="true" class="ms-0.5 w-8 h-8 rtl:rotate-180">
+										<path fill-rule="evenodd"
+											d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</div>
+							</div>
+
+							<div class="mg_card_info">
+								<a class="mg_card_title">Lenovo’s smarter devices</a>
+								<p class="mg_card_text">
+									Aenean lectus. Pellentesque eget nunc. Donec quis orci eget
+									orci vehicula condimentum.
+								</p>
+
+								<div class="section_actions">
+									<button class="section_actions_link">
+										<svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+											<path fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
+												stroke-linejoin="round" stroke-width="1"
+												d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
+												clip-rule="evenodd"></path>
+										</svg>
+										<span>38</span>
+									</button>
+									<a href="" class="section_actions_link"><svg width="24" height="24" fill="none"
+											viewBox="0 0 24 24">
+											<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+												stroke-width="1"
+												d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z">
+											</path>
+											<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+												d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z">
+											</path>
+											<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+												d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z">
+											</path>
+											<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+												d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z">
+											</path>
+										</svg>
+										<span>110</span></a>
+									<button class="section_actions_link">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"
+											fill="none" stroke="currentColor" class="w-[18px] h-[18px]">
+											<path stroke-linecap="round" stroke-linejoin="round"
+												d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z">
+											</path>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section_music_item section_music_card">
+						<a href="" class="mg_card_picture">
+							<img src="../images/pexels-photo-6843304.jpeg" alt="" class="mg_card_image" />
+						</a>
+
+						<div class="mg_card_label">
+							<a href="bacs" class="section_label_link section_label-purpule">Jewelry</a>
+						</div>
+
+						<div class="mg_card_body">
+							<div class="mg_card_play">
+								<div class="mg_card_music">
+									<img src="../images/musicWave.png" alt="" />
+								</div>
+
+								<div class="mg_card_play_btn">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+										aria-hidden="true" class="ms-0.5 w-8 h-8 rtl:rotate-180">
+										<path fill-rule="evenodd"
+											d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</div>
+							</div>
+
+							<div class="mg_card_info">
+								<a class="mg_card_title">Lenovo’s smarter devices</a>
+								<p class="mg_card_text">
+									Aenean lectus. Pellentesque eget nunc. Donec quis orci eget
+									orci vehicula condimentum.
+								</p>
+
+								<div class="section_actions">
+									<button class="section_actions_link">
+										<svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+											<path fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
+												stroke-linejoin="round" stroke-width="1"
+												d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
+												clip-rule="evenodd"></path>
+										</svg>
+										<span>38</span>
+									</button>
+									<a href="" class="section_actions_link"><svg width="24" height="24" fill="none"
+											viewBox="0 0 24 24">
+											<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+												stroke-width="1"
+												d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z">
+											</path>
+											<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+												d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z">
+											</path>
+											<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+												d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z">
+											</path>
+											<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+												d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z">
+											</path>
+										</svg>
+										<span>110</span></a>
+									<button class="section_actions_link">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"
+											fill="none" stroke="currentColor" class="w-[18px] h-[18px]">
+											<path stroke-linecap="round" stroke-linejoin="round"
+												d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z">
+											</path>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section_music_item">
+						<ul class="listen_podcasts_list">
+							<li class="lp_list_item">
+								<a class="lp_list_link" href="">
+									<div class="lp_list_picture">
+										<img alt="" src="../images//pexels-photo-2156327.jpeg" class="lp_list_img" />
+									</div>
+
+									<div class="lp_list_main">
+										<h2 class="lp_list_title">How architects visualize</h2>
+										<span class="lp_list_ep">40 Episode · 110 minutes</span>
+									</div>
+								</a>
+
+								<button class="lp_list_play">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+										aria-hidden="true" class="ms-0.5 w-8 h-8 rtl:rotate-180">
+										<path fill-rule="evenodd"
+											d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</button>
+							</li>
+
+							<li class="lp_list_item">
+								<a class="lp_list_link" href="">
+									<div class="lp_list_picture">
+										<img alt="" src="../images//pexels-photo-2156327.jpeg" class="lp_list_img" />
+									</div>
+
+									<div class="lp_list_main">
+										<h2 class="lp_list_title">How architects visualize</h2>
+										<span class="lp_list_ep">40 Episode · 110 minutes</span>
+									</div>
+								</a>
+
+								<button class="lp_list_play">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+										aria-hidden="true" class="ms-0.5 w-8 h-8 rtl:rotate-180">
+										<path fill-rule="evenodd"
+											d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</button>
+							</li>
+
+							<li class="lp_list_item">
+								<a class="lp_list_link" href="">
+									<div class="lp_list_picture">
+										<img alt="" src="../images//pexels-photo-2156327.jpeg" class="lp_list_img" />
+									</div>
+
+									<div class="lp_list_main">
+										<h2 class="lp_list_title">How architects visualize</h2>
+										<span class="lp_list_ep">40 Episode · 110 minutes</span>
+									</div>
+								</a>
+
+								<button class="lp_list_play">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+										aria-hidden="true" class="ms-0.5 w-8 h-8 rtl:rotate-180">
+										<path fill-rule="evenodd"
+											d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</button>
+							</li>
+
+							<li class="lp_list_item">
+								<a class="lp_list_link" href="">
+									<div class="lp_list_picture">
+										<img alt="" src="../images//pexels-photo-2156327.jpeg" class="lp_list_img" />
+									</div>
+
+									<div class="lp_list_main">
+										<h2 class="lp_list_title">How architects visualize</h2>
+										<span class="lp_list_ep">40 Episode · 110 minutes</span>
+									</div>
+								</a>
+
+								<button class="lp_list_play">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+										aria-hidden="true" class="ms-0.5 w-8 h-8 rtl:rotate-180">
+										<path fill-rule="evenodd"
+											d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- LISTEN PODCASTS -->
+	<!-- ############################### -->
+	<!-- ############################### -->
+
+	<!-- ############################### -->
+	<!-- ############################### -->
+	<!-- LISTEN TO AUDIO LIVE -->
+	<section id="listen_audio" class="listen_audio">
+		<div class="global_wrapper">
+			<div class="listen_audio_wrapper">
+				<div class="section_header">
+					<h2 class="section_header_title">Listen to audio live</h2>
+					<p class="section_header_text">
+						Click on music icon and enjoy music or podcast
+					</p>
+				</div>
+
+				<div class="listen_audio_grid">
+					<div class="listen_audio_item">
+						<div class="la_item_actions">
+							<div class="section_actions">
+								<button class="section_actions_link">
+									<svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+										<path fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
+											stroke-linejoin="round" stroke-width="1"
+											d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
+											clip-rule="evenodd"></path>
+									</svg>
+									<span>38</span>
+								</button>
+								<a href="" class="section_actions_link"><svg width="24" height="24" fill="none"
+										viewBox="0 0 24 24">
+										<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+											stroke-width="1"
+											d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z">
+										</path>
+										<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+											d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z">
+										</path>
+										<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+											d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z">
+										</path>
+										<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+											d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z">
+										</path>
+									</svg>
+									<span>110</span></a>
+								<button class="section_actions_link">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"
+										fill="none" stroke="currentColor" class="w-[18px] h-[18px]">
+										<path stroke-linecap="round" stroke-linejoin="round"
+											d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z">
+										</path>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="la_item_picture">
+							<img src="../images/pexels-photo-4407688.jpeg" alt="" class="la_item_img" />
+							<span class="la_item_icon"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M6.28016 22C8.00328 22 9.40016 20.6031 9.40016 18.88C9.40016 17.1569 8.00328 15.76 6.28016 15.76C4.55703 15.76 3.16016 17.1569 3.16016 18.88C3.16016 20.6031 4.55703 22 6.28016 22Z"
+										stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path
+										d="M20.8404 7.96009V4.60009C20.8404 2.00009 19.2104 1.64009 17.5604 2.09009L11.3204 3.79009C10.1804 4.10009 9.40039 5.00009 9.40039 6.30009V8.47009V9.93009V18.8701"
+										stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path d="M20.8398 16.8V12" stroke="currentColor" stroke-width="1.5"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M17.7196 19.9199C19.4427 19.9199 20.8396 18.5231 20.8396 16.7999C20.8396 15.0768 19.4427 13.6799 17.7196 13.6799C15.9965 13.6799 14.5996 15.0768 14.5996 16.7999C14.5996 18.5231 15.9965 19.9199 17.7196 19.9199Z"
+										stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path d="M9.40039 9.5199L20.8404 6.3999" stroke="currentColor" stroke-width="1.5"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></span>
+							<a href="listen_audio_item_link" class="listen_audio_item_link"></a>
+						</div>
+						<div class="la_item_info">
+							<div class="la_item_info_label">
+								<div class="section_label">
+									<a href="bacs" class="section_label_link section_label-purpule">Jewelry</a>
+								</div>
+							</div>
+
+							<div class="la_item_info_main">
+								<h3 class="la_item_title">
+									<a href="Take a 3D tour">Take a 3D tour</a>
+								</h3>
+								<a href="lol" class="la_item_author">Birrell Chariot<span> · May 20, 2021</span></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="listen_audio_item">
+						<div class="la_item_actions">
+							<div class="section_actions">
+								<button class="section_actions_link">
+									<svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+										<path fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
+											stroke-linejoin="round" stroke-width="1"
+											d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
+											clip-rule="evenodd"></path>
+									</svg>
+									<span>38</span>
+								</button>
+								<a href="" class="section_actions_link"><svg width="24" height="24" fill="none"
+										viewBox="0 0 24 24">
+										<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+											stroke-width="1"
+											d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z">
+										</path>
+										<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+											d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z">
+										</path>
+										<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+											d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z">
+										</path>
+										<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+											d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z">
+										</path>
+									</svg>
+									<span>110</span></a>
+								<button class="section_actions_link">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"
+										fill="none" stroke="currentColor" class="w-[18px] h-[18px]">
+										<path stroke-linecap="round" stroke-linejoin="round"
+											d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z">
+										</path>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="la_item_picture">
+							<img src="../images/pexels-photo-4407688.jpeg" alt="" class="la_item_img" />
+							<span class="la_item_icon"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M6.28016 22C8.00328 22 9.40016 20.6031 9.40016 18.88C9.40016 17.1569 8.00328 15.76 6.28016 15.76C4.55703 15.76 3.16016 17.1569 3.16016 18.88C3.16016 20.6031 4.55703 22 6.28016 22Z"
+										stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path
+										d="M20.8404 7.96009V4.60009C20.8404 2.00009 19.2104 1.64009 17.5604 2.09009L11.3204 3.79009C10.1804 4.10009 9.40039 5.00009 9.40039 6.30009V8.47009V9.93009V18.8701"
+										stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path d="M20.8398 16.8V12" stroke="currentColor" stroke-width="1.5"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M17.7196 19.9199C19.4427 19.9199 20.8396 18.5231 20.8396 16.7999C20.8396 15.0768 19.4427 13.6799 17.7196 13.6799C15.9965 13.6799 14.5996 15.0768 14.5996 16.7999C14.5996 18.5231 15.9965 19.9199 17.7196 19.9199Z"
+										stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path d="M9.40039 9.5199L20.8404 6.3999" stroke="currentColor" stroke-width="1.5"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></span>
+							<a href="listen_audio_item_link" class="listen_audio_item_link"></a>
+						</div>
+						<div class="la_item_info">
+							<div class="la_item_info_label">
+								<div class="section_label">
+									<a href="bacs" class="section_label_link section_label-purpule">Jewelry</a>
+								</div>
+							</div>
+
+							<div class="la_item_info_main">
+								<h3 class="la_item_title">
+									<a href="Take a 3D tour">Take a 3D tour</a>
+								</h3>
+								<a href="lol" class="la_item_author">Birrell Chariot<span> · May 20, 2021</span></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="listen_audio_item">
+						<div class="la_item_actions">
+							<div class="section_actions">
+								<button class="section_actions_link">
+									<svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+										<path fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
+											stroke-linejoin="round" stroke-width="1"
+											d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
+											clip-rule="evenodd"></path>
+									</svg>
+									<span>38</span>
+								</button>
+								<a href="" class="section_actions_link"><svg width="24" height="24" fill="none"
+										viewBox="0 0 24 24">
+										<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+											stroke-width="1"
+											d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z">
+										</path>
+										<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+											d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z">
+										</path>
+										<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+											d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z">
+										</path>
+										<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+											d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z">
+										</path>
+									</svg>
+									<span>110</span></a>
+								<button class="section_actions_link">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"
+										fill="none" stroke="currentColor" class="w-[18px] h-[18px]">
+										<path stroke-linecap="round" stroke-linejoin="round"
+											d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z">
+										</path>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="la_item_picture">
+							<img src="../images/pexels-photo-4407688.jpeg" alt="" class="la_item_img" />
+							<span class="la_item_icon"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M6.28016 22C8.00328 22 9.40016 20.6031 9.40016 18.88C9.40016 17.1569 8.00328 15.76 6.28016 15.76C4.55703 15.76 3.16016 17.1569 3.16016 18.88C3.16016 20.6031 4.55703 22 6.28016 22Z"
+										stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path
+										d="M20.8404 7.96009V4.60009C20.8404 2.00009 19.2104 1.64009 17.5604 2.09009L11.3204 3.79009C10.1804 4.10009 9.40039 5.00009 9.40039 6.30009V8.47009V9.93009V18.8701"
+										stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path d="M20.8398 16.8V12" stroke="currentColor" stroke-width="1.5"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M17.7196 19.9199C19.4427 19.9199 20.8396 18.5231 20.8396 16.7999C20.8396 15.0768 19.4427 13.6799 17.7196 13.6799C15.9965 13.6799 14.5996 15.0768 14.5996 16.7999C14.5996 18.5231 15.9965 19.9199 17.7196 19.9199Z"
+										stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path d="M9.40039 9.5199L20.8404 6.3999" stroke="currentColor" stroke-width="1.5"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg></span>
+							<a href="listen_audio_item_link" class="listen_audio_item_link"></a>
+						</div>
+						<div class="la_item_info">
+							<div class="la_item_info_label">
+								<div class="section_label">
+									<a href="bacs" class="section_label_link section_label-purpule">Jewelry</a>
+								</div>
+							</div>
+
+							<div class="la_item_info_main">
+								<h3 class="la_item_title">
+									<a href="Take a 3D tour">Take a 3D tour</a>
+								</h3>
+								<a href="lol" class="la_item_author">Birrell Chariot<span> · May 20, 2021</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section_listen_grid">
+					<div class="section_listen_item">
+						<div class="section_listen_mask">
+							<a href="" class="section_listen_picture">
+								<img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
+							</a>
+						</div>
+
+						<div class="section_listen_content">
+							<h3 class="section_listen_title">
+								<a href="">To cool datacenter servers</a>
+							</h3>
+							<span class="section_listen_desc">40 Episode · 110 minutes</span>
+
+							<button class="section_listen_btn">
+								<span class="section_listen_play">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+										aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+										<path fill-rule="evenodd"
+											d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</span>
+								<span>Listen now</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="section_listen_item">
+						<div class="section_listen_mask">
+							<a href="" class="section_listen_picture">
+								<img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
+							</a>
+						</div>
+
+						<div class="section_listen_content">
+							<h3 class="section_listen_title">
+								<a href="">To cool datacenter servers</a>
+							</h3>
+							<span class="section_listen_desc">40 Episode · 110 minutes</span>
+
+							<button class="section_listen_btn">
+								<span class="section_listen_play">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+										aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+										<path fill-rule="evenodd"
+											d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</span>
+								<span>Listen now</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="section_listen_item">
+						<div class="section_listen_mask">
+							<a href="" class="section_listen_picture">
+								<img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
+							</a>
+						</div>
+
+						<div class="section_listen_content">
+							<h3 class="section_listen_title">
+								<a href="">To cool datacenter servers</a>
+							</h3>
+							<span class="section_listen_desc">40 Episode · 110 minutes</span>
+
+							<button class="section_listen_btn">
+								<span class="section_listen_play">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+										aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+										<path fill-rule="evenodd"
+											d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</span>
+								<span>Listen now</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="section_listen_item">
+						<div class="section_listen_mask">
+							<a href="" class="section_listen_picture">
+								<img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
+							</a>
+						</div>
+
+						<div class="section_listen_content">
+							<h3 class="section_listen_title">
+								<a href="">To cool datacenter servers</a>
+							</h3>
+							<span class="section_listen_desc">40 Episode · 110 minutes</span>
+
+							<button class="section_listen_btn">
+								<span class="section_listen_play">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+										aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+										<path fill-rule="evenodd"
+											d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</span>
+								<span>Listen now</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="section_listen_item">
+						<div class="section_listen_mask">
+							<a href="" class="section_listen_picture">
+								<img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
+							</a>
+						</div>
+
+						<div class="section_listen_content">
+							<h3 class="section_listen_title">
+								<a href="">To cool datacenter servers</a>
+							</h3>
+							<span class="section_listen_desc">40 Episode · 110 minutes</span>
+
+							<button class="section_listen_btn">
+								<span class="section_listen_play">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+										aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+										<path fill-rule="evenodd"
+											d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</span>
+								<span>Listen now</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="section_listen_item">
+						<div class="section_listen_mask">
+							<a href="" class="section_listen_picture">
+								<img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
+							</a>
+						</div>
+
+						<div class="section_listen_content">
+							<h3 class="section_listen_title">
+								<a href="">To cool datacenter servers</a>
+							</h3>
+							<span class="section_listen_desc">40 Episode · 110 minutes</span>
+
+							<button class="section_listen_btn">
+								<span class="section_listen_play">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+										aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+										<path fill-rule="evenodd"
+											d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</span>
+								<span>Listen now</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="section_listen_item">
+						<div class="section_listen_mask">
+							<a href="" class="section_listen_picture">
+								<img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
+							</a>
+						</div>
+
+						<div class="section_listen_content">
+							<h3 class="section_listen_title">
+								<a href="">To cool datacenter servers</a>
+							</h3>
+							<span class="section_listen_desc">40 Episode · 110 minutes</span>
+
+							<button class="section_listen_btn">
+								<span class="section_listen_play">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+										aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+										<path fill-rule="evenodd"
+											d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</span>
+								<span>Listen now</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="section_listen_item">
+						<div class="section_listen_mask">
+							<a href="" class="section_listen_picture">
+								<img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
+							</a>
+						</div>
+
+						<div class="section_listen_content">
+							<h3 class="section_listen_title">
+								<a href="">To cool datacenter servers</a>
+							</h3>
+							<span class="section_listen_desc">40 Episode · 110 minutes</span>
+
+							<button class="section_listen_btn">
+								<span class="section_listen_play">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+										aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+										<path fill-rule="evenodd"
+											d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</span>
+								<span>Listen now</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="section_listen_item">
+						<div class="section_listen_mask">
+							<a href="" class="section_listen_picture">
+								<img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
+							</a>
+						</div>
+
+						<div class="section_listen_content">
+							<h3 class="section_listen_title">
+								<a href="">To cool datacenter servers</a>
+							</h3>
+							<span class="section_listen_desc">40 Episode · 110 minutes</span>
+
+							<button class="section_listen_btn">
+								<span class="section_listen_play">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+										aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+										<path fill-rule="evenodd"
+											d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+											clip-rule="evenodd"></path>
+									</svg>
+								</span>
+								<span>Listen now</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- LISTEN TO AUDIO LIVE -->
+	<!-- ############################### -->
+	<!-- ############################### -->
+
+	<!--  -->
+	<div class="background_design">
+		<div class="background_design_colors">
+			<span class="background_design_color"></span>
+			<span class="background_design_color background_design_color-blue"></span>
+		</div>
+
+		<div class="background_design_content">
+			<!-- ############################### -->
+			<!-- ############################### -->
+			<!-- ABOUT US -->
+			<section id="about" class="about">
+				<div class="global_wrapper">
+					<div class="about_wrapper">
+						<div class="about_content">
+							<h2 class="about_title">👋 About Us.</h2>
+							<p class="about_text">
+								We’re impartial and independent, and every day we create
+								distinctive, world-class programmes and content which inform,
+								educate and entertain millions of people in the around the
+								world.
+							</p>
+						</div>
+						<div class="about_images">
+							<img src="../images/about-hero-right.png" alt="" class="about_image" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ABOUT US -->
+			<!-- ############################### -->
+			<!-- ############################### -->
+
+			<!-- ############################### -->
+			<!-- ############################### -->
+			<!-- FOUNDER -->
+			<section id="founder" class="founder">
+				<div class="global_wrapper">
+					<div class="founder_wrapper">
+						<div class="founder_content">
+							<h2 class="founder_title">⛱ Founder</h2>
+							<p class="founder_text">
+								We’re impartial and independent, and every day we create
+								distinctive, world-class programmes and content
+							</p>
+						</div>
+						<div class="founder_grid">
+							<div class="founder_card">
+								<div class="founder_card_image">
+									<img src="../images/photo-1472099645785-5658abf4ff4e.jpeg" alt="" />
+								</div>
+								<div class="founder_card_content">
+									<span class="founder_card_name">Niamh O'Shea</span>
+									<span class="founder_card_rol">Co-founder and Chief Executive</span>
+								</div>
+							</div>
+
+							<div class="founder_card">
+								<div class="founder_card_image">
+									<img src="../images/photo-1472099645785-5658abf4ff4e.jpeg" alt="" />
+								</div>
+								<div class="founder_card_content">
+									<span class="founder_card_name">Niamh O'Shea</span>
+									<span class="founder_card_rol">Co-founder and Chief Executive</span>
+								</div>
+							</div>
+
+							<div class="founder_card">
+								<div class="founder_card_image">
+									<img src="../images/photo-1472099645785-5658abf4ff4e.jpeg" alt="" />
+								</div>
+								<div class="founder_card_content">
+									<span class="founder_card_name">Niamh O'Shea</span>
+									<span class="founder_card_rol">Co-founder and Chief Executive</span>
+								</div>
+							</div>
+
+							<div class="founder_card">
+								<div class="founder_card_image">
+									<img src="../images/photo-1472099645785-5658abf4ff4e.jpeg" alt="" />
+								</div>
+								<div class="founder_card_content">
+									<span class="founder_card_name">Niamh O'Shea</span>
+									<span class="founder_card_rol">Co-founder and Chief Executive</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- FOUNDER -->
+			<!-- ############################### -->
+			<!-- ############################### -->
+		</div>
+	</div>
+
+	<script src="../js/script.js"></script>
+</body>
+
 </html>
