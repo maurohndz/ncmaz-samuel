@@ -248,6 +248,49 @@ img {
 /* SECTION LISTEN */
 /* ********************************** */
 
+/* ********************************** */
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.form_block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form_block label.form_block_title {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: var(--neutral-800);
+  font-family: "Poppins", sans-serif;
+}
+
+.form_block input[type="text"] {
+  display: block;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  padding: 0.75rem 1rem;
+  background-color: rgb(255 255 255/1);
+  border-color: var(--neutral-200);
+  border-radius: 9999px;
+  height: 2.75rem;
+  margin-top: 0.25rem;
+  border-width: 1px;
+  appearance: none;
+  border-style: solid;
+}
+/* FORM */
+/* ********************************** */
+
 /* GLOBALS */
 /* ********************************** */
 /* ********************************** */
@@ -2757,6 +2800,120 @@ editorPicks_comment:last-child {
 /* ********************************** */
 /* ********************************** */
 
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+/* FORM SECTION */
+.form_section_wrapper {
+  position: relative;
+  z-index: 2;
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-basic);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  border-radius: 40px;
+  padding: 4rem;
+  margin: 0 auto 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_section_header {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.form_section_title {
+  margin: 0;
+  font-size: 3rem;
+  line-height: 3.4375rem;
+  font-weight: 600;
+  color: var(--neutral-900);
+}
+
+.form_section_text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  color: var(--neutral-700);
+}
+
+.form_section_main {
+  width: 100%;
+}
+/* FORM SECTION */
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+/* FORM - CONTACT */
+.form_contact_main {
+  display: flex;
+}
+
+.form_contact_main > div {
+  flex: 1;
+  display: flex;
+}
+
+.form_contact_info_item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form_contact_info {
+  max-width: 24rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form_contact_info_title {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: var(--neutral-900);
+}
+
+.form_contact_info_text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: var(--neutral-500);
+}
+
+.form_contact_social {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  gap: 0.75rem;
+}
+
+.form_contact_social_link {
+  text-decoration: none;
+}
+
+.form_contact_social_link svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--neutral-600);
+}
+/* FORM - CONTACT */
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
 @media screen and (max-width: 1279px) {
   /* ********************************** */
   /* ********************************** */
@@ -3111,6 +3268,18 @@ editorPicks_comment:last-child {
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* FORM SECTION */
+  .form_section_header {
+    margin-bottom: 4rem;
+  }
+  /* FORM SECTION */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
 }
 
 @media screen and (max-width: 767px) {
@@ -3314,6 +3483,18 @@ editorPicks_comment:last-child {
     line-height: 1.5rem;
   }
   /* FOUNDER */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* FORM SECTION */
+  .form_section_header {
+    margin-bottom: 3.5rem;
+  }
+  /* FORM SECTION */
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
