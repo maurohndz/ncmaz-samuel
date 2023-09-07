@@ -272,7 +272,8 @@ img {
   font-family: "Poppins", sans-serif;
 }
 
-.form_block input[type="text"] {
+.form_block input[type="text"],
+.form_block textarea {
   display: block;
   width: 100%;
   font-size: 0.875rem;
@@ -281,12 +282,61 @@ img {
   padding: 0.75rem 1rem;
   background-color: rgb(255 255 255/1);
   border-color: var(--neutral-200);
-  border-radius: 9999px;
-  height: 2.75rem;
   margin-top: 0.25rem;
   border-width: 1px;
   appearance: none;
   border-style: solid;
+  outline: none;
+}
+
+.form_block input[type="text"] {
+  border-radius: 9999px;
+  height: 2.75rem;
+}
+
+.form_block input[type="text"]::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+.form_block textarea {
+  min-width: 100%;
+  max-width: 100%;
+  width: 100% !important;
+  border-radius: 0.75rem;
+}
+
+.form_block input[type="text"]:focus,
+.form_block textarea:focus {
+  box-shadow: 0 0px 2px 2px var(--primary-200);
+  outline: none;
+  border-color: var(--primary-300);
+}
+
+.form_btn {
+  border-radius: 9999px;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  color: var(--primary-50);
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background-color: var(--primary-700);
+  font-weight: 500;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.form_btn:hover {
+  background-color: var(--primary-600);
 }
 /* FORM */
 /* ********************************** */
@@ -3280,6 +3330,42 @@ editorPicks_comment:last-child {
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* FORM SECTION */
+  .form_section_wrapper {
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .form_section_main {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .form_section_title {
+    font-size: 1.875rem;
+    line-height: 2.1875rem;
+  }
+  /* FORM SECTION */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* FORM - CONTACT */
+  .form_contact_form {
+    padding-top: 2rem;
+    border-top: 1px solid var(--neutral-100);
+  }
+  /* FORM - CONTACT */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
 }
 
 @media screen and (max-width: 767px) {
@@ -3487,17 +3573,6 @@ editorPicks_comment:last-child {
   /* ********************************** */
   /* ********************************** */
 
-  /* ********************************** */
-  /* ********************************** */
-  /* ********************************** */
-  /* FORM SECTION */
-  .form_section_header {
-    margin-bottom: 3.5rem;
-  }
-  /* FORM SECTION */
-  /* ********************************** */
-  /* ********************************** */
-  /* ********************************** */
 }
 
 @media screen and (max-width: 639px) {
@@ -3720,6 +3795,28 @@ editorPicks_comment:last-child {
     grid-template-columns: repeat(1, 1fr);
   }
   /* FOUNDER */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* FORM SECTION */
+  .form_section_header {
+    margin-bottom: 3.5rem;
+  }
+
+  .form_section_wrapper {
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+  }
+
+  .form_section_text {
+    font-size: .875rem;
+    line-height: 1.25rem;
+  }
+  /* FORM SECTION */
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
