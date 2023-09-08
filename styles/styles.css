@@ -2980,6 +2980,46 @@ editorPicks_comment:last-child {
 /* ********************************** */
 /* ********************************** */
 
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+/* FORM - SIGNUP */
+.form_signup_main {
+  max-width: 28rem;
+}
+
+.form_signup_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form_signup_menu_link {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-50);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  display: flex;
+}
+
+.form_signup_menu_link h3 {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  color: var(--neutral-700);
+  font-weight: 500;
+  text-align: center;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+/* FORM - SIGNUP */
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
 @media screen and (max-width: 1279px) {
   /* ********************************** */
   /* ********************************** */
