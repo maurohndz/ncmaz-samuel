@@ -1871,7 +1871,7 @@ editorPicks_comment:last-child {
   text-decoration: none;
   border-radius: 1.5rem;
   display: block;
-  --tw-aspect-w: 3;
+  --tw-aspect-w: 4;
   --tw-aspect-h: 3;
   padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
   position: relative;
@@ -3022,6 +3022,19 @@ editorPicks_comment:last-child {
     line-height: 2rem;
   }
   /* EDITOR PICKS */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* LISTEN PODCASTS */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  .mg_card_picture {
+    --tw-aspect-w: 3;
+  }
+
+  /* LISTEN PODCASTS */
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
