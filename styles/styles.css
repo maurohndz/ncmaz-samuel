@@ -2854,6 +2854,22 @@ editorPicks_comment:last-child {
 /* ********************************** */
 /* ********************************** */
 /* FORM SECTION */
+.form_section {
+  padding: 5rem 0;
+}
+
+.form_section::before {
+  content: "";
+  background-color: var(--primary-100);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 400px;
+  z-index: 1;
+  position: absolute;
+  opacity: 0.25;
+}
+
 .form_section_wrapper {
   position: relative;
   z-index: 2;
@@ -3348,6 +3364,10 @@ editorPicks_comment:last-child {
   /* ********************************** */
   /* ********************************** */
   /* FORM SECTION */
+  .form_section {
+    padding: 2.5rem 0;
+  }
+
   .form_section_wrapper {
     padding: 2.5rem;
     border-radius: 1.5rem;
@@ -3585,7 +3605,6 @@ editorPicks_comment:last-child {
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
-
 }
 
 @media screen and (max-width: 639px) {
@@ -3816,6 +3835,10 @@ editorPicks_comment:last-child {
   /* ********************************** */
   /* ********************************** */
   /* FORM SECTION */
+  .form_section {
+    padding: 1.5rem 0;
+  }
+
   .form_section_header {
     margin-bottom: 3.5rem;
   }
@@ -3826,7 +3849,7 @@ editorPicks_comment:last-child {
   }
 
   .form_section_text {
-    font-size: .875rem;
+    font-size: 0.875rem;
     line-height: 1.25rem;
   }
   /* FORM SECTION */
