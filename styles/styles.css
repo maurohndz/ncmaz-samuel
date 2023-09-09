@@ -403,6 +403,7 @@ header {
 .header_icon {
   cursor: pointer;
   position: relative;
+  padding: 0 4px;
 }
 
 .header_icon_main svg,
@@ -418,8 +419,77 @@ header {
   align-items: center;
 }
 
+/* ****************** */
 /**/
-.header_menu_main,
+.section_hide-desktop {
+  display: none;
+}
+
+.header_main_section {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.header_main_content,
+.header_main_menu,
+.header_main_menu_nav,
+.header_main_menu_nav li {
+  height: inherit;
+}
+
+.header_main_menu_nav {
+  display: flex;
+  list-style: none;
+  padding-left: 6.77%;
+  gap: 1px;
+}
+
+.header_main_menu_nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header_main_menu_nav li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header_main_menu_link {
+  display: inline-flex;
+  text-decoration: none;
+  color: rgb(51 65 85/1);
+  padding: 0.625rem 1.13rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  border-radius: 9999px;
+  align-items: center;
+}
+
+.header_main_menu_arrow {
+  margin-inline-start: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.header_main_menu_arrow svg {
+  width: 1rem;
+  height: 1rem;
+  color: rgb(148 163 184/1);
+}
+
+.header_main_menu_link:hover {
+  color: rgb(15 23 42/1);
+  background-color: rgb(241 245 249/1);
+}
+
+.header_main_subMenu {
+  display: none; /*TODO:*/
+}
+/*.header_menu_main,
+
 #menu,
 .menu_main,
 .menu_item {
@@ -475,7 +545,7 @@ header {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-}
+}*/
 
 /* ********************* */
 /* USER MENU ICON */
