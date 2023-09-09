@@ -2,6 +2,88 @@ function main() {
   /* ************************** */
   /* ************************** */
   /* ************************** */
+  /* HEADER MENU */
+  const OPEN_MENU = "header_menu-open";
+  const OPEN_SUBMENU = "header_subMenu-open";
+
+  const headerMenuOpen = document.getElementById("header_btn-open");
+  const headerMenuClose = document.getElementById("header_btn-close");
+  const menu = document.getElementById("header_menu");
+  const itemsMenu = document.querySelectorAll(".header_menu_item");
+  const shadowHeader = document.querySelector(".header_main_shadow");
+
+  function validateWindow() {
+    return window?.innerWidth <= 1023;
+  }
+
+  function openMenu(event) {
+    event?.preventDefault();
+    event?.stopPropagation();
+
+    if (validateWindow()) {
+      menu?.classList?.add(OPEN_MENU);
+
+      shadowHeader?.addEventListener("click", clickOutSideMenu);
+      Array.from(itemsMenu).forEach((item) =>
+        item.addEventListener("click", toggleSubMenu)
+      );
+    }
+  }
+
+  function toggleSubMenu(event) {
+    event?.preventDefault();
+    event?.stopPropagation();
+
+    const elementCliked = event?.currentTarget;
+    const subMenu = elementCliked?.nextElementSibling;
+
+    subMenu?.classList?.toggle(OPEN_SUBMENU);
+
+    if (!subMenu?.classList?.contains(OPEN_SUBMENU)) {
+      const allSubMennus = subMenu?.querySelectorAll(`.${OPEN_SUBMENU}`);
+
+      Array.from(allSubMennus).forEach((item) =>
+        item?.classList?.remove(OPEN_SUBMENU)
+      );
+    }
+  }
+
+  function clickOutSideMenu(event) {
+    closeMenu(event);
+  }
+
+  function closeMenu(event) {
+    event?.preventDefault();
+    event?.stopPropagation();
+
+    menu?.classList?.remove(OPEN_MENU);
+
+    const allSubMennus = document.querySelectorAll(`.${OPEN_SUBMENU}`);
+    Array.from(allSubMennus).forEach((item) =>
+      item?.classList?.remove(OPEN_SUBMENU)
+    );
+
+    shadowHeader?.removeEventListener("click", clickOutSideMenu);
+    Array.from(itemsMenu).forEach((item) =>
+      item.removeEventListener("click", toggleSubMenu)
+    );
+  }
+
+  function handleResize(event) {
+    if (!validateWindow()) closeMenu(event);
+  }
+
+  window?.addEventListener("resize", handleResize);
+  headerMenuOpen?.addEventListener("click", openMenu);
+  headerMenuClose?.addEventListener("click", closeMenu);
+  /* HEADER MENU */
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
   /* HEADER MENU USER */
   const OPEN_USER_MENU = "open_user_menu";
   const headerUserIcon = document.getElementById("header_user_icon");
