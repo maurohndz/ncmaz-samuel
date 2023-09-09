@@ -2911,6 +2911,28 @@ editorPicks_comment:last-child {
 .form_section_main {
   width: 100%;
 }
+
+.form_section_message {
+  margin-top: 1.5rem;
+  color: var(--neutral-700);
+  text-align: center;
+  display: block;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.form_section_message a {
+  color: var(--primary-600);
+  font-weight: 500;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+}
+
+.form_section_message a:hover {
+  color: var(--primary-800);
+}
 /* FORM SECTION */
 /* ********************************** */
 /* ********************************** */
@@ -2984,6 +3006,10 @@ editorPicks_comment:last-child {
 /* ********************************** */
 /* ********************************** */
 /* FORM - SIGNUP */
+.form_signup .form_section_header {
+  margin-bottom: 5rem;
+}
+
 .form_signup_main {
   max-width: 28rem;
 }
@@ -2996,8 +3022,8 @@ editorPicks_comment:last-child {
 
 .form_signup_menu_link {
   transition-property: transform;
-  transition-timing-function: cubic-bezier(.4,0,.2,1);
-  transition-duration: .15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
   padding: 0.75rem 1.5rem;
   background-color: var(--primary-50);
   border-radius: 0.5rem;
@@ -3005,8 +3031,12 @@ editorPicks_comment:last-child {
   display: flex;
 }
 
+.form_signup_menu_link:hover {
+  transform: translateY(-2px);
+}
+
 .form_signup_menu_link h3 {
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   color: var(--neutral-700);
   font-weight: 500;
@@ -3014,6 +3044,38 @@ editorPicks_comment:last-child {
   flex-grow: 1;
   margin: 0;
   padding: 0;
+}
+
+.form_signup_details {
+  position: relative;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.form_signup_details_text {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+.form_signup_details_line {
+  border: 1px solid var(--neutral-100);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+}
+
+.form_signup label {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 400 !important;
 }
 /* FORM - SIGNUP */
 /* ********************************** */
@@ -3436,6 +3498,18 @@ editorPicks_comment:last-child {
     border-top: 1px solid var(--neutral-100);
   }
   /* FORM - CONTACT */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* FORM - SIGNUP */
+  .form_signup .form_section_header {
+    margin-bottom: 4rem;
+  }
+  /* FORM - SIGNUP */
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
@@ -3893,6 +3967,18 @@ editorPicks_comment:last-child {
     line-height: 1.25rem;
   }
   /* FORM SECTION */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* FORM - SIGNUP */
+  .form_signup .form_section_header {
+    margin-bottom: 3.5rem;
+  }
+  /* FORM - SIGNUP */
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
