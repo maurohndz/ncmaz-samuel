@@ -355,7 +355,6 @@ header {
   position: sticky;
   z-index: 1000;
   top: 0;
-  margin-bottom: 5000px; /*TODO: */
 }
 
 .header_wrapper {
