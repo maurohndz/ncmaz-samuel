@@ -9,7 +9,7 @@ function main() {
   const headerMenuOpen = document.getElementById("header_btn-open");
   const headerMenuClose = document.getElementById("header_btn-close");
   const menu = document.getElementById("header_menu");
-  const itemsMenu = document.querySelectorAll(".header_menu_item");
+  const itemsMenu = document.querySelectorAll(".header_menu_item") ?? [];
   const shadowHeader = document.querySelector(".header_main_shadow");
 
   function validateWindow() {
@@ -37,7 +37,7 @@ function main() {
     subMenu?.classList?.toggle(OPEN_SUBMENU);
 
     if (!subMenu?.classList?.contains(OPEN_SUBMENU)) {
-      const allSubMennus = subMenu?.querySelectorAll(`.${OPEN_SUBMENU}`);
+      const allSubMennus = subMenu?.querySelectorAll(`.${OPEN_SUBMENU}`) ?? [];
 
       Array.from(allSubMennus).forEach((item) =>
         item?.classList?.remove(OPEN_SUBMENU)
@@ -55,7 +55,7 @@ function main() {
 
     menu?.classList?.remove(OPEN_MENU);
 
-    const allSubMennus = document.querySelectorAll(`.${OPEN_SUBMENU}`);
+    const allSubMennus = document.querySelectorAll(`.${OPEN_SUBMENU}`) ?? [];
     Array.from(allSubMennus).forEach((item) =>
       item?.classList?.remove(OPEN_SUBMENU)
     );
@@ -192,6 +192,48 @@ function main() {
   /* ************************** */
   /* ************************** */
   /* ************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* DASH BOARD */
+  const DASHBOARD_BTN_SHOW = "dashboard_btn-active";
+  const DASHBOARD_ITEM_SHOW = "dashboard_main_item-active";
+  const dashboardBtn = document.querySelectorAll("button.dashboard_btn") ?? [];
+  const dashboardItem =
+    document.querySelectorAll("div.dashboard_main_item") ?? [];
+
+  function clearDashboard() {
+    Array.from(dashboardBtn).forEach((btn) => {
+      btn?.classList?.remove(DASHBOARD_BTN_SHOW);
+    });
+
+    Array.from(dashboardItem).forEach((item) => {
+      item?.classList?.remove(DASHBOARD_ITEM_SHOW);
+    });
+  }
+
+  function showDashboardItem(event) {
+    event?.preventDefault();
+    event?.stopPropagation();
+
+    const btn = event?.currentTarget;
+    const op = btn?.getAttribute("op");
+    const item = document.querySelector(`div[op="${op}"].dashboard_main_item`);
+
+    clearDashboard();
+
+    item?.classList?.add(DASHBOARD_ITEM_SHOW);
+    btn?.classList?.add(DASHBOARD_BTN_SHOW);
+  }
+
+  Array.from(dashboardBtn).forEach((btn) => {
+    btn?.addEventListener("click", showDashboardItem);
+  });
+  /* DASH BOARD */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
 }
 
 window.addEventListener("load", main);

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <!-- ############################### -->
+    <!-- ############################### -->
+    <!-- DASH BOARD -->
+    <section class="section_main dashboard" id="dashboard">
+      <div class="global_wrapper">
+        <div class="section_main_wrapper dashboard_wrapper">
+          <div class="section_main_header">
+            <h2 class="section_main_title">Dash board</h2>
+            <p class="section_main_text">
+              View your dashboard, manage your posts, subscription and edit and
+              profile.
+            </p>
+          </div>
+
+          <div class="section_main_content">
+            <div class="dashboard_content">
+              <div class="dashboard_menu">
+                <button
+                  class="dashboard_btn dashboard_btn-active"
+                  type="button"
+                  op="dashboard"
+                >
+                  <span>⏳</span>
+                  Dash board
+                </button>
+                <button class="dashboard_btn" type="button" op="subscription">
+                  <span>📃</span>
+                  Subscription
+                </button>
+              </div>
+
+              <div class="dashboard_main">
+                <div
+                  class="dashboard_main_item dashboard_main_item-active"
+                  op="dashboard"
+                >
+                  <div class="dashboard_form">
+                    <form action="" class="form">
+                      <div class="form_block">
+                        <label for="" class="form_block_title"
+                          >Post Title *</label
+                        >
+                        <input type="text" />
+                      </div>
+
+                      <div class="form_block">
+                        <label for="" class="form_block_title"
+                          >Post Excerpt</label
+                        >
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <span
+                          >Brief description for your article. URLs are
+                          hyperlinked.</span
+                        >
+                      </div>
+
+                      <div class="form_row">
+                        <div class="form_block">
+                          <label for="" class="form_block_title"
+                            >Category</label
+                          >
+                          <select>
+                            <option value="-1">– select –</option>
+                            <option value="ha'apai">Category 1</option>
+                            <option value="tongatapu">Category 2</option>
+                            <option value="vava'u">Category 3</option>
+                          </select>
+                        </div>
+
+                        <div class="form_block">
+                          <label for="" class="form_block_title">Tags</label>
+                          <input type="text" />
+                        </div>
+                      </div>
+
+                      <div class="form_block">
+                        <label for="" class="form_block_title"
+                          >Featured Image</label
+                        >
+                        <div class="form_upload">
+                          <div>
+                            <svg
+                              class="mx-auto h-12 w-12 text-neutral-400"
+                              stroke="currentColor"
+                              fill="none"
+                              viewBox="0 0 48 48"
+                              aria-hidden="true"
+                            >
+                              <path
+                                d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                            <div>
+                              <label for="file-upload"
+                                ><span>Upload a file</span
+                                ><input
+                                  id="file-upload"
+                                  type="file"
+                                  name="file-upload"
+                              /></label>
+                              <p class="form_upload_drag">or drag and drop</p>
+                            </div>
+                            <p class="form_upload_type">
+                              PNG, JPG, GIF up to 2MB
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form_block">
+                        <label for="" class="form_block_title"
+                          >Post Content</label
+                        >
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                      </div>
+
+                      <div class="form_block">
+                        <button class="form_btn">Submit post</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="dashboard_main_item" op="subscription">
+                  <div class="dashboard_subs">
+                    <div class="dashboard_subs_header">
+                      <h3>Package Information</h3>
+                      <p>You've subscribed to the following package</p>
+                    </div>
+                    <div class="dashboard_subs_content">
+                      <dl>
+                        <div>
+                          <dt>Subcription Name</dt>
+                          <dd>Premium</dd>
+                        </div>
+                        <div>
+                          <dt>Package &amp; billing details</dt>
+                          <dd>$222.00</dd>
+                        </div>
+                        <div>
+                          <dt>Remaining post</dt>
+                          <dd>18</dd>
+                        </div>
+                        <div>
+                          <dt>Expire date</dt>
+                          <dd>October 20, 2021</dd>
+                        </div>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- DASH BOARD -->
+    <!-- ############################### -->
+    <!-- ############################### -->
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
