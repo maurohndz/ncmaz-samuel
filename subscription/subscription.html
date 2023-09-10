@@ -11,7 +11,7 @@
       <div class="global_wrapper">
         <div class="header_wrapper">
           <div class="header_menu_btn">
-            <button class="header_btn">
+            <button class="header_btn" id="header_btn-open">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-7 w-7"
@@ -26,6 +26,7 @@
               </svg>
             </button>
           </div>
+
           <div class="logo">
             <a class="" href="/"
               ><svg
@@ -54,63 +55,63 @@
             ></a>
           </div>
 
-          <div class="header_menu">
-            <div class="header_menu_mask">
-              <div class="header_menu_top">
-                <div class="header_menu_opts">
-                  <div class="logo">
-                    <a class="" href="/"
-                      ><svg
-                        width="59"
-                        height="41"
-                        viewBox="0 0 59 41"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M33.5224 9.69455C34.547 8.66632 35.1818 7.24829 35.1818 5.68181C35.1818 2.54402 32.6378 0 29.5 0C27.516 0 25.7721 1.01857 24.7559 2.55971C24.4868 2.83004 1.8706 30.7044 1.65941 31.0255C0.633591 32.0525 0 33.4705 0 35.037C0 38.1748 2.54281 40.7188 5.6806 40.7188C7.66464 40.7188 9.40853 39.7002 10.4247 38.1591C10.695 37.8888 33.3112 10.0144 33.5224 9.69455Z"
-                          fill="currentColor"
-                        ></path>
-                        <path
-                          d="M46.6081 22.9203C47.6363 21.8921 48.2723 20.4728 48.2723 18.904C48.2723 15.7662 45.7283 13.2221 42.5905 13.2221C40.6065 13.2221 38.8614 14.2419 37.8452 15.7831C37.5737 16.0558 25.6948 30.6972 25.4824 31.0206C24.4541 32.0489 23.8193 33.4681 23.8193 35.037C23.8193 38.1748 26.3621 40.7188 29.4999 40.7188C31.484 40.7188 33.2291 39.699 34.2452 38.1579C34.5168 37.8851 46.3957 23.2437 46.6081 22.9203Z"
-                          fill="currentColor"
-                        ></path>
-                        <path
-                          d="M59.0001 5.68181C59.0001 8.81959 56.4573 11.3636 53.3195 11.3636C50.1817 11.3636 47.6377 8.81959 47.6377 5.68181C47.6377 2.54402 50.1817 0 53.3195 0C56.4573 0 59.0001 2.54402 59.0001 5.68181Z"
-                          fill="currentColor"
-                        ></path>
-                        <path
-                          d="M11.3624 5.68181C11.3624 8.81959 8.81838 11.3636 5.6806 11.3636C2.54281 11.3636 0 8.81959 0 5.68181C0 2.54402 2.54281 0 5.6806 0C8.81838 0 11.3624 2.54402 11.3624 5.68181Z"
-                          fill="currentColor"
-                        ></path></svg
-                    ></a>
-                  </div>
+          <div class="header_main_section" id="header_menu">
+            <div class="section_hide-desktop header_main_shadow"></div>
 
-                  <button class="header_btn_close">
-                    <svg
+            <div class="header_main_content">
+              <div class="section_hide-desktop header_main_info">
+                <button class="header_btn_close" id="header_btn-close">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+
+                <div class="logo header_menu_logo">
+                  <a class="" href="/"
+                    ><svg
+                      width="59"
+                      height="41"
+                      viewBox="0 0 59 41"
+                      fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5"
                     >
                       <path
-                        fill-rule="evenodd"
-                        d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
-                        clip-rule="evenodd"
+                        d="M33.5224 9.69455C34.547 8.66632 35.1818 7.24829 35.1818 5.68181C35.1818 2.54402 32.6378 0 29.5 0C27.516 0 25.7721 1.01857 24.7559 2.55971C24.4868 2.83004 1.8706 30.7044 1.65941 31.0255C0.633591 32.0525 0 33.4705 0 35.037C0 38.1748 2.54281 40.7188 5.6806 40.7188C7.66464 40.7188 9.40853 39.7002 10.4247 38.1591C10.695 37.8888 33.3112 10.0144 33.5224 9.69455Z"
+                        fill="currentColor"
                       ></path>
-                    </svg>
-                  </button>
+                      <path
+                        d="M46.6081 22.9203C47.6363 21.8921 48.2723 20.4728 48.2723 18.904C48.2723 15.7662 45.7283 13.2221 42.5905 13.2221C40.6065 13.2221 38.8614 14.2419 37.8452 15.7831C37.5737 16.0558 25.6948 30.6972 25.4824 31.0206C24.4541 32.0489 23.8193 33.4681 23.8193 35.037C23.8193 38.1748 26.3621 40.7188 29.4999 40.7188C31.484 40.7188 33.2291 39.699 34.2452 38.1579C34.5168 37.8851 46.3957 23.2437 46.6081 22.9203Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M59.0001 5.68181C59.0001 8.81959 56.4573 11.3636 53.3195 11.3636C50.1817 11.3636 47.6377 8.81959 47.6377 5.68181C47.6377 2.54402 50.1817 0 53.3195 0C56.4573 0 59.0001 2.54402 59.0001 5.68181Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M11.3624 5.68181C11.3624 8.81959 8.81838 11.3636 5.6806 11.3636C2.54281 11.3636 0 8.81959 0 5.68181C0 2.54402 2.54281 0 5.6806 0C8.81838 0 11.3624 2.54402 11.3624 5.68181Z"
+                        fill="currentColor"
+                      ></path></svg
+                  ></a>
                 </div>
 
-                <p class="header_menu_desc">
+                <p>
                   Discover the most outstanding articles on all topics of life.
                   Write your stories and share them
                 </p>
 
-                <div class="header_menu_icons">
-                  <nav class="header_menu_icons_list">
-                    <a>
+                <ul class="header_main_info_social">
+                  <li>
+                    <a href="#" class="header_main_info_social_link">
                       <svg
                         class="w-5 h-5"
                         viewBox="0 0 48 48"
@@ -122,10 +123,13 @@
                             d="M48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 35.9789 8.77641 45.908 20.25 47.7084V30.9375H14.1562V24H20.25V18.7125C20.25 12.6975 23.8331 9.375 29.3152 9.375C31.9402 9.375 34.6875 9.84375 34.6875 9.84375V15.75H31.6613C28.68 15.75 27.75 17.6002 27.75 19.5V24H34.4062L33.3422 30.9375H27.75V47.7084C39.2236 45.908 48 35.9789 48 24Z"
                             fill="currentColor"
                           ></path>
-                        </g></svg
-                    ></a>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
 
-                    <a>
+                  <li>
+                    <a href="#" class="header_main_info_social_link">
                       <svg
                         class="w-5 h-5"
                         viewBox="0 0 48 48"
@@ -140,8 +144,10 @@
                         </g>
                       </svg>
                     </a>
+                  </li>
 
-                    <a>
+                  <li>
+                    <a href="#" class="header_main_info_social_link">
                       <svg
                         class="w-5 h-5"
                         viewBox="0 0 48 48"
@@ -156,8 +162,10 @@
                         </g>
                       </svg>
                     </a>
+                  </li>
 
-                    <a>
+                  <li>
+                    <a href="#" class="header_main_info_social_link">
                       <svg
                         class="w-5 h-5"
                         viewBox="0 0 48 48"
@@ -180,29 +188,31 @@
                         </g>
                       </svg>
                     </a>
-                  </nav>
+                  </li>
 
-                  <button class="header_change_mode">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                      class="w-7 h-7"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
-                      ></path>
-                    </svg>
-                  </button>
-                </div>
+                  <li>
+                    <button class="header_main_info_change_mode">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        class="w-7 h-7"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
 
-                <form action="" class="header_search">
-                  <div class="header_search_wrap" bis_skin_checked="1">
+                <form action="" method="POST" class="header_main_info_form">
+                  <div class="header_main_info_mask">
                     <svg
                       width="22"
                       height="22"
@@ -233,110 +243,605 @@
                 </form>
               </div>
 
-              <div class="header_menu_main">
-                <nav id="menu">
-                  <ul class="menu_main">
-                    <li class="menu_item">
-                      <a href="" class="menu_link">
-                        <span class="menu_link_content"
-                          >Homes
-                          <span
-                            ><svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              fill="currentColor"
-                              aria-hidden="true"
-                              class="ms-2 h-4 w-4 text-neutral-500"
+              <div class="header_main_menu">
+                <nav class="header_main_menu_nav">
+                  <li>
+                    <div class="header_menu_item">
+                      <a href="#" class="header_main_menu_link">
+                        <span class="header_main_menu_text">Homes</span>
+
+                        <span class="header_main_menu_arrow">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            aria-hidden="true"
+                            class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+
+                    <div class="header_main_subMenu">
+                      <ul>
+                        <li>
+                          <a
+                            href=""
+                            class="header_main_subMenu_link header_main_subMenu_link-active"
+                          >
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
                             >
-                              <path
-                                fill-rule="evenodd"
-                                d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
-                                clip-rule="evenodd"
-                              ></path></svg></span
-                        ></span>
-                      </a>
-                    </li>
-
-                    <li class="menu_item">
-                      <a href="" class="menu_link">
-                        <span class="menu_link_content"
-                          >Singles
-                          <span
-                            ><svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              fill="currentColor"
-                              aria-hidden="true"
-                              class="ms-2 h-4 w-4 text-neutral-500"
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
                             >
-                              <path
-                                fill-rule="evenodd"
-                                d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
-                                clip-rule="evenodd"
-                              ></path></svg></span
-                        ></span>
-                      </a>
-                    </li>
-
-                    <li class="menu_item">
-                      <a href="" class="menu_link">
-                        <span class="menu_link_content">Beauty</span>
-                      </a>
-                    </li>
-
-                    <li class="menu_item">
-                      <a href="" class="menu_link">
-                        <span class="menu_link_content">Sport</span>
-                      </a>
-                    </li>
-
-                    <li class="menu_item">
-                      <a href="" class="menu_link">
-                        <span class="menu_link_content"
-                          >Templates
-                          <span
-                            ><svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              fill="currentColor"
-                              aria-hidden="true"
-                              class="ms-2 h-4 w-4 text-neutral-500"
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
                             >
-                              <path
-                                fill-rule="evenodd"
-                                d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
-                                clip-rule="evenodd"
-                              ></path></svg></span
-                        ></span>
-                      </a>
-                    </li>
-
-                    <li class="menu_item">
-                      <a href="" class="menu_link">
-                        <span class="menu_link_content"
-                          >Explore
-                          <span
-                            ><svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              fill="currentColor"
-                              aria-hidden="true"
-                              class="ms-2 h-4 w-4 text-neutral-500"
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
                             >
-                              <path
-                                fill-rule="evenodd"
-                                d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
-                                clip-rule="evenodd"
-                              ></path></svg></span
-                        ></span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="header_menu_item">
+                      <a href="#" class="header_main_menu_link">
+                        <span class="header_main_menu_text">Singles</span>
+
+                        <span class="header_main_menu_arrow">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            aria-hidden="true"
+                            class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
                       </a>
-                    </li>
-                  </ul>
+                    </div>
+
+                    <div class="header_main_subMenu">
+                      <ul>
+                        <li>
+                          <span class="header_main_subMenu_item">
+                            <a href="" class="header_main_subMenu_link"
+                              >Item #1</a
+                            >
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="header_main_subMenu_item">
+                            <a href="" class="header_main_subMenu_link"
+                              >Item #2</a
+                            >
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="header_main_subMenu_item">
+                            <a href="" class="header_main_subMenu_link"
+                              >Item #3</a
+                            >
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="header_main_subMenu_item">
+                            <a href="" class="header_main_subMenu_link"
+                              >Item #4</a
+                            >
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="header_main_subMenu_item">
+                            <a href="" class="header_main_subMenu_link"
+                              >Item #5</a
+                            >
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="header_main_subMenu_item">
+                            <a href="" class="header_main_subMenu_link"
+                              >Item #6</a
+                            >
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="header_main_subMenu_item">
+                            <a href="" class="header_main_subMenu_link"
+                              >Item #7</a
+                            >
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="header_main_subMenu_item">
+                            <a href="" class="header_main_subMenu_link"
+                              >Item #8</a
+                            >
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li>
+                    <span class="header_main_menu_item">
+                      <a href="" class="header_main_menu_link">Beauty</a>
+                    </span>
+                  </li>
+
+                  <li>
+                    <span class="header_main_menu_item">
+                      <a href="" class="header_main_menu_link">Sport</a>
+                    </span>
+                  </li>
+
+                  <li class="header_main_menu_special">
+                    <div class="header_menu_item">
+                      <a href="#" class="header_main_menu_link">
+                        <span class="header_main_menu_text">Templates</span>
+
+                        <span class="header_main_menu_arrow">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            aria-hidden="true"
+                            class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+
+                    <div class="header_main_subMenu">
+                      <div class="global_wrapper">
+                        <div class="header_main_special">
+                          <div class="header_main_special_grid">
+                            <div class="header_main_special_col">
+                              <div class="header_menu_item">
+                              <a href="" class="header_main_special_title"
+                                >Home Page
+                                <span class="header_main_menu_arrow">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                    class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                                  >
+                                    <path
+                                      fill-rule="evenodd"
+                                      d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                      clip-rule="evenodd"
+                                    ></path>
+                                  </svg> </span
+                              ></a>
+                              </div>
+
+                              <ul class="header_main_special_list">
+                                <li class="">
+                                  <a href="/">Home page 1</a>
+                                </li>
+                                <li class="">
+                                  <a href="/home-2">Home page 2</a>
+                                </li>
+                                <li class="">
+                                  <a href="/home-3">Home page 3</a>
+                                </li>
+                                <li class="">
+                                  <a href="/home-4">Home page 4</a>
+                                </li>
+                                <li class="">
+                                  <a href="/home-6">Home page 5</a>
+                                </li>
+                                <li class="menuIsNew">
+                                  <a href="/">Header style 1</a>
+                                </li>
+                                <li class="menuIsNew">
+                                  <a href="/home-2">Header style 2</a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="header_main_special_col">
+                              <div class="header_menu_item">
+                              <a href="" class="header_main_special_title"
+                                >Single Pages
+                                <span class="header_main_menu_arrow">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                    class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                                  >
+                                    <path
+                                      fill-rule="evenodd"
+                                      d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                      clip-rule="evenodd"
+                                    ></path>
+                                  </svg> </span
+                              ></a>
+                              </div>
+
+                              <ul class="header_main_special_list">
+                                <li class="">
+                                  <a href="/single/demo-slug">Single page 1</a>
+                                </li>
+                                <li class="">
+                                  <a href="/single-2/demo-slug"
+                                    >Single page 2</a
+                                  >
+                                </li>
+                                <li class="">
+                                  <a href="/single-3/demo-slug"
+                                    >Single page 3</a
+                                  >
+                                </li>
+                                <li class="">
+                                  <a href="/single-4/demo-slug"
+                                    >Single page 4</a
+                                  >
+                                </li>
+                                <li class="">
+                                  <a href="/single-audio/demo-slug"
+                                    >Single Audio</a
+                                  >
+                                </li>
+                                <li class="">
+                                  <a href="/single-video/demo-slug"
+                                    >Single Video</a
+                                  >
+                                </li>
+                                <li class="menuIsNew">
+                                  <a href="/single-gallery/demo-slug"
+                                    >Single Gallery</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="header_main_special_col">
+                              <div class="header_menu_item">
+                              <a href="" class="header_main_special_title"
+                                >Archive Pages
+                                <span class="header_main_menu_arrow">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                    class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                                  >
+                                    <path
+                                      fill-rule="evenodd"
+                                      d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                      clip-rule="evenodd"
+                                    ></path>
+                                  </svg> </span
+                              ></a>
+                              </div>
+
+                              <ul class="header_main_special_list">
+                                <li class="">
+                                  <a href="/archive/demo-slug">Category page</a>
+                                </li>
+                                <li class="">
+                                  <a href="/archive-2/demo-slug"
+                                    >Category audio</a
+                                  >
+                                </li>
+                                <li class="">
+                                  <a href="/archive-3/demo-slug"
+                                    >Category videos</a
+                                  >
+                                </li>
+                                <li class="">
+                                  <a href="/search">Search page</a>
+                                </li>
+                                <li class="">
+                                  <a href="/search-2">Search page 2</a>
+                                </li>
+                                <li class="">
+                                  <a href="/author/demo-slug">Author page</a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="header_main_special_col">
+                              <div class="header_menu_item">
+                              <a href="#" class="header_main_special_title"
+                                >Other Pages
+                                <span class="header_main_menu_arrow">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                    class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                                  >
+                                    <path
+                                      fill-rule="evenodd"
+                                      d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                      clip-rule="evenodd"
+                                    ></path>
+                                  </svg> </span
+                              ></a>
+                              </div>
+
+                              <ul class="header_main_special_list">
+                                <li class="">
+                                  <a href="/dashboard">Dashboard</a>
+                                </li>
+                                <li class="">
+                                  <a href="/about">About</a>
+                                </li>
+                                <li class="">
+                                  <a href="/contact">Contact us</a>
+                                </li>
+                                <li class="">
+                                  <a href="/login">Login</a>
+                                </li>
+                                <li class="">
+                                  <a href="/signup">Signup</a>
+                                </li>
+                                <li class="">
+                                  <a href="/forgot-pass">Forgot password</a>
+                                </li>
+                                <li class="">
+                                  <a href="/subscription">Subscription</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <div class="header_special_article">
+                            <h3 class="header_special_title">Recent posts</h3>
+                            <div class="header_special_article_grid">
+                              <article>
+                                <div class="header_special_article_img">
+                                  <img
+                                    src="../images/photo-1678720175173-f57e293022e4.jpeg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="header_special_article_content">
+                                  <div class="header_special_article_date">
+                                    <time datetime="2023-03-10"
+                                      >Mar 10, 2023</time
+                                    >
+                                    <a href="/archive/demo-slug">Sales</a>
+                                  </div>
+                                  <h4 class="header_special_article_link">
+                                    <a href="/single-gallery/demo-slug">
+                                      <span
+                                        class="header_special_article_mask"
+                                      ></span
+                                      >How to use search engine optimization to
+                                      drive sales
+                                    </a>
+                                  </h4>
+                                  <p class="header_special_article_text">
+                                    Optio cum necessitatibus dolor voluptatum
+                                    provident commodi et.
+                                  </p>
+                                </div>
+                              </article>
+
+                              <article>
+                                <div class="header_special_article_img">
+                                  <img
+                                    src="../images/photo-1678720175173-f57e293022e4.jpeg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="header_special_article_content">
+                                  <div class="header_special_article_date">
+                                    <time datetime="2023-03-10"
+                                      >Mar 10, 2023</time
+                                    >
+                                    <a href="/archive/demo-slug">Sales</a>
+                                  </div>
+                                  <h4 class="header_special_article_link">
+                                    <a href="/single-gallery/demo-slug">
+                                      <span
+                                        class="header_special_article_mask"
+                                      ></span
+                                      >How to use search engine optimization to
+                                      drive sales
+                                    </a>
+                                  </h4>
+                                  <p class="header_special_article_text">
+                                    Optio cum necessitatibus dolor voluptatum
+                                    provident commodi et.
+                                  </p>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="header_menu_item">
+                      <a href="#" class="header_main_menu_link">
+                        <span class="header_main_menu_text">Explore</span>
+
+                        <span class="header_main_menu_arrow">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            aria-hidden="true"
+                            class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+
+                    <div class="header_main_subMenu">
+                      <ul>
+                        <li>
+                          <a href="" class="header_main_subMenu_link">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <div class="header_menu_item">
+                            <a href="" class="header_main_subMenu_link">
+                              <span>Category pages</span>
+                              <span class="header_main_menu_arrow">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 24 24"
+                                  fill="currentColor"
+                                  aria-hidden="true"
+                                  class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                    clip-rule="evenodd"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </a>
+                          </div>
+
+                          <div class="header_main_subMenu-lv1">
+                            <ul>
+                              <li>
+                                <a href="" class="header_main_subMenu-lv1_link">
+                                  <span class="header_main_subMenu-lv1-text"
+                                    >Item #1-1</span
+                                  >
+                                </a>
+                              </li>
+                              <li>
+                                <a href="" class="header_main_subMenu-lv1_link">
+                                  <span class="header_main_subMenu-lv1-text"
+                                    >Item #1-1</span
+                                  >
+                                </a>
+                              </li>
+                              <li>
+                                <a href="" class="header_main_subMenu-lv1_link">
+                                  <span class="header_main_subMenu-lv1-text"
+                                    >Item #1-1</span
+                                  >
+                                </a>
+                              </li>
+                              <li>
+                                <a href="" class="header_main_subMenu-lv1_link">
+                                  <span class="header_main_subMenu-lv1-text"
+                                    >Item #1-1</span
+                                  >
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
                 </nav>
               </div>
 
-              <div class="header_menu_bottom">
-                <a href="">Buy this template</a>
+              <div class="section_hide-desktop header_main_foo">
+                <button class="buy_template">
+                  Buy this template<a href="" class=""></a>
+                </button>
               </div>
             </div>
           </div>
@@ -370,7 +875,7 @@
             </div>
 
             <div class="header_icon header_icon-comments">
-              <a href="" class="header_icon_main">
+              <span class="header_icon_main" id="user_notifications_btn">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path
                     d="M12 6.43994V9.76994"
@@ -393,7 +898,42 @@
                     stroke-miterlimit="10"
                   ></path>
                 </svg>
-              </a>
+              </span>
+
+              <div id="user_notifications" class="user_notifications">
+                <div class="user_notifications_wrapper">
+                  <h3 class="user_notifications_title">notificationsfications</h3>
+                  <a href="" class="user_notifications_link">
+                    <div class="user_notifications_img"><img src="../images/1.jpeg" /></div>
+                    <div class="user_notifications_content">
+                      <p class="user_notifications_name">Leo Kante</p>
+                      <p class="user_notifications_text">Keep track of your growth</p>
+                      <p class="user_notifications_time">3 minutes ago</p>
+                    </div>
+                    <span class="user_notifications_details"></span>
+                  </a>
+
+                  <a href="" class="user_notifications_link">
+                    <div class="user_notifications_img"><img src="../images/1.jpeg" /></div>
+                    <div class="user_notifications_content">
+                      <p class="user_notifications_name">Leo Kante</p>
+                      <p class="user_notifications_text">Keep track of your growth</p>
+                      <p class="user_notifications_time">3 minutes ago</p>
+                    </div>
+                    <span class="user_notifications_details"></span>
+                  </a>
+
+                  <a href="" class="user_notifications_link">
+                    <div class="user_notifications_img"><img src="../images/1.jpeg" /></div>
+                    <div class="user_notifications_content">
+                      <p class="user_notifications_name">Leo Kante</p>
+                      <p class="user_notifications_text">Keep track of your growth</p>
+                      <p class="user_notifications_time">3 minutes ago</p>
+                    </div>
+                    <span class="user_notifications_details"></span>
+                  </a>
+                </div>
+              </div>
             </div>
 
             <div class="header_icon">
@@ -436,7 +976,7 @@
                   <span class="user_menu_details">
                     <span></span>
                   </span>
-              
+
                   <div class="user_menu_section">
                     <a href="" class="user_menu_link">
                       <div class="user_menu_link_icon">
@@ -463,15 +1003,20 @@
                           ></path>
                         </svg>
                       </div>
-              
+
                       <div class="user_menu_link_text">
                         <p>My Account</p>
                       </div>
                     </a>
-              
+
                     <a href="" class="user_menu_link">
                       <div class="user_menu_link_icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
                           <path
                             d="M8 12.2H15"
                             stroke="currentColor"
@@ -510,10 +1055,15 @@
                         <p>My Posts</p>
                       </div>
                     </a>
-              
+
                     <a href="" class="user_menu_link">
                       <div class="user_menu_link_icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
                           <path
                             d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
                             stroke="currentColor"
@@ -531,7 +1081,7 @@
                     <span class="user_menu_details">
                       <span></span>
                     </span>
-              
+
                     <div class="user_menu_link">
                       <div class="user_menu_link_icon">
                         <svg
@@ -568,7 +1118,7 @@
                         <p>Dark theme</p>
                       </div>
                     </div>
-              
+
                     <a href="" class="user_menu_link">
                       <div class="user_menu_link_icon">
                         <svg
@@ -626,7 +1176,7 @@
                         <p>Help</p>
                       </div>
                     </a>
-              
+
                     <a href="" class="user_menu_link">
                       <div class="user_menu_link_icon">
                         <svg
