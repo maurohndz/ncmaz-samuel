@@ -868,6 +868,118 @@ header {
 /* USER MENU ICON */
 /* ********************* */
 
+.user_notifications {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100vw;
+  max-width: 24rem;
+  margin-top: 0.875rem;
+  z-index: 10;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 10px #0000001c;
+  border-radius: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.user_notifications-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.user_notifications_wrapper {
+  padding: 1.75rem;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.user_notifications_link {
+  text-decoration: none;
+  position: relative;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  padding-right: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  margin: -0.75rem;
+  position: relative;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.user_notifications_content {
+  margin-inline-start: 1rem;
+}
+
+.user_notifications_title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin: 0;
+}
+
+.user_notifications_img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 99999px;
+  position: relative;
+}
+
+.user_notifications_img img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0px;
+  color: transparent;
+  border-radius: 99999px;
+  object-fit: cover;
+}
+
+.user_notifications_name {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 0;
+  padding: 0;
+  color: var(--neutral-900);
+  font-weight: 500;
+}
+
+.user_notifications_text {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 0.25rem 0;
+  padding: 0;
+  color: var(--neutral-500);
+  font-weight: 400;
+}
+
+.user_notifications_time {
+  margin: 0;
+  padding: 0;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: var(--neutral-400);
+}
+
+.user_notifications_details {
+  background-color: rgb(59 130 246 /1);
+  border-radius: 9999px !important;
+  width: 0.5rem !important;
+  height: 0.5rem !important;
+  top: 50%;
+  right: 0.25rem;
+  position: absolute;
+}
+
 /*@media screen and (max-width: 1023px) {
   .header_menu_btn {
     display: flex;
@@ -4447,6 +4559,20 @@ editorPicks_comment:last-child {
     padding-left: 5px;
   }
   /* GLOBALS */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* HEADER */
+  .user_notifications {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+  /* HEADER */
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */

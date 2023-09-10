@@ -17,9 +17,6 @@ function main() {
   }
 
   function openMenu(event) {
-    event?.preventDefault();
-    event?.stopPropagation();
-
     if (validateWindow()) {
       menu?.classList?.add(OPEN_MENU);
 
@@ -109,6 +106,53 @@ function main() {
 
   headerUserIcon?.addEventListener("click", openUserMenu);
   /* HEADER MENU USER */
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+  /* HEADER MENU NOTIFICATIONS */
+  const OPEN_NOTIFICATIONS = "user_notifications-open";
+  const btnNotifications = document.getElementById("user_notifications_btn");
+  const notifications = document.getElementById("user_notifications");
+
+  function hideNotifications(event) {
+    event?.preventDefault();
+    event?.stopPropagation();
+
+    if (
+      !notifications.contains(event.target) &&
+      !btnNotifications.contains(event.target)
+    ) {
+      notifications.classList.remove(OPEN_NOTIFICATIONS);
+      document.removeEventListener("click", closeUserMenu);
+      window.removeEventListener("resize", hideNotificationsAction);
+    }
+  }
+
+  function hideNotificationsAction(event) {
+    event?.preventDefault();
+    event?.stopPropagation();
+
+    if (window?.innerWidth <= 639) {
+      notifications.classList.remove(OPEN_NOTIFICATIONS);
+      document.removeEventListener("click", closeUserMenu);
+    }
+  }
+
+  function showNotifications(event) {
+    event?.preventDefault();
+    event?.stopPropagation();
+
+    notifications?.classList?.toggle(OPEN_NOTIFICATIONS);
+    document.addEventListener("click", hideNotifications);
+    window.addEventListener("resize", hideNotificationsAction);
+  }
+
+  btnNotifications?.addEventListener("click", showNotifications);
+  /* HEADER MENU NOTIFICATIONS */
   /* ************************** */
   /* ************************** */
   /* ************************** */
