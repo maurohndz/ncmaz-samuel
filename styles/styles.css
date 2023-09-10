@@ -803,6 +803,18 @@ header {
   background-color: var(--neutral-100);
 }
 
+.header_main_subMenu_link.menu_new .header_main_subMenu_text::after {
+  content: "New!";
+  display: inline-block;
+  padding: 0 5px;
+  line-height: 15px;
+  border-radius: 4px;
+  background-color: #f35656;
+  color: #fff;
+  font-size: 10px;
+  margin-inline-start: 0.375rem;
+}
+
 .header_main_subMenu-lv1 {
   top: 0;
   left: 100%;
