@@ -110,6 +110,20 @@ img {
   background-color: rgb(157 23 77/1);
 }
 
+.section_label-blue {
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+.section_label-blue:hover {
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
 /* ********************************** */
 /* SECTION LISTEN */
 .section_listen_grid {
@@ -3581,19 +3595,19 @@ editorPicks_comment:last-child {
   margin-right: 0.5rem;
 }
 
-.singleVideo_btns {
+.action_buttons {
   display: flex;
   align-items: center;
   margin-top: 1.25rem;
   gap: 0.625rem;
 }
 
-.singleVideo_actions {
+.action_buttons_actions {
   display: flex;
   gap: 0.625rem;
 }
 
-.singleVideo_actions_btn {
+.action_buttons_actions_btn {
   color: var(--neutral-200);
   background-color: var(--neutral-800);
   transition-property: color, background-color, border-color,
@@ -3615,22 +3629,27 @@ editorPicks_comment:last-child {
   cursor: pointer;
 }
 
-.singleVideo_actions_btn:first-child:hover {
+.action_buttons-white .action_buttons_actions_btn {
+  color: var(--neutral-700);
+  background-color: var(--neutral-100);
+}
+
+.action_buttons_actions_btn:first-child:hover {
   color: rgb(244 63 94 / 1);
   background-color: rgb(255 228 230 / 1);
 }
 
-.singleVideo_actions_btn:last-child:hover {
+.action_buttons_actions_btn:last-child:hover {
   color: rgb(20 184 166/ 1);
   background-color: rgb(204 251 241/ 1);
 }
 
-.singleVideo_community {
+.action_buttons_community {
   display: flex;
   gap: 0.625rem;
 }
 
-.singleVideo_community_btn {
+.action_buttons_community_btn {
   border-radius: 9999px;
   justify-content: center;
   align-items: center;
@@ -3645,31 +3664,44 @@ editorPicks_comment:last-child {
   background-color: var(--neutral-800);
 }
 
-.singleVideo_community_btn:hover {
+.action_buttons-white .action_buttons_community_btn {
+  color: var(--neutral-700);
+  background-color: var(--neutral-100);
+}
+
+.action_buttons_community_btn:hover {
   background-color: var(--neutral-700);
 }
 
-.singleVideo_community_btn svg {
+.action_buttons-white .action_buttons_community_btn:hover {
+  background-color: var(--neutral-200);
+}
+
+.action_buttons_community_btn svg {
   width: 18px;
   height: 18px;
 }
 
-.singleVideo_btns_details {
+.action_buttons_details {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
 
-.singleVideo_btns_details div {
+.action_buttons_details div {
   border: 1px solid var(--neutral-700);
   border-inline-start-width: 1px;
   height: 1.5rem;
+}
+
+.action_buttons-white .action_buttons_details div {
+  border: 1px solid var(--neutral-100);
 }
 
 .singleVideo_body {
   margin-top: 2.5rem;
 }
 
-.singleVideo_tags {
+.single_tags {
   margin: 2.5rem auto;
   flex-wrap: wrap;
   max-width: 768px;
@@ -3677,7 +3709,7 @@ editorPicks_comment:last-child {
   gap: 0.5rem;
 }
 
-.singleVideo_tags_item {
+.single_tags_item {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
   padding-left: 1rem;
@@ -3693,9 +3725,10 @@ editorPicks_comment:last-child {
   text-decoration: none;
 }
 
-.singleVideo_tags_item:hover {
+.single_tags_item:hover {
   background-color: var(--neutral-50);
 }
+
 /* SINGLE VIDEO */
 /* ********************************** */
 /* ********************************** */
@@ -4215,6 +4248,219 @@ editorPicks_comment:last-child {
   line-height: 1.25rem;
 }
 /* DASH BOARD */
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
+.singleAudio_hero.section_main::before {
+  height: 15rem;
+}
+
+.singleAudio_hero .section_main_wrapper {
+  flex-direction: row;
+  gap: 2.75rem;
+}
+
+.singleAudio_hero_mask {
+  width: 25%;
+  min-width: 25%;
+}
+
+.singleAudio_hero_image {
+  --tw-aspect-w: 1;
+  --tw-aspect-h: 1;
+  border-radius: 9999px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  position: relative;
+}
+
+.singleAudio_hero_disc {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  object-fit: cover;
+  border-radius: 9999px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.singleAudio_hero_image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: var(--neutral-900);
+  opacity: 0.75;
+}
+
+.singleAudio_play {
+  animation: myspin 20s linear infinite;
+}
+
+.singleAudio_pause {
+  animation-play-state: paused;
+}
+
+.singleAudio_hero_img_details {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.singleAudio_hero_play {
+  background-blend-mode: multiply;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-bg-opacity: 0.5;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  border-color: var(--neutral-300);
+  border-width: 2px;
+  border-radius: 9999px;
+  border-style: solid;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+}
+
+.singleAudio_hero_play svg {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.singleAudio_hero_song {
+  display: none;
+}
+
+.singleAudio_hero_top {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.singleAudio_hero_date {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: var(--neutral-500);
+}
+
+.singleAudio_hero_title {
+  font-size: 3rem;
+  line-height: 3.625rem;
+  color: var(--neutral-900);
+  margin: 0;
+  font-weight: 600;
+}
+
+.singleAudio_hero_text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: var(--neutral-500);
+  margin: 1.25rem 0;
+}
+/* SINGLW AUDIO */
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+/* SINGLe AUTHOR */
+.singleAuthor {
+  display: flex;
+  padding-top: 2.5rem;
+  margin: 2.5rem auto;
+  max-width: 768px;
+  gap: 1.25rem;
+  border-top: 1px solid var(--neutral-100);
+}
+
+.singleAuthor_image div {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 9999px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.singleAuthor_image img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
+  object-fit: cover;
+}
+
+.singleAuthor_content {
+  max-width: 32rem;
+}
+
+.singleAuthor_label {
+  color: var(--neutral-400);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.singleAuthor_name {
+  color: var(--neutral-900);
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin: 0;
+}
+
+.singleAuthor_name a {
+  color: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.singleAuthor_text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--neutral-500);
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.singleAuthor_text a {
+  text-decoration: none;
+  font-weight: 500;
+}
+/* SINGLe AUTHOR */
 /* ********************************** */
 /* ********************************** */
 /* ********************************** */
@@ -5195,6 +5441,27 @@ editorPicks_comment:last-child {
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* SINGLE AUDIO */
+  .singleAudio_hero_title {
+    font-size: 2.25rem;
+    line-height: 120%;
+  }
+
+  .singleAudio_hero_text {
+    display: none;
+  }
+
+  .singleAudio_action {
+    margin-top: 1.25rem;
+  }
+  /* SINGLE AUDIO */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
 }
 
 @media screen and (max-width: 767px) {
@@ -5414,6 +5681,19 @@ editorPicks_comment:last-child {
     line-height: 3rem;
   }
   /* VIDEOS */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* SINGLE AUDIO */
+  .singleAudio_hero_title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  /* SINGLE AUDIO */
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
@@ -5708,7 +5988,7 @@ editorPicks_comment:last-child {
     --tw-aspect-w: 16;
   }
 
-  .singleVideo_actions_btn:last-child {
+  .action_buttons_actions_btn:last-child {
     display: none;
   }
   /* SINGLE VIDEO */
@@ -5752,6 +6032,43 @@ editorPicks_comment:last-child {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 0.2rem;
   }
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* SINGLE AUDIO */
+  .singleAudio_hero .section_main_wrapper,
+  .singleAudio_hero_top {
+    flex-direction: column;
+  }
+
+  .singleAudio_hero_mask {
+    width: 50%;
+  }
+  /* SINGLE AUDIO */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* SINGLe AUTHOR */
+  .singleAuthor {
+    gap: 0.75rem;
+  }
+  .singleAuthor_image div {
+    width: 3rem;
+    height: 3rem;
+  }
+  .singleAuthor_text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  /* SINGLe AUTHOR */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
 }
 
 @media screen and (max-width: 301px) {
