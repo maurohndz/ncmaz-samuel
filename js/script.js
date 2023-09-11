@@ -234,6 +234,44 @@ function main() {
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
+
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+  /* ACTIONS */
+  const OPEN_MENU_MORE = "action_community_menu-open";
+  const menuMoreBtn = document.getElementById("menu_more");
+  const menuMore = document.getElementById("action_community_menu_more");
+
+  function hideMore(event) {
+    event?.preventDefault();
+    event?.stopPropagation();
+
+    if (
+      !menuMore.contains(event.target) &&
+      !menuMoreBtn.contains(event.target)
+    ) {
+      menuMore.classList.remove(OPEN_MENU_MORE);
+      document.removeEventListener("click", hideMore);
+    }
+  }
+
+  function showMore(event) {
+    event?.preventDefault();
+    event?.stopPropagation();
+
+    menuMore?.classList?.toggle(OPEN_MENU_MORE);
+
+    if (menuMore?.classList?.contains(OPEN_MENU_MORE)) {
+      document.addEventListener("click", hideMore);
+    }
+  }
+
+  menuMoreBtn?.addEventListener("click", showMore);
+  /* ACTIONS */
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
 }
 
 window.addEventListener("load", main);
