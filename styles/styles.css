@@ -1145,6 +1145,7 @@ header {
   border-radius: 1.5rem;
   opacity: 0;
   visibility: hidden;
+  transition: 0.25s;
 }
 
 .user_notifications-open {
@@ -3709,6 +3710,93 @@ editorPicks_comment:last-child {
   border: 1px solid var(--neutral-100);
 }
 
+.action_buttons_community_menu {
+  position: relative;
+}
+
+.action_community_menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100vw;
+  width: 14rem;
+  margin-top: 0.875rem;
+  z-index: 10;
+  color: var(--neutral-300);
+  background-color: var(--neutral-900);
+  border: 1px solid var(--neutral-800);
+  box-shadow: 0px 2px 10px #0000001c;
+  border-radius: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s;
+}
+
+.action_buttons-white .action_community_menu {
+  color: var(--neutral-700);
+  background-color: var(--neutral-100);
+  border: 1px solid var(--neutral-200);
+}
+
+.action_community_menu_wrapper {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.action_community_menu_item button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  color: var(--neutral-300);
+}
+
+.action_buttons-white .action_community_menu_item button {
+  color: var(--neutral-700);
+}
+
+.action_community_menu_item button:hover {
+  background-color: var(--neutral-800);
+}
+
+.action_buttons-white .action_community_menu_item button:hover {
+  background-color: var(--neutral-200);
+}
+
+.action_community_menu_item svg,
+.action_community_menu_item div {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.action_community_menu_item span {
+  margin-inline-start: 0.75rem;
+  display: block;
+}
+
+.action_community_menu-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/**/
+
 .singleVideo_body {
   margin-top: 2.5rem;
 }
@@ -3739,6 +3827,10 @@ editorPicks_comment:last-child {
 
 .single_tags_item:hover {
   background-color: var(--neutral-50);
+}
+
+.singleAudio .section_main_wrapper {
+  margin-bottom: 0 !important;
 }
 
 /* SINGLE VIDEO */
