@@ -4719,6 +4719,126 @@ editorPicks_comment:last-child {
 /* ********************************** */
 /* ********************************** */
 
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+/* BECOME AN AUTHOR */
+.becomeAnAuthor {
+  position: relative;
+}
+
+.becomeAnAuthor > .global_wrapper {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.becomeAnAuthor::after {
+  content: "";
+  max-width: 1536px;
+  width: 100vw;
+  border-radius: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--neutral-100);
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.becomeAnAuthor_wrapper {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.becomeAnAuthor_content {
+  color: var(--neutral-900);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 40%;
+  justify-content: center;
+}
+
+.becomeAnAuthor_label {
+  color: var(--neutral-400);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.becomeAnAuthor_title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 0.75rem;
+}
+
+.becomeAnAuthor_text {
+  color: var(--neutral-500);
+  display: block;
+  margin-top: 2rem;
+}
+
+.becomeAnAuthor_btn {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.875rem 1.5rem;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  color: var(--primary-50);
+  font-weight: 500;
+  background-color: var(--primary-700);
+  border-color: transparent;
+  border-radius: 9999px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  height: auto;
+  display: inline-flex;
+  outline: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+}
+
+.becomeAnAuthor_image {
+  flex-grow: 1;
+  display: flex;
+}
+
+.becomeAnAuthor_img {
+  max-width: 100%;
+  height: auto;
+}
+/* BECOME AN AUTHOR */
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
+@media screen and (max-width: 1536px) {
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* BECOME AN AUTHOR */
+  .becomeAnAuthor::after {
+    max-width: 1340px;
+  }
+  /* BECOME AN AUTHOR */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+}
+
 @media screen and (max-width: 1279px) {
   /* ********************************** */
   /* ********************************** */
@@ -4836,6 +4956,19 @@ editorPicks_comment:last-child {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   /* MORE FROM AUTHOR */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* BECOME AN AUTHOR */
+  .becomeAnAuthor::after {
+    max-width: 100vw;
+    border-radius: none;
+  }
+  /* BECOME AN AUTHOR */
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
@@ -5745,6 +5878,22 @@ editorPicks_comment:last-child {
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* BECOME AN AUTHOR */
+  .becomeAnAuthor_wrapper {
+    flex-direction: column;
+  }
+
+  .becomeAnAuthor_content {
+    width: 100%;
+  }
+  /* BECOME AN AUTHOR */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
 }
 
 @media screen and (max-width: 767px) {
@@ -6383,6 +6532,28 @@ editorPicks_comment:last-child {
     --tw-aspect-h: 3;
   }
   /* MORE FROM AUTHOR */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* BECOME AN AUTHOR */
+  .becomeAnAuthor_title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .becomeAnAuthor_btn {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  /* BECOME AN AUTHOR */
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
