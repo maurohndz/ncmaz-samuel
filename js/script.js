@@ -272,6 +272,46 @@ function main() {
   /* ************************** */
   /* ************************** */
   /* ************************** */
+
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+  /* TRENDING TOPICS */
+  const trendingToìcSlider = document.querySelector('.trendingTopics_slider');
+
+  if (trendingToìcSlider) {
+    const slider = new Splide(trendingToìcSlider, {
+      arrowPath: 'M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z',
+      classes: {
+        arrow : 'splide__arrow trendingTopics-arrow',
+        prev  : 'splide__arrow--prev trendingTopics-prev',
+        next  : 'splide__arrow--next trendingTopics-next',
+      },
+      perPage: 5,
+      perMove: 1,
+      pagination: false,
+      breakpoints: {
+        1279: {
+          perPage: 4,
+        },
+        1024: {
+          perPage: 3,
+        },
+        499: {
+          perPage: 2,
+        },
+        320: {
+          perPage: 1,
+        }
+      }
+    });
+
+    slider.mount();
+  }
+  /* TRENDING TOPICS */
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
 }
 
 window.addEventListener("load", main);
