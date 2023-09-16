@@ -5102,7 +5102,7 @@ editorPicks_comment:last-child {
   display: inline-block;
 }
 
-.trendingTopics_grid li:nth-child(2) .trendingTopics_item::after  {
+.trendingTopics_grid li:nth-child(2) .trendingTopics_item::after {
   content: "#2";
   background-color: rgb(254 226 226/1);
   --tw-text-opacity: 1;
@@ -5110,7 +5110,7 @@ editorPicks_comment:last-child {
   display: inline-block;
 }
 
-.trendingTopics_grid li:nth-child(3) .trendingTopics_item::after  {
+.trendingTopics_grid li:nth-child(3) .trendingTopics_item::after {
   content: "#3";
   --tw-text-opacity: 1;
   color: rgb(133 77 14 / var(--tw-text-opacity));
@@ -5198,6 +5198,94 @@ button[disabled].trendingTopics-arrow {
 }
 
 /* TRENDING TOPICS */
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+/* EXPLORE LATEST VIDEO ARTICLES */
+.lastestVideo {
+  background-color: var(--neutral-900);
+  padding: 7rem 0;
+}
+
+.lastestVideo_header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.lastestVideo_title {
+  margin: 0;
+  color: var(--neutral-100);
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.lastestVideo_text {
+  padding: 0;
+  margin: 0;
+  color: var(--neutral-400);
+  margin-top: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.lastestVideo_footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.lastestVideo_btn {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.875rem 1.5rem;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  color: var(--primary-50);
+  font-weight: 500;
+  background-color: var(--primary-700);
+  border-color: transparent;
+  border-radius: 9999px;
+  border-style: solid;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.lastestVideo_btn svg {
+  animation: spin 1s linear infinite;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-inline-end: 0.75rem;
+  margin-inline-start: -0.25rem;
+  display: block;
+  color: var(--primary-50);
+}
+
+.lastestVideo_btn svg circle {
+  opacity: 0.25;
+}
+
+.lastestVideo_btn svg path {
+  opacity: 0.75;
+}
+/* EXPLORE LATEST VIDEO ARTICLES */
 /* ********************************** */
 /* ********************************** */
 /* ********************************** */
@@ -6331,6 +6419,24 @@ button[disabled].trendingTopics-arrow {
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* EXPLORE LATEST VIDEO ARTICLES */
+  .lastestVideo {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .lastestVideo_title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  /* EXPLORE LATEST VIDEO ARTICLES */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
 }
 
 @media screen and (max-width: 767px) {
@@ -6617,6 +6723,23 @@ button[disabled].trendingTopics-arrow {
     top: -1.5rem;
   }
   /* EDITOR'S PICK */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* EXPLORE LATEST VIDEO ARTICLES */
+  .lastestVideo_header {
+    margin-bottom: 2.5rem;
+  }
+
+  .lastestVideo_title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  /* EXPLORE LATEST VIDEO ARTICLES */
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
@@ -7075,6 +7198,26 @@ button[disabled].trendingTopics-arrow {
     padding-bottom: 4rem;
   }
   /* TRENDING TOPICS */
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+
+  /* ********************************** */
+  /* ********************************** */
+  /* ********************************** */
+  /* EXPLORE LATEST VIDEO ARTICLES */
+  .lastestVideo_text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .lastestVideo_btn {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding: 0.75rem 1rem;
+  }
+  /* EXPLORE LATEST VIDEO ARTICLES */
   /* ********************************** */
   /* ********************************** */
   /* ********************************** */
