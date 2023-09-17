@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <!-- ########################## -->
+    <!-- ########################## -->
+    <!-- MUSIC PLAYER -->
+    <section id="musicPlayer" class="musicPlayer">
+      <div class="musicPlayer_wrapper">
+        <button class="musicPlayer_open_subPlayer">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+              class="w-4 h-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 15.75l7.5-7.5 7.5 7.5"
+              ></path>
+            </svg>
+          </div>
+        </button>
+
+        <div class="musicPlayer_progress_bar">
+          <input
+            id="musicPlayer_progress"
+            min="0"
+            max="0.999999"
+            step="any"
+            type="range"
+            value="0"
+          />
+
+          <div class="musicPlayer_progress_bar_line"></div>
+
+          <div class="musicPlayer_progresSlider" id="musicPlayer_progresSlider">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="musicPlayer_main">
+          <div class="musicPlayer_main_left">
+            <a
+              href="/single-audio/this-is-single-slug"
+              class="musicPlayer_info"
+            >
+              <div class="musicPlayer_image">
+                <img src="../images/pexels-photo-144429.jpeg" />
+              </div>
+
+              <div class="musicPlayer_info_content">
+                <h3 class="musicPlayer_info_title">People who inspired</h3>
+                <span class="musicPlayer_info_label">Industrial</span>
+              </div>
+            </a>
+
+            <div class="musicPlayer_actions">
+              <button>
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path
+                    fill-rule="evenodd"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+
+                <span class="">34</span>
+              </button>
+
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  fill="none"
+                  stroke="currentColor"
+                  class="w-[18px] h-[18px]"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="musicPlayer_main_center">
+            <div class="musicPlayer_controls">
+              <div style="width: 3rem"></div>
+
+              <button
+                class="musicPlayer_controls_salt"
+                id="musicPlayer_backward"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="display: none"
+                >
+                  <path
+                    d="M13.98 4.46997L12 2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M19.0899 7.79999C20.1999 9.27999 20.8899 11.11 20.8899 13.11C20.8899 18.02 16.9099 22 11.9999 22C7.08988 22 3.10986 18.02 3.10986 13.11C3.10986 8.19999 7.08988 4.21997 11.9999 4.21997C12.6799 4.21997 13.3399 4.31002 13.9799 4.46002"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M9.54004 15.92V10.5801L8.04004 12.2501"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M14 10.5801C15.1 10.5801 16 11.4801 16 12.5801V13.9301C16 15.0301 15.1 15.9301 14 15.9301C12.9 15.9301 12 15.0301 12 13.9301V12.5801C12 11.4701 12.9 10.5801 14 10.5801Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M9.54004 15.92V10.5801L8.04004 12.2501"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M10.02 4.46997L12 2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M4.91 7.79999C3.8 9.27999 3.10999 11.11 3.10999 13.11C3.10999 18.02 7.09 22 12 22C16.91 22 20.89 18.02 20.89 13.11C20.89 8.19999 16.91 4.21997 12 4.21997C11.32 4.21997 10.66 4.31002 10.02 4.46002"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M14 10.5801C15.1 10.5801 16 11.4801 16 12.5801V13.9301C16 15.0301 15.1 15.9301 14 15.9301C12.9 15.9301 12 15.0301 12 13.9301V12.5801C12 11.4701 12.9 10.5801 14 10.5801Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+
+              <div class="musicPlayer_controls_play musicPlayer_play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  class="musicPlayer_play-play"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  class="w-10 h-10 musicPlayer_play-pause"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+
+              <button
+                class="musicPlayer_controls_salt"
+                id="musicPlayer_forward"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="display: none"
+                >
+                  <path
+                    d="M15.96 10.8301H12.9L12.14 13.1201H14.43C15.27 13.1201 15.96 13.8001 15.96 14.6501C15.96 15.4901 15.28 16.1801 14.43 16.1801H12.14"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M9.54004 16.17V10.8301L8.04004 12.5001"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M10.02 4.46997L12 2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M4.90997 7.79999C3.79997 9.27999 3.10999 11.11 3.10999 13.11C3.10999 18.02 7.09 22 12 22C16.91 22 20.89 18.02 20.89 13.11C20.89 8.19999 16.91 4.21997 12 4.21997C11.32 4.21997 10.66 4.31002 10.02 4.46002"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M15.9601 10.8301H12.9001L12.1401 13.1201H14.4301C15.2701 13.1201 15.9601 13.8001 15.9601 14.6501C15.9601 15.4901 15.2801 16.1801 14.4301 16.1801H12.1401"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M9.54004 16.17V10.8301L8.04004 12.5001"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M13.98 4.46997L12 2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M19.0899 7.79999C20.1999 9.27999 20.8899 11.11 20.8899 13.11C20.8899 18.02 16.9099 22 11.9999 22C7.08988 22 3.10986 18.02 3.10986 13.11C3.10986 8.19999 7.08988 4.21997 11.9999 4.21997C12.6799 4.21997 13.3399 4.31002 13.9799 4.46002"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+
+              <div class="musicPlayer_controls_wrap">
+                <button
+                  class="musicPlayer_changeSpeed musicPlayer_changeSpeed-show"
+                  data-speed="1.5"
+                >
+                  1.0x
+                </button>
+                <button class="musicPlayer_changeSpeed" data-speed="2.0">
+                  1.5x
+                </button>
+                <button class="musicPlayer_changeSpeed" data-speed="1.0">
+                  2.0x
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="musicPlayer_main_rigth">
+            <div class="musicPlayer_vol">
+              <button class="musicPlayer_vol_icon" id="musicPlayer_mute">
+                <svg
+                  class="w-5 h-5 flex-shrink-0 musicPlayer_mute-on"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M2 10V14C2 16 3 17 5 17H6.43C6.8 17 7.17 17.11 7.49 17.3L10.41 19.13C12.93 20.71 15 19.56 15 16.59V7.41003C15 4.43003 12.93 3.29003 10.41 4.87003L7.49 6.70003C7.17 6.89003 6.8 7.00003 6.43 7.00003H5C3 7.00003 2 8.00003 2 10Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  ></path>
+                  <path
+                    d="M18 8C19.78 10.37 19.78 13.63 18 16"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M19.83 5.5C22.72 9.35 22.72 14.65 19.83 18.5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+
+                <svg
+                  class="w-5 h-5 flex-shrink-0 musicPlayer_mute-off"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M15 8.37003V7.41003C15 4.43003 12.93 3.29003 10.41 4.87003L7.49 6.70003C7.17 6.89003 6.8 7.00003 6.43 7.00003H5C3 7.00003 2 8.00003 2 10V14C2 16 3 17 5 17H7"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M10.41 19.13C12.93 20.71 15 19.56 15 16.59V12.95"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M18.81 9.41992C19.71 11.5699 19.44 14.0799 18 15.9999"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M21.15 7.80005C22.62 11.29 22.18 15.37 19.83 18.5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M22 2L2 22"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+
+              <div class="musicPlayer_vol_input">
+                <input
+                  min="0"
+                  max="0.999999"
+                  step="any"
+                  type="range"
+                  value="0.8"
+                  id="musicPlayer_volumeSlider"
+                />
+                <div class="musicPlayer_vol_bar"></div>
+                <div class="musicPlayer_vol_value" id="musicPlayer_volumeBar">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="musicPlayer_time">
+              <div id="musicPlayer_time-current">00:00</div>
+              /
+              <div id="musicPlayer_time-total">00:00</div>
+            </div>
+
+            <div class="musicPlayer_play_mobile musicPlayer_play">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                class="musicPlayer_play-play"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                class="w-10 h-10 musicPlayer_play-pause"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+
+            <button class="musicPlayer_close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="">
+          <audio
+            id="musicPlayer_audio"
+            src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+            preload="auto"
+            controls=""
+            style="width: 100%; height: 100%"
+          ></audio>
+        </div>
+      </div>
+    </section>
+    <!-- MUSIC PLAYER -->
+    <!-- ########################## -->
+    <!-- ########################## -->
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
