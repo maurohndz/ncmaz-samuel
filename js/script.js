@@ -639,6 +639,72 @@ function main() {
   /* ************************** */
   /* ************************** */
   /* ************************** */
+
+
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+  /* GRID VIDEOS */
+  const SHOW_IFRAME = "video_iframe-visible";
+
+  const videos = document.querySelectorAll(".videos_item_image");
+
+  function iframeVideo(url) {
+    return `<div class="video_iframe">
+      <iframe
+        width="560"
+        height="315"
+        src="${url}"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    ` ;
+  }
+
+  function showIframe(container, iframe) {
+    container?.classList.add(SHOW_IFRAME)
+    iframe?.removeEventListener("load", showIframe);
+  }
+
+  function loadIframe(video) {
+    const container = video?.querySelector(".video_iframe");
+    const iframe = container?.querySelector("iframe");
+
+    iframe?.addEventListener("load", () => showIframe(container, iframe));
+  }
+
+  function focusVideo(video) {
+    const exist = video?.querySelector(".video_iframe");
+
+    if (exist) {
+      exist.remove();
+    }
+
+    const iframe = iframeVideo(video?.dataset?.url) ?? null;
+
+    video?.insertAdjacentHTML('beforeend', iframe);
+    loadIframe(video);
+  }
+
+  function leaveVideo(video) {
+    const iframe = video?.querySelector(".video_iframe");
+
+    if (iframe) {
+      video?.removeChild(iframe)
+    }
+  }
+
+  Array.from(videos).forEach((video) => {
+    video.addEventListener("mouseenter", () => focusVideo(video));
+    video.addEventListener("mouseleave", () => leaveVideo(video));
+  })
+  /* GRID VIDEOS */
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
 }
 
 window.addEventListener("load", main);
