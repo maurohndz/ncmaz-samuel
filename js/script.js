@@ -8,6 +8,8 @@ const SPEED = "musicPlayer_changeSpeed-show";
 
 class MusicPlayer {
   constructor() {
+    this.globalsPlay = document.querySelectorAll(".musicPlayer_global_play");
+    //
     this.audio = document.getElementById("musicPlayer_audio");
     this.btn_mute = document.getElementById("musicPlayer_mute");
     this.playButtons = document.querySelectorAll(".musicPlayer_play");
@@ -22,8 +24,12 @@ class MusicPlayer {
     this.speedButtons = document.querySelectorAll(".musicPlayer_changeSpeed");
     this.image = document.querySelector(".musicPlayer_image");
 
+    /*this.loadActions();
+    this.loadInitData();*/
+    Array.from(this.globalsPlay).forEach((btn) => btn.addEventListener("click", (e) => this.restartAudio(e)));
+    this.audio.addEventListener("loadedmetadata", () => this.loadInitData());
+
     this.loadActions();
-    this.loadInitData();
   }
 
   loadActions() {
@@ -33,18 +39,18 @@ class MusicPlayer {
     this.volumeSlider?.addEventListener("input", () => this.setVolume());
     this.progressInput?.addEventListener("input", () => this.setProgress());
 
-    Array.from(this.playButtons).forEach((btn) => {
-      btn.addEventListener("click", () => this.togglePlay());
-    });
-
-    Array.from(this.speedButtons).forEach((btn) => {
-      btn.addEventListener("click", () => this.changeSpeed(btn.dataset.speed));
-    });
+    Array.from(this.playButtons).forEach((btn) => btn.addEventListener("click", () => this.togglePlay()));
+    Array.from(this.speedButtons).forEach((btn) => btn.addEventListener("click", () => this.changeSpeed(btn)));
   }
 
   loadInitData() {
+    this.audio.currentTime = 0;
+    this.audio.pause();
+
     this.setVolume();
     this.printTotalTime();
+
+    this.togglePlay();
   }
 
   toggleMute() {
@@ -56,15 +62,22 @@ class MusicPlayer {
   togglePlay() {
     if (this.audio.paused) {
       this.audio.play();
-      Array.from(this.playButtons).forEach((btn) => btn.classList.add(PLAYING));
-      this.audio.addEventListener("timeupdate", () => this.updateProgress());
       this.image.classList.add(PLAYING);
+      this.currentButton.classList.add(PLAYING);
+      
+      Array.from(this.playButtons).forEach((btn) => btn.classList.add(PLAYING));
+
+      this.audio.addEventListener("timeupdate", () => this.updateProgress());
     } else {
       this.audio.pause();
       this.image.classList.remove(PLAYING);
+      this.currentButton.classList.remove(PLAYING);
+
       Array.from(this.playButtons).forEach((btn) =>
         btn.classList.remove(PLAYING)
       );
+
+      this.audio.removeEventListener("timeupdate", () => this.updateProgress());
     }
   }
 
@@ -145,7 +158,8 @@ class MusicPlayer {
     this.totalTime.innerHTML = totalTime;
   }
 
-  changeSpeed(speed) {
+  changeSpeed(btn) {
+    const speed = btn.dataset.speed;
     this.audio.playbackRate = parseFloat(speed);
     this.hideAllChangeSpeed();
 
@@ -168,6 +182,16 @@ class MusicPlayer {
     Array.from(this.speedButtons).forEach((btn) => {
       btn.classList.remove(SPEED);
     });
+  }
+
+  restartAudio(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    
+    this.currentButton = event?.currentTarget;
+    this.dataset = this.currentButton?.dataset;
+    this.audio.src = this.dataset?.musicSrc;
+    // TODO: texto e imagenes
   }
 }
 
