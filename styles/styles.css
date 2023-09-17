@@ -4386,6 +4386,8 @@ editorPicks_comment:last-child {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 0.15s;
+  animation: myspin 20s linear infinite;
+  animation-play-state: paused;
   object-fit: cover;
   border-radius: 9999px;
   width: 100%;
@@ -4408,18 +4410,6 @@ editorPicks_comment:last-child {
   z-index: 1;
   background-color: var(--neutral-900);
   opacity: 0.75;
-}
-
-.singleAudio_play {
-  animation: myspin 20s linear infinite;
-}
-
-.singleAudio_pause {
-  animation-play-state: paused;
-}
-
-.singleAudio_play.musicPlayer-playing {
-  animation-play-state: running;
 }
 
 .singleAudio_hero_img_details {
@@ -5845,6 +5835,11 @@ button[disabled].trendingTopics-arrow {
   100% {
     transform: rotate(1turn);
   }
+}
+
+*.musicPlayer-playing.musicPlayer-playing-efect,
+*.musicPlayer-playing *.musicPlayer-playing-efect {
+  animation-play-state: running;
 }
 /* MUSIC PLAYER */
 /* ********************************** */
