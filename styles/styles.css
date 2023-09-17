@@ -269,6 +269,14 @@ img {
   width: 1.25rem;
   height: 1.25rem;
 }
+.section_listen_btn .section_listen_play-pause,
+.section_listen_btn.musicPlayer-playing .section_listen_play-play {
+  display: none;
+}
+
+.section_listen_btn.musicPlayer-playing .section_listen_play-pause {
+  display: flex;
+}
 /* SECTION LISTEN */
 /* ********************************** */
 
@@ -2347,7 +2355,19 @@ editorPicks_comment:last-child {
   width: 2rem;
   height: 2rem;
   color: var(--primary-500);
+}
+
+.mg_card_play_btn-play {
   margin-left: 3px;
+}
+
+.mg_card_play_btn > .mg_card_play_btn-pause,
+.mg_card_play_btn.musicPlayer-playing > .mg_card_play_btn-play {
+  display: none;
+}
+
+.mg_card_play_btn.musicPlayer-playing > .mg_card_play_btn-pause {
+  display: flex;
 }
 
 .mg_card_info {
@@ -2554,6 +2574,15 @@ editorPicks_comment:last-child {
   width: 1.5rem;
   height: 1.5rem;
   margin-left: 2px;
+}
+
+.lp_list_play > .lp_list_play-pause,
+.lp_list_play.musicPlayer-playing > .lp_list_play-play {
+  display: none;
+}
+
+.lp_list_play.musicPlayer-playing > .lp_list_play-pause {
+  display: flex;
 }
 /* LISTEN PODCASTS */
 /* ********************************** */

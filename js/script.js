@@ -278,6 +278,8 @@ class musicPlayer {
     event.preventDefault();
     event.stopPropagation();
 
+    this.currentButton?.classList.remove(PLAYING);
+
     this.currentButton = event?.currentTarget;
     this.dataset = this.currentButton?.dataset;
     this.audio.src = this.dataset?.musicSrc;
