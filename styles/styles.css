@@ -662,8 +662,8 @@ img {
 .lds-ellipsis div {
   position: absolute;
   top: 33px;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: rgb(255, 255, 255);
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
@@ -4914,6 +4914,7 @@ editorPicks_comment:last-child {
 /* BECOME AN AUTHOR */
 .becomeAnAuthor {
   position: relative;
+  margin: 3rem 0;
 }
 
 .becomeAnAuthor > .global_wrapper {
