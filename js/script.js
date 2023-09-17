@@ -1,46 +1,94 @@
 /* ************************** */
 /* ************************** */
 /* ************************** */
-/* MUSIC PLAYER */
+/* music PLAYER */
 const MUTE = "musicPlayer-mute";
 const PLAYING = "musicPlayer-playing";
 const SPEED = "musicPlayer_changeSpeed-show";
+const MUSIC_OPEN = "musicPlayer-open";
+const MUSIC_OPEN_SUBMENU = "musicPlayer-open-subMenu";
 
-class MusicPlayer {
-  constructor() {
+class musicPlayer {
+  constructor(container) {
     this.globalsPlay = document.querySelectorAll(".musicPlayer_global_play");
     //
     this.audio = document.getElementById("musicPlayer_audio");
     this.btn_mute = document.getElementById("musicPlayer_mute");
     this.playButtons = document.querySelectorAll(".musicPlayer_play");
-    this.btn_forward = document.getElementById("musicPlayer_forward");
-    this.btn_backward = document.getElementById("musicPlayer_backward");
+    this.btn_forward = document.querySelectorAll(".musicPlayer_forward");
+    this.btn_backward = document.querySelectorAll(".musicPlayer_backward");
     this.volumeSlider = document.getElementById("musicPlayer_volumeSlider");
     this.volumeBar = document.getElementById("musicPlayer_volumeBar");
     this.progressInput = document.getElementById("musicPlayer_progress");
     this.progresSlider = document.getElementById("musicPlayer_progresSlider");
     this.currentTime = document.getElementById("musicPlayer_time-current");
     this.totalTime = document.getElementById("musicPlayer_time-total");
-    this.speedButtons = document.querySelectorAll(".musicPlayer_changeSpeed");
-    this.image = document.querySelector(".musicPlayer_image");
+    this.effectDisc = document.querySelector(".musicPlayer_image");
+    this.songImage = document.getElementById("musicPlayer_image");
+    this.songTitle = document.getElementById("musicPlayer_title");
+    this.songLabel = document.getElementById("musicPlayer_label");
+    this.close = document.getElementById("musicPlayer_close");
+    this.btnSubMenu = document.getElementById("musicPlayer_subMenu");
 
-    /*this.loadActions();
-    this.loadInitData();*/
-    Array.from(this.globalsPlay).forEach((btn) => btn.addEventListener("click", (e) => this.restartAudio(e)));
+    this.container = container;
+    this.speedButtons = {};
+
+    Array.from(this.globalsPlay).forEach((btn) =>
+      btn.addEventListener("click", (e) => this.restartAudio(e))
+    );
     this.audio.addEventListener("loadedmetadata", () => this.loadInitData());
 
+    this.getSeedButtons();
     this.loadActions();
+  }
+
+  openSubMenu() {
+    console.log("ok");
+    if (
+      window?.innerWidth <= 1023 &&
+      this.container.classList.contains(MUSIC_OPEN)
+    ) {
+      this.container.classList.toggle(MUSIC_OPEN_SUBMENU);
+    }
+
+    if (this.container.classList.contains(MUSIC_OPEN_SUBMENU)) {
+      window?.addEventListener("resize", () => this.closeSubMenuResize());
+    } else {
+      window?.removeEventListener("resize", () => this.closeSubMenuResize());
+    }
+  }
+
+  closeSubMenuResize() {
+    if (window?.innerWidth >= 1023) {
+      this.container.classList.remove(MUSIC_OPEN_SUBMENU);
+    }
   }
 
   loadActions() {
     this.btn_mute?.addEventListener("click", () => this.toggleMute());
-    this.btn_forward?.addEventListener("click", () => this.seekTime(15));
-    this.btn_backward?.addEventListener("click", () => this.seekTime(-15));
     this.volumeSlider?.addEventListener("input", () => this.setVolume());
     this.progressInput?.addEventListener("input", () => this.setProgress());
+    this.close.addEventListener("click", () => this.closePlayer());
+    this.btnSubMenu.addEventListener("click", () => this.openSubMenu());
 
-    Array.from(this.playButtons).forEach((btn) => btn.addEventListener("click", () => this.togglePlay()));
-    Array.from(this.speedButtons).forEach((btn) => btn.addEventListener("click", () => this.changeSpeed(btn)));
+    Array.from(this.btn_forward).forEach((btn) =>
+      btn.addEventListener("click", () => this.seekTime(15))
+    );
+
+    Array.from(this.btn_backward).forEach((btn) =>
+      btn.addEventListener("click", () => this.seekTime(-15))
+    );
+
+    Array.from(this.playButtons).forEach((btn) =>
+      btn.addEventListener("click", () => this.togglePlay())
+    );
+
+    //
+    Array.from(Object.values(this.speedButtons)).forEach((values) => {
+      Array.from(values).forEach((btn) =>
+        btn.addEventListener("click", () => this.changeSpeed(btn))
+      );
+    });
   }
 
   loadInitData() {
@@ -49,8 +97,30 @@ class MusicPlayer {
 
     this.setVolume();
     this.printTotalTime();
-
     this.togglePlay();
+
+    this.container.classList.add(MUSIC_OPEN);
+  }
+
+  closePlayer() {
+    this.container.classList.remove(MUSIC_OPEN);
+    this.audio.pause();
+
+    this.effectDisc.classList.remove(PLAYING);
+    this.currentButton.classList.remove(PLAYING);
+    this.container.classList.remove(MUSIC_OPEN_SUBMENU);
+    Array.from(this.playButtons).forEach((btn) =>
+      btn.classList.remove(PLAYING)
+    );
+
+    window?.removeEventListener("resize", () => this.closeSubMenuResize());
+
+    this.currentButton = null;
+    this.dataset = null;
+    this.audio.src = "";
+    this.songImage.src = "";
+    this.songTitle.innerHTML = "";
+    this.songLabel.innerHTML = "";
   }
 
   toggleMute() {
@@ -62,15 +132,15 @@ class MusicPlayer {
   togglePlay() {
     if (this.audio.paused) {
       this.audio.play();
-      this.image.classList.add(PLAYING);
+      this.effectDisc.classList.add(PLAYING);
       this.currentButton.classList.add(PLAYING);
-      
+
       Array.from(this.playButtons).forEach((btn) => btn.classList.add(PLAYING));
 
       this.audio.addEventListener("timeupdate", () => this.updateProgress());
     } else {
       this.audio.pause();
-      this.image.classList.remove(PLAYING);
+      this.effectDisc.classList.remove(PLAYING);
       this.currentButton.classList.remove(PLAYING);
 
       Array.from(this.playButtons).forEach((btn) =>
@@ -79,6 +149,20 @@ class MusicPlayer {
 
       this.audio.removeEventListener("timeupdate", () => this.updateProgress());
     }
+  }
+
+  getSeedButtons() {
+    const speedButtons = document.querySelectorAll(".musicPlayer_changeSpeed");
+
+    speedButtons.forEach((element) => {
+      const dataSpeed = element.getAttribute("data-speed");
+
+      if (!this.speedButtons[dataSpeed]) {
+        this.speedButtons[dataSpeed] = [];
+      }
+
+      this.speedButtons[dataSpeed].push(element);
+    });
   }
 
   setVolume() {
@@ -165,37 +249,45 @@ class MusicPlayer {
 
     switch (speed) {
       case "1.5":
-        this.speedButtons[1].classList.add(SPEED);
+        Array.from(this.speedButtons["2.0"]).forEach((btn) =>
+          btn.classList.add(SPEED)
+        );
         break;
 
       case "2.0":
-        this.speedButtons[2].classList.add(SPEED);
+        Array.from(this.speedButtons["1.0"]).forEach((btn) =>
+          btn.classList.add(SPEED)
+        );
         break;
 
       case "1.0":
-        this.speedButtons[0].classList.add(SPEED);
+        Array.from(this.speedButtons["1.5"]).forEach((btn) =>
+          btn.classList.add(SPEED)
+        );
         break;
     }
   }
 
   hideAllChangeSpeed() {
-    Array.from(this.speedButtons).forEach((btn) => {
-      btn.classList.remove(SPEED);
+    Array.from(Object.values(this.speedButtons)).forEach((values) => {
+      Array.from(values).forEach((btn) => btn.classList.remove(SPEED));
     });
   }
 
   restartAudio(event) {
     event.preventDefault();
     event.stopPropagation();
-    
+
     this.currentButton = event?.currentTarget;
     this.dataset = this.currentButton?.dataset;
     this.audio.src = this.dataset?.musicSrc;
-    // TODO: texto e imagenes
+    this.songImage.src = this.dataset?.musicImg;
+    this.songTitle.innerHTML = this.dataset?.musicTitle;
+    this.songLabel.innerHTML = this.dataset?.musicLabel;
   }
 }
 
-/* MUSIC PLAYER */
+/* music PLAYER */
 /* ************************** */
 /* ************************** */
 /* ************************** */
@@ -519,13 +611,29 @@ function main() {
   /* ************************** */
   /* ************************** */
   /* ************************** */
-  /* MUSIC PLAYER */
+  /* music PLAYER */
   const music = document.getElementById("musicPlayer");
 
   if (music) {
-    new MusicPlayer();
+    new musicPlayer(music);
   }
-  /* MUSIC PLAYER */
+  /* music PLAYER */
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+  /* EFFECTS */
+  const likeButtons = document.querySelectorAll(".like_action");
+
+  Array.from(likeButtons).forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("like_active");
+    });
+  });
+  /* EFFECTS */
   /* ************************** */
   /* ************************** */
   /* ************************** */
