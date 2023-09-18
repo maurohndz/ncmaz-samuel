@@ -181,7 +181,7 @@ img {
   line-height: 1.5rem;
   border: 1px solid var(--neutral-200);
   color: var(--neutral-900);
-  background-color: rgb(255 255 255/1);
+  background-color: var(--bg-basic);
   padding: 0.75rem;
   display: flex;
   align-items: center;
@@ -283,6 +283,11 @@ img {
   font-weight: 400;
 }
 
+body[data-theme="dark"] .section_listen_btn:hover {
+  background-color: transparent;
+  font-weight: 400;
+}
+
 .section_listen_play {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -296,6 +301,15 @@ img {
   align-items: center;
   background-color: var(--primary-50);
   color: var(--primary-600);
+}
+
+body[data-theme="dark"]  .section_listen_btn {
+  background-color: transparent;
+  color: var(--primary-200);
+}
+
+body[data-theme="dark"]  .section_listen_play {
+  background-color: rgb(31, 41, 55);
 }
 
 .section_listen_play svg {
@@ -1502,7 +1516,7 @@ footer ul {
   font-size: 3.75rem;
   line-height: 4.13rem;
   font-weight: 700;
-  color: var(--neutral-100);
+  color: rgb(243, 244, 246);
   margin: 0;
   margin-top: 0.75rem;
 }
@@ -1511,7 +1525,7 @@ footer ul {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 400;
-  color: var(--neutral-300);
+  color: rgb(209, 213, 219);
   margin: 0;
   margin-top: 1.75rem;
 }
@@ -1542,7 +1556,7 @@ footer ul {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: var(--neutral-900);
-  background-color: #ffffff;
+  background-color: var(--bg-basic);
   gap: 0.5rem;
 }
 
@@ -1587,12 +1601,12 @@ footer ul {
 
 .video_modal {
   position: fixed;
-  z-index: 20;
+  z-index: 2000;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(17, 24, 39, 0.5);
+  background-color: rgba(17, 24, 39, 0.8);
   visibility: visible;
   opacity: 1;
   display: flex;
@@ -1609,7 +1623,7 @@ footer ul {
 }
 
 .video_modal_content {
-  background-color: #ffffff;
+  background-color: var(--bg-main);
   border-radius: 1rem;
   padding: 0 !important;
   max-width: 1280px;
@@ -2091,7 +2105,7 @@ footer ul {
 
 .editorPicks_menu_btn:hover {
   color: var(--neutral-900);
-  background-color: var(--neutral-100);
+  background-color: var(--neutral-200);
 }
 
 .editorPicks_menu_btn span {
@@ -2110,7 +2124,7 @@ footer ul {
 
 .editorPicks_menu_btn-all {
   margin-left: auto;
-  background-color: #ffffff !important;
+  background-color: var(--bg-basic) !important;
   color: var(--neutral-900) !important;
 }
 
@@ -2171,7 +2185,7 @@ footer ul {
   line-height: 2.25rem;
   font-weight: 600;
   text-decoration: none;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 
 .editorPicks_post_title a {
@@ -2182,7 +2196,7 @@ footer ul {
 }
 
 .editorPicks_post_title:hover * {
-  color: var(--neutral-300);
+  color: rgb(249, 250, 251);
 }
 
 .editorPicks_post_text {
@@ -2190,13 +2204,13 @@ footer ul {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-top: 1.25rem;
-  color: var(--neutral-200);
+  color: rgb(229, 231, 235);
 }
 
 .editorPicks_post_button {
   display: flex;
   gap: 0.75rem;
-  color: var(--neutral-200);
+  color: rgb(229, 231, 235);
   margin-top: 1.75rem;
 }
 
@@ -2227,20 +2241,20 @@ footer ul {
 
 .editorPicks_post_author {
   text-decoration: none;
-  color: var(--neutral-200);
+  color: rgb(229, 231, 235);
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
 }
 
 .editorPicks_post_author:hover {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 
 .editorPicks_post_date {
   font-size: 0.75rem;
   line-height: 1rem;
-  color: var(--neutral-400);
+  color: rgb(156, 163, 175);
 }
 
 .editorPicks_post_date span {
@@ -2268,6 +2282,10 @@ footer ul {
   overflow: hidden;
 }
 
+body[data-theme="dark"] .editorPicks_comments {
+  background-color: rgba(17, 24, 39, 0.8);
+}
+
 .editorPicks_comments_list {
   list-style: none;
   padding: 0;
@@ -2292,7 +2310,7 @@ footer ul {
   padding-top: 0;
 }
 
-editorPicks_comment:last-child {
+.editorPicks_comment:last-child {
   padding-bottom: 0;
 }
 
@@ -2310,6 +2328,10 @@ editorPicks_comment:last-child {
 
 .editorPicks_comment_link:hover {
   color: var(--primary-900);
+}
+
+body[data-theme="dark"] .editorPicks_comment_link:hover {
+  color: var(--primary-300);
 }
 
 .editorPicks_comment_author {
@@ -2353,7 +2375,7 @@ editorPicks_comment:last-child {
 }
 
 .editorPicks_comment_name a:hover {
-  color: #000;
+  color: var(--neutral-900);
 }
 /* EDITOR PICKS */
 /* ********************************** */
@@ -2436,7 +2458,7 @@ editorPicks_comment:last-child {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--neutral-900);
+  background-color: rgb(17, 24, 39);
   opacity: 0.3;
   z-index: 2;
   border-radius: 1.5rem;
@@ -2468,7 +2490,7 @@ editorPicks_comment:last-child {
   min-width: 3.5rem;
   min-height: 3.5rem;
   border-radius: 9999px;
-  background-color: #ffffff;
+  background-color: var(--bg-basic);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2497,7 +2519,7 @@ editorPicks_comment:last-child {
 .mg_card_info {
   padding: 1.25rem;
   margin-top: 1.25rem;
-  background-color: #ffffff;
+  background-color: var(--bg-basic);
   border-radius: 1.5rem;
   border-start-start-radius: 0;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
@@ -2567,7 +2589,7 @@ editorPicks_comment:last-child {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 0.15s;
   color: var(--neutral-700);
-  background-color: var(--neutral-50);
+  background-color: var(--neutral-100);
   font-size: 0.75rem;
   line-height: 1;
   border-radius: 999px;
@@ -2623,6 +2645,10 @@ editorPicks_comment:last-child {
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 0.15s;
+}
+
+body[data-theme="dark"] .lp_list_item {
+  background-color: rgb(28 37 51);
 }
 
 .lp_list_item:hover {
@@ -2767,7 +2793,7 @@ editorPicks_comment:last-child {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: var(--neutral-900);
+  background-color: rgb(17, 24, 39);
   opacity: 0.4;
   border-radius: 1.5rem;
 }
@@ -2854,7 +2880,7 @@ editorPicks_comment:last-child {
 
 .la_item_author {
   margin-top: 0.625rem;
-  color: var(--neutral-200);
+  color: rgb(229, 231, 235);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
