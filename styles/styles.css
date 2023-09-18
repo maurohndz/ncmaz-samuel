@@ -659,6 +659,11 @@ body[data-theme="dark"]  .section_listen_play {
     Liberation Mono, Courier New, monospace;
 }
 
+body[data-theme="dark"] .section_text pre {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(209, 213, 219);
+}
+
 .video_iframe {
   position: absolute;
   z-index: 50;
@@ -4032,12 +4037,12 @@ body[data-theme="dark"] .lp_list_item {
   padding-bottom: 0.625rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  color: rgb(82 82 82 / 1);
+  color: var(--neutral-700);
   font-size: 0.875rem;
   line-height: 1.25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: rgb(255 255 255 / 1);
+  background-color: var(--bg-basic);
   border-radius: 0.5rem;
   display: inline-block;
   text-decoration: none;
@@ -4626,8 +4631,8 @@ body[data-theme="dark"] .videos  {
 /* ********************************** */
 /* ********************************** */
 
-.singleAudio_hero.section_main::before {
-  height: 15rem;
+body[data-theme="dark"] .singleAudio_hero.section_main::before {
+  background-color: #0e1729;
 }
 
 .singleAudio_hero .section_main_wrapper {
@@ -4682,7 +4687,7 @@ body[data-theme="dark"] .videos  {
   bottom: 0;
   left: 0;
   z-index: 1;
-  background-color: var(--neutral-900);
+  background-color: rgb(17, 24, 39);
   opacity: 0.75;
 }
 
@@ -4876,7 +4881,7 @@ body[data-theme="dark"] .videos  {
 
 .more_author_picture::after {
   content: "";
-  background-color: var(--neutral-900);
+  background-color: rgb(17, 24, 39);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -4923,7 +4928,7 @@ body[data-theme="dark"] .videos  {
 .more_author_title {
   font-size: 1.125rem;
   line-height: 1.75rem;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   font-weight: 600;
   -webkit-line-clamp: 2;
   overflow: hidden;
@@ -4940,7 +4945,7 @@ body[data-theme="dark"] .videos  {
   text-decoration: none;
   font-size: 0.75rem;
   line-height: 1rem;
-  color: var(--neutral-200);
+  color: rgb(229, 231, 235);
 }
 
 .more_author_info span:nth-child(1) {
