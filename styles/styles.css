@@ -43,6 +43,8 @@
   --header-link-action: #0f172a;
   --header-link: #475569;
   --header-color-secundary: #0f172a;
+
+  --details: var(--primary-100);
 }
 
 * {
@@ -62,6 +64,7 @@ body[data-theme="dark"] {
   --neutral-900: #f9fafb;
 
   --bg-basic: var(--neutral-50);
+  --details: var(--neutral-100);
   --bg-main: var(--neutral-100);
 
   --header-color: #cbd5e1;
@@ -1455,7 +1458,7 @@ footer ul {
 
 .footer_col_list a:hover,
 .footer_social a:hover {
-  color: #000;
+  color: var(--neutral-900);
 }
 
 .footer_social a span {
@@ -2891,7 +2894,7 @@ editorPicks_comment:last-child {
 
 #subscription::before {
   content: "";
-  background-color: var(--primary-100);
+  background-color: var(--details);
   top: 0;
   left: 0;
   right: 0;
@@ -3172,8 +3175,9 @@ editorPicks_comment:last-child {
   outline: none;
   border-radius: 9999px;
   display: block;
-  width: 93%;
+  width: 102%;
   color: var(--neutral-500);
+  background-color: var(--bg-basic);
 }
 
 .subs_newsletter_input:focus {
@@ -3187,14 +3191,14 @@ editorPicks_comment:last-child {
 }
 
 .subs_newsletter_btn {
-  background-color: #0f172a;
+  background-color: var(--neutral-800);
   border: 1px solid transparent;
   position: absolute;
   right: -2px;
   top: 50%;
   margin-top: -1.125rem;
   line-height: 1 !important;
-  color: #f8fafc;
+  color: var(--neutral-100);
   border-radius: 9999px;
   width: 2.25rem;
   height: 2.25rem;
