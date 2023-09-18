@@ -1404,6 +1404,10 @@ header {
 .header_main_info_change_mode svg:nth-child(2) {
   display: none;
 }
+
+body[data-theme="dark"] header {
+  border-bottom: 1px solid rgb(51 65 85/1);
+}
 /* HEADER */
 /* ********************************** */
 /* ********************************** */
@@ -4061,10 +4065,14 @@ body[data-theme="dark"] .lp_list_item {
   background-color: #1d2432;
 }
 
+body[data-theme="dark"] .videos  {
+  background-color: #111827;
+}
+
 .videos_title {
   font-size: 3.75rem;
   line-height: 3.75rem;
-  color: var(--neutral-100);
+  color: rgb(243, 244, 246);
   font-weight: 600;
   margin: 0;
 }
@@ -4074,7 +4082,7 @@ body[data-theme="dark"] .lp_list_item {
   padding: 0;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: var(--neutral-300);
+  color: rgb(209, 213, 219);
   margin-top: 1rem;
 }
 
@@ -4083,15 +4091,15 @@ body[data-theme="dark"] .lp_list_item {
 }
 
 .videos_menu .sm_menu_select {
-  background-color: var(--neutral-900);
-  color: var(--neutral-200);
-  border: 1px solid var(--neutral-700);
+  background-color: rgb(17, 24, 39);
+  color: rgb(229, 231, 235);
+  border: 1px solid #374151;
 }
 
 .videos_menu .sm_menu_list {
-  background-color: var(--neutral-900);
-  color: var(--neutral-200);
-  border: 1px solid var(--neutral-700);
+  background-color: rgb(17, 24, 39);
+  color: rgb(229, 231, 235);
+  border: 1px solid #374151;
   box-shadow: none;
 }
 
@@ -4281,13 +4289,13 @@ body[data-theme="dark"] .lp_list_item {
   line-height: 1.5rem;
   font-weight: 600;
   text-decoration: none;
-  color: var(--neutral-200);
+  color: rgb(229, 231, 235);
 }
 
 .videos_item_time {
   font-weight: 500;
   text-decoration: none;
-  color: var(--neutral-200);
+  color: rgb(229, 231, 235);
   font-size: 0.75rem;
   line-height: 0.75rem;
   display: flex;
@@ -4304,9 +4312,9 @@ body[data-theme="dark"] .lp_list_item {
 }
 
 .videos_pagination .section_pagination_page {
-  background-color: var(--neutral-900);
-  color: var(--neutral-200);
-  border: 1px solid var(--neutral-700);
+  background-color: rgb(17, 24, 39);
+  color: rgb(229, 231, 235);
+  border: 1px solid #374151;
 }
 
 .videos_pagination .section_pagination_page-active {
@@ -4347,8 +4355,7 @@ body[data-theme="dark"] .lp_list_item {
   flex-direction: column;
   text-align: center;
   padding: 1.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: var(--bg-basic);
   border-radius: 1.5rem;
   align-items: center;
   justify-content: center;
