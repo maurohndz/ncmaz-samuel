@@ -384,6 +384,8 @@ function main() {
   function closeUserMenu(event) {
     const menu = document.getElementById("user_menu");
 
+    console.log(!menu.contains(event.target) &&
+    !headerUserIcon.contains(event.target))
     if (
       !menu.contains(event.target) &&
       !headerUserIcon.contains(event.target)
@@ -415,9 +417,6 @@ function main() {
   const notifications = document.getElementById("user_notifications");
 
   function hideNotifications(event) {
-    event?.preventDefault();
-    event?.stopPropagation();
-
     if (
       !notifications.contains(event.target) &&
       !btnNotifications.contains(event.target)
@@ -429,19 +428,13 @@ function main() {
   }
 
   function hideNotificationsAction(event) {
-    event?.preventDefault();
-    event?.stopPropagation();
-
-    if (window?.innerWidth <= 639) {
+     if (window?.innerWidth <= 639) {
       notifications.classList.remove(OPEN_NOTIFICATIONS);
       document.removeEventListener("click", closeUserMenu);
     }
   }
 
   function showNotifications(event) {
-    event?.preventDefault();
-    event?.stopPropagation();
-
     notifications?.classList?.toggle(OPEN_NOTIFICATIONS);
     document.addEventListener("click", hideNotifications);
     window.addEventListener("resize", hideNotificationsAction);
@@ -702,6 +695,34 @@ function main() {
     video.addEventListener("mouseleave", () => leaveVideo(video));
   })
   /* GRID VIDEOS */
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+  /* CHANGE THEME */
+  const themeButtons = document.querySelectorAll(".change_theme");
+
+  function changeTheme(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const body = document.body;
+    const current = body.getAttribute("data-theme");
+
+    if (current) {
+      body.setAttribute("data-theme", "");
+    } else {
+      body.setAttribute("data-theme", "dark");
+    }
+  }
+
+  Array.from(themeButtons).forEach((button) => {
+    button.addEventListener("click", changeTheme)
+  })
+  /* CHANGE THEME */
   /* ************************** */
   /* ************************** */
   /* ************************** */
