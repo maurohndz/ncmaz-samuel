@@ -7,6 +7,1254 @@
     <link rel="stylesheet" href="../styles/styles.css" />
   </head>
   <body>
+    <!-- ######################## -->
+    <!-- ######################## -->
+    <!-- HEADER -->
+    <header>
+      <div class="global_wrapper">
+        <div class="header_wrapper">
+          <div class="header_menu_btn">
+            <button class="header_btn" id="header_btn-open">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-7 w-7"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="logo">
+            <a class="" href="/"
+              ><svg
+                width="59"
+                height="41"
+                viewBox="0 0 59 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M33.5224 9.69455C34.547 8.66632 35.1818 7.24829 35.1818 5.68181C35.1818 2.54402 32.6378 0 29.5 0C27.516 0 25.7721 1.01857 24.7559 2.55971C24.4868 2.83004 1.8706 30.7044 1.65941 31.0255C0.633591 32.0525 0 33.4705 0 35.037C0 38.1748 2.54281 40.7188 5.6806 40.7188C7.66464 40.7188 9.40853 39.7002 10.4247 38.1591C10.695 37.8888 33.3112 10.0144 33.5224 9.69455Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M46.6081 22.9203C47.6363 21.8921 48.2723 20.4728 48.2723 18.904C48.2723 15.7662 45.7283 13.2221 42.5905 13.2221C40.6065 13.2221 38.8614 14.2419 37.8452 15.7831C37.5737 16.0558 25.6948 30.6972 25.4824 31.0206C24.4541 32.0489 23.8193 33.4681 23.8193 35.037C23.8193 38.1748 26.3621 40.7188 29.4999 40.7188C31.484 40.7188 33.2291 39.699 34.2452 38.1579C34.5168 37.8851 46.3957 23.2437 46.6081 22.9203Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M59.0001 5.68181C59.0001 8.81959 56.4573 11.3636 53.3195 11.3636C50.1817 11.3636 47.6377 8.81959 47.6377 5.68181C47.6377 2.54402 50.1817 0 53.3195 0C56.4573 0 59.0001 2.54402 59.0001 5.68181Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M11.3624 5.68181C11.3624 8.81959 8.81838 11.3636 5.6806 11.3636C2.54281 11.3636 0 8.81959 0 5.68181C0 2.54402 2.54281 0 5.6806 0C8.81838 0 11.3624 2.54402 11.3624 5.68181Z"
+                  fill="currentColor"
+                ></path></svg
+            ></a>
+          </div>
+
+          <div class="header_main_section" id="header_menu">
+            <div class="section_hide-desktop header_main_shadow"></div>
+
+            <div class="header_main_content">
+              <div class="section_hide-desktop header_main_info">
+                <button class="header_btn_close" id="header_btn-close">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+
+                <div class="logo header_menu_logo">
+                  <a class="" href="/"
+                    ><svg
+                      width="59"
+                      height="41"
+                      viewBox="0 0 59 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M33.5224 9.69455C34.547 8.66632 35.1818 7.24829 35.1818 5.68181C35.1818 2.54402 32.6378 0 29.5 0C27.516 0 25.7721 1.01857 24.7559 2.55971C24.4868 2.83004 1.8706 30.7044 1.65941 31.0255C0.633591 32.0525 0 33.4705 0 35.037C0 38.1748 2.54281 40.7188 5.6806 40.7188C7.66464 40.7188 9.40853 39.7002 10.4247 38.1591C10.695 37.8888 33.3112 10.0144 33.5224 9.69455Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M46.6081 22.9203C47.6363 21.8921 48.2723 20.4728 48.2723 18.904C48.2723 15.7662 45.7283 13.2221 42.5905 13.2221C40.6065 13.2221 38.8614 14.2419 37.8452 15.7831C37.5737 16.0558 25.6948 30.6972 25.4824 31.0206C24.4541 32.0489 23.8193 33.4681 23.8193 35.037C23.8193 38.1748 26.3621 40.7188 29.4999 40.7188C31.484 40.7188 33.2291 39.699 34.2452 38.1579C34.5168 37.8851 46.3957 23.2437 46.6081 22.9203Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M59.0001 5.68181C59.0001 8.81959 56.4573 11.3636 53.3195 11.3636C50.1817 11.3636 47.6377 8.81959 47.6377 5.68181C47.6377 2.54402 50.1817 0 53.3195 0C56.4573 0 59.0001 2.54402 59.0001 5.68181Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M11.3624 5.68181C11.3624 8.81959 8.81838 11.3636 5.6806 11.3636C2.54281 11.3636 0 8.81959 0 5.68181C0 2.54402 2.54281 0 5.6806 0C8.81838 0 11.3624 2.54402 11.3624 5.68181Z"
+                        fill="currentColor"
+                      ></path></svg
+                  ></a>
+                </div>
+
+                <p>
+                  Discover the most outstanding articles on all topics of life.
+                  Write your stories and share them
+                </p>
+
+                <ul class="header_main_info_social">
+                  <li>
+                    <a href="#" class="header_main_info_social_link">
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_17_61)">
+                          <path
+                            d="M48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 35.9789 8.77641 45.908 20.25 47.7084V30.9375H14.1562V24H20.25V18.7125C20.25 12.6975 23.8331 9.375 29.3152 9.375C31.9402 9.375 34.6875 9.84375 34.6875 9.84375V15.75H31.6613C28.68 15.75 27.75 17.6002 27.75 19.5V24H34.4062L33.3422 30.9375H27.75V47.7084C39.2236 45.908 48 35.9789 48 24Z"
+                            fill="currentColor"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="header_main_info_social_link">
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_17_80)">
+                          <path
+                            d="M15.1003 43.5C33.2091 43.5 43.1166 28.4935 43.1166 15.4838C43.1166 15.0619 43.1072 14.6307 43.0884 14.2088C45.0158 12.815 46.679 11.0886 48 9.11066C46.205 9.90926 44.2993 10.4308 42.3478 10.6575C44.4026 9.42588 45.9411 7.491 46.6781 5.21159C44.7451 6.35718 42.6312 7.16528 40.4269 7.60128C38.9417 6.02318 36.978 4.97829 34.8394 4.62816C32.7008 4.27803 30.5064 4.64216 28.5955 5.66425C26.6846 6.68635 25.1636 8.30947 24.2677 10.2827C23.3718 12.2559 23.1509 14.4693 23.6391 16.5807C19.725 16.3842 15.8959 15.3675 12.4 13.5963C8.90405 11.825 5.81939 9.33893 3.34594 6.29909C2.0888 8.46655 1.70411 11.0314 2.27006 13.4722C2.83601 15.9131 4.31013 18.047 6.39281 19.44C4.82926 19.3904 3.29995 18.9694 1.93125 18.2119V18.3338C1.92985 20.6084 2.7162 22.8132 4.15662 24.5736C5.59704 26.334 7.60265 27.5412 9.8325 27.99C8.38411 28.3863 6.86396 28.4441 5.38969 28.1588C6.01891 30.1149 7.24315 31.8258 8.89154 33.0527C10.5399 34.2796 12.5302 34.9613 14.5847 35.0025C11.0968 37.7423 6.78835 39.2283 2.35313 39.2213C1.56657 39.2201 0.780798 39.1719 0 39.0769C4.50571 41.9676 9.74706 43.5028 15.1003 43.5Z"
+                            fill="currentColor"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="header_main_info_social_link">
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_17_68)">
+                          <path
+                            d="M44.4469 0H3.54375C1.58437 0 0 1.54688 0 3.45938V44.5312C0 46.4437 1.58437 48 3.54375 48H44.4469C46.4062 48 48 46.4438 48 44.5406V3.45938C48 1.54688 46.4062 0 44.4469 0ZM14.2406 40.9031H7.11563V17.9906H14.2406V40.9031ZM10.6781 14.8688C8.39062 14.8688 6.54375 13.0219 6.54375 10.7437C6.54375 8.46562 8.39062 6.61875 10.6781 6.61875C12.9563 6.61875 14.8031 8.46562 14.8031 10.7437C14.8031 13.0125 12.9563 14.8688 10.6781 14.8688ZM40.9031 40.9031H33.7875V29.7656C33.7875 27.1125 33.7406 23.6906 30.0844 23.6906C26.3812 23.6906 25.8187 26.5875 25.8187 29.5781V40.9031H18.7125V17.9906H25.5375V21.1219H25.6312C26.5781 19.3219 28.9031 17.4188 32.3625 17.4188C39.5719 17.4188 40.9031 22.1625 40.9031 28.3313V40.9031Z"
+                            fill="currentColor"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="header_main_info_social_link">
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_17_63)">
+                          <path
+                            d="M24 4.32187C30.4125 4.32187 31.1719 4.35 33.6938 4.4625C36.0375 4.56562 37.3031 4.95938 38.1469 5.2875C39.2625 5.71875 40.0688 6.24375 40.9031 7.07812C41.7469 7.92188 42.2625 8.71875 42.6938 9.83438C43.0219 10.6781 43.4156 11.9531 43.5188 14.2875C43.6313 16.8187 43.6594 17.5781 43.6594 23.9813C43.6594 30.3938 43.6313 31.1531 43.5188 33.675C43.4156 36.0188 43.0219 37.2844 42.6938 38.1281C42.2625 39.2438 41.7375 40.05 40.9031 40.8844C40.0594 41.7281 39.2625 42.2438 38.1469 42.675C37.3031 43.0031 36.0281 43.3969 33.6938 43.5C31.1625 43.6125 30.4031 43.6406 24 43.6406C17.5875 43.6406 16.8281 43.6125 14.3063 43.5C11.9625 43.3969 10.6969 43.0031 9.85313 42.675C8.7375 42.2438 7.93125 41.7188 7.09688 40.8844C6.25313 40.0406 5.7375 39.2438 5.30625 38.1281C4.97813 37.2844 4.58438 36.0094 4.48125 33.675C4.36875 31.1438 4.34063 30.3844 4.34063 23.9813C4.34063 17.5688 4.36875 16.8094 4.48125 14.2875C4.58438 11.9437 4.97813 10.6781 5.30625 9.83438C5.7375 8.71875 6.2625 7.9125 7.09688 7.07812C7.94063 6.23438 8.7375 5.71875 9.85313 5.2875C10.6969 4.95938 11.9719 4.56562 14.3063 4.4625C16.8281 4.35 17.5875 4.32187 24 4.32187ZM24 0C17.4844 0 16.6688 0.028125 14.1094 0.140625C11.5594 0.253125 9.80625 0.665625 8.2875 1.25625C6.70312 1.875 5.3625 2.69062 4.03125 4.03125C2.69063 5.3625 1.875 6.70313 1.25625 8.27813C0.665625 9.80625 0.253125 11.55 0.140625 14.1C0.028125 16.6687 0 17.4844 0 24C0 30.5156 0.028125 31.3312 0.140625 33.8906C0.253125 36.4406 0.665625 38.1938 1.25625 39.7125C1.875 41.2969 2.69063 42.6375 4.03125 43.9688C5.3625 45.3 6.70313 46.125 8.27813 46.7344C9.80625 47.325 11.55 47.7375 14.1 47.85C16.6594 47.9625 17.475 47.9906 23.9906 47.9906C30.5063 47.9906 31.3219 47.9625 33.8813 47.85C36.4313 47.7375 38.1844 47.325 39.7031 46.7344C41.2781 46.125 42.6188 45.3 43.95 43.9688C45.2812 42.6375 46.1063 41.2969 46.7156 39.7219C47.3063 38.1938 47.7188 36.45 47.8313 33.9C47.9438 31.3406 47.9719 30.525 47.9719 24.0094C47.9719 17.4938 47.9438 16.6781 47.8313 14.1188C47.7188 11.5688 47.3063 9.81563 46.7156 8.29688C46.125 6.70312 45.3094 5.3625 43.9688 4.03125C42.6375 2.7 41.2969 1.875 39.7219 1.26562C38.1938 0.675 36.45 0.2625 33.9 0.15C31.3313 0.028125 30.5156 0 24 0Z"
+                            fill="currentColor"
+                          ></path>
+                          <path
+                            d="M24 11.6719C17.1938 11.6719 11.6719 17.1938 11.6719 24C11.6719 30.8062 17.1938 36.3281 24 36.3281C30.8062 36.3281 36.3281 30.8062 36.3281 24C36.3281 17.1938 30.8062 11.6719 24 11.6719ZM24 31.9969C19.5844 31.9969 16.0031 28.4156 16.0031 24C16.0031 19.5844 19.5844 16.0031 24 16.0031C28.4156 16.0031 31.9969 19.5844 31.9969 24C31.9969 28.4156 28.4156 31.9969 24 31.9969Z"
+                            fill="currentColor"
+                          ></path>
+                          <path
+                            d="M39.6937 11.1843C39.6937 12.778 38.4 14.0624 36.8156 14.0624C35.2219 14.0624 33.9375 12.7687 33.9375 11.1843C33.9375 9.59053 35.2313 8.30615 36.8156 8.30615C38.4 8.30615 39.6937 9.5999 39.6937 11.1843Z"
+                            fill="currentColor"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li>
+                    <button class="header_main_info_change_mode change_theme">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        class="w-7 h-7"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                        ></path>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        class="w-7 h-7"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+
+                <form action="" method="POST" class="header_main_info_form">
+                  <div class="header_main_info_mask">
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M22 22L20 20"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg
+                    ><input
+                      placeholder="Type and press enter"
+                      class=""
+                      type="search"
+                    />
+                  </div>
+                </form>
+              </div>
+
+              <div class="header_main_menu">
+                <nav class="header_main_menu_nav">
+                  <li>
+                    <div class="header_menu_item">
+                      <a href="#" class="header_main_menu_link">
+                        <span class="header_main_menu_text">Homes</span>
+
+                        <span class="header_main_menu_arrow">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            aria-hidden="true"
+                            class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+
+                    <div class="header_main_subMenu">
+                      <ul>
+                        <li>
+                          <a
+                            href=""
+                            class="header_main_subMenu_link header_main_subMenu_link-active"
+                          >
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link menu_new">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link menu_new">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link menu_new">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="header_menu_item">
+                      <a href="#" class="header_main_menu_link">
+                        <span class="header_main_menu_text">Singles</span>
+
+                        <span class="header_main_menu_arrow">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            aria-hidden="true"
+                            class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+
+                    <div class="header_main_subMenu">
+                      <ul>
+                        <li>
+                          <span class="header_main_subMenu_item">
+                            <a href="" class="header_main_subMenu_link"
+                              >Item #1</a
+                            >
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="header_main_subMenu_item">
+                            <a href="" class="header_main_subMenu_link"
+                              >Item #2</a
+                            >
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="header_main_subMenu_item">
+                            <a href="" class="header_main_subMenu_link"
+                              >Item #3</a
+                            >
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="header_main_subMenu_item">
+                            <a href="" class="header_main_subMenu_link"
+                              >Item #4</a
+                            >
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="header_main_subMenu_item">
+                            <a href="" class="header_main_subMenu_link"
+                              >Item #5</a
+                            >
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="header_main_subMenu_item">
+                            <a href="" class="header_main_subMenu_link"
+                              >Item #6</a
+                            >
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="header_main_subMenu_item">
+                            <a href="" class="header_main_subMenu_link"
+                              >Item #7</a
+                            >
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="header_main_subMenu_item">
+                            <a href="" class="header_main_subMenu_link"
+                              >Item #8</a
+                            >
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li>
+                    <span class="header_main_menu_item">
+                      <a href="" class="header_main_menu_link">Beauty</a>
+                    </span>
+                  </li>
+
+                  <li>
+                    <span class="header_main_menu_item">
+                      <a href="" class="header_main_menu_link">Sport</a>
+                    </span>
+                  </li>
+
+                  <li class="header_main_menu_special">
+                    <div class="header_menu_item">
+                      <a href="#" class="header_main_menu_link">
+                        <span class="header_main_menu_text">Templates</span>
+
+                        <span class="header_main_menu_arrow">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            aria-hidden="true"
+                            class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+
+                    <div class="header_main_subMenu">
+                      <div class="global_wrapper">
+                        <div class="header_main_special">
+                          <div class="header_main_special_grid">
+                            <div class="header_main_special_col">
+                              <div class="header_menu_item">
+                                <a href="" class="header_main_special_title"
+                                  >Home Page
+                                  <span class="header_main_menu_arrow">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                      aria-hidden="true"
+                                      class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                                    >
+                                      <path
+                                        fill-rule="evenodd"
+                                        d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                        clip-rule="evenodd"
+                                      ></path>
+                                    </svg> </span
+                                ></a>
+                              </div>
+
+                              <ul class="header_main_special_list">
+                                <li class="">
+                                  <a href="/">Home page 1</a>
+                                </li>
+                                <li class="">
+                                  <a href="/home-2">Home page 2</a>
+                                </li>
+                                <li class="">
+                                  <a href="/home-3">Home page 3</a>
+                                </li>
+                                <li class="">
+                                  <a href="/home-4">Home page 4</a>
+                                </li>
+                                <li class="">
+                                  <a href="/home-6">Home page 5</a>
+                                </li>
+                                <li class="menuIsNew">
+                                  <a href="/">Header style 1</a>
+                                </li>
+                                <li class="menuIsNew">
+                                  <a href="/home-2">Header style 2</a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="header_main_special_col">
+                              <div class="header_menu_item">
+                                <a href="" class="header_main_special_title"
+                                  >Single Pages
+                                  <span class="header_main_menu_arrow">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                      aria-hidden="true"
+                                      class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                                    >
+                                      <path
+                                        fill-rule="evenodd"
+                                        d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                        clip-rule="evenodd"
+                                      ></path>
+                                    </svg> </span
+                                ></a>
+                              </div>
+
+                              <ul class="header_main_special_list">
+                                <li class="">
+                                  <a href="/single/demo-slug">Single page 1</a>
+                                </li>
+                                <li class="">
+                                  <a href="/single-2/demo-slug"
+                                    >Single page 2</a
+                                  >
+                                </li>
+                                <li class="">
+                                  <a href="/single-3/demo-slug"
+                                    >Single page 3</a
+                                  >
+                                </li>
+                                <li class="">
+                                  <a href="/single-4/demo-slug"
+                                    >Single page 4</a
+                                  >
+                                </li>
+                                <li class="">
+                                  <a href="/single-audio/demo-slug"
+                                    >Single Audio</a
+                                  >
+                                </li>
+                                <li class="">
+                                  <a href="/single-video/demo-slug"
+                                    >Single Video</a
+                                  >
+                                </li>
+                                <li class="menuIsNew">
+                                  <a href="/single-gallery/demo-slug"
+                                    >Single Gallery</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="header_main_special_col">
+                              <div class="header_menu_item">
+                                <a href="" class="header_main_special_title"
+                                  >Archive Pages
+                                  <span class="header_main_menu_arrow">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                      aria-hidden="true"
+                                      class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                                    >
+                                      <path
+                                        fill-rule="evenodd"
+                                        d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                        clip-rule="evenodd"
+                                      ></path>
+                                    </svg> </span
+                                ></a>
+                              </div>
+
+                              <ul class="header_main_special_list">
+                                <li class="">
+                                  <a href="/archive/demo-slug">Category page</a>
+                                </li>
+                                <li class="">
+                                  <a href="/archive-2/demo-slug"
+                                    >Category audio</a
+                                  >
+                                </li>
+                                <li class="">
+                                  <a href="/archive-3/demo-slug"
+                                    >Category videos</a
+                                  >
+                                </li>
+                                <li class="">
+                                  <a href="/search">Search page</a>
+                                </li>
+                                <li class="">
+                                  <a href="/search-2">Search page 2</a>
+                                </li>
+                                <li class="">
+                                  <a href="/author/demo-slug">Author page</a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="header_main_special_col">
+                              <div class="header_menu_item">
+                                <a href="#" class="header_main_special_title"
+                                  >Other Pages
+                                  <span class="header_main_menu_arrow">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="currentColor"
+                                      aria-hidden="true"
+                                      class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                                    >
+                                      <path
+                                        fill-rule="evenodd"
+                                        d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                        clip-rule="evenodd"
+                                      ></path>
+                                    </svg> </span
+                                ></a>
+                              </div>
+
+                              <ul class="header_main_special_list">
+                                <li class="">
+                                  <a href="/dashboard">Dashboard</a>
+                                </li>
+                                <li class="">
+                                  <a href="/about">About</a>
+                                </li>
+                                <li class="">
+                                  <a href="/contact">Contact us</a>
+                                </li>
+                                <li class="">
+                                  <a href="/login">Login</a>
+                                </li>
+                                <li class="">
+                                  <a href="/signup">Signup</a>
+                                </li>
+                                <li class="">
+                                  <a href="/forgot-pass">Forgot password</a>
+                                </li>
+                                <li class="">
+                                  <a href="/subscription">Subscription</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <div class="header_special_article">
+                            <h3 class="header_special_title">Recent posts</h3>
+                            <div class="header_special_article_grid">
+                              <article>
+                                <div class="header_special_article_img">
+                                  <img
+                                    src="../images/photo-1678720175173-f57e293022e4.jpeg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="header_special_article_content">
+                                  <div class="header_special_article_date">
+                                    <time datetime="2023-03-10"
+                                      >Mar 10, 2023</time
+                                    >
+                                    <a href="/archive/demo-slug">Sales</a>
+                                  </div>
+                                  <h4 class="header_special_article_link">
+                                    <a href="/single-gallery/demo-slug">
+                                      <span
+                                        class="header_special_article_mask"
+                                      ></span
+                                      >How to use search engine optimization to
+                                      drive sales
+                                    </a>
+                                  </h4>
+                                  <p class="header_special_article_text">
+                                    Optio cum necessitatibus dolor voluptatum
+                                    provident commodi et.
+                                  </p>
+                                </div>
+                              </article>
+
+                              <article>
+                                <div class="header_special_article_img">
+                                  <img
+                                    src="../images/photo-1678720175173-f57e293022e4.jpeg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="header_special_article_content">
+                                  <div class="header_special_article_date">
+                                    <time datetime="2023-03-10"
+                                      >Mar 10, 2023</time
+                                    >
+                                    <a href="/archive/demo-slug">Sales</a>
+                                  </div>
+                                  <h4 class="header_special_article_link">
+                                    <a href="/single-gallery/demo-slug">
+                                      <span
+                                        class="header_special_article_mask"
+                                      ></span
+                                      >How to use search engine optimization to
+                                      drive sales
+                                    </a>
+                                  </h4>
+                                  <p class="header_special_article_text">
+                                    Optio cum necessitatibus dolor voluptatum
+                                    provident commodi et.
+                                  </p>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="header_menu_item">
+                      <a href="#" class="header_main_menu_link">
+                        <span class="header_main_menu_text">Explore</span>
+
+                        <span class="header_main_menu_arrow">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            aria-hidden="true"
+                            class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+
+                    <div class="header_main_subMenu">
+                      <ul>
+                        <li>
+                          <a href="" class="header_main_subMenu_link">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <div class="header_menu_item">
+                            <a href="" class="header_main_subMenu_link">
+                              <span>Category pages</span>
+                              <span class="header_main_menu_arrow">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 24 24"
+                                  fill="currentColor"
+                                  aria-hidden="true"
+                                  class="ms-1 -me-1 h-4 w-4 text-slate-400"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                    clip-rule="evenodd"
+                                  ></path>
+                                </svg>
+                              </span>
+                            </a>
+                          </div>
+
+                          <div class="header_main_subMenu-lv1">
+                            <ul>
+                              <li>
+                                <a href="" class="header_main_subMenu-lv1_link">
+                                  <span class="header_main_subMenu-lv1-text"
+                                    >Item #1-1</span
+                                  >
+                                </a>
+                              </li>
+                              <li>
+                                <a href="" class="header_main_subMenu-lv1_link">
+                                  <span class="header_main_subMenu-lv1-text"
+                                    >Item #1-1</span
+                                  >
+                                </a>
+                              </li>
+                              <li>
+                                <a href="" class="header_main_subMenu-lv1_link">
+                                  <span class="header_main_subMenu-lv1-text"
+                                    >Item #1-1</span
+                                  >
+                                </a>
+                              </li>
+                              <li>
+                                <a href="" class="header_main_subMenu-lv1_link">
+                                  <span class="header_main_subMenu-lv1-text"
+                                    >Item #1-1</span
+                                  >
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" class="header_main_subMenu_link">
+                            <span class="header_main_subMenu_text"
+                              >Home page 1</span
+                            >
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </nav>
+              </div>
+
+              <div class="section_hide-desktop header_main_foo">
+                <button class="buy_template">
+                  Buy this template<a href="" class=""></a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="header_icon_menu">
+            <div class="header_icon">
+              <a href="" class="header_icon_main">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M22 22L20 20"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+
+            <div class="header_icon header_icon-comments">
+              <span class="header_icon_main" id="user_notifications_btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 6.43994V9.76994"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                  ></path>
+                  <path
+                    d="M12.02 2C8.34002 2 5.36002 4.98 5.36002 8.66V10.76C5.36002 11.44 5.08002 12.46 4.73002 13.04L3.46002 15.16C2.68002 16.47 3.22002 17.93 4.66002 18.41C9.44002 20 14.61 20 19.39 18.41C20.74 17.96 21.32 16.38 20.59 15.16L19.32 13.04C18.97 12.46 18.69 11.43 18.69 10.76V8.66C18.68 5 15.68 2 12.02 2Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                  ></path>
+                  <path
+                    d="M15.33 18.8201C15.33 20.6501 13.83 22.1501 12 22.1501C11.09 22.1501 10.25 21.7701 9.65004 21.1701C9.05004 20.5701 8.67004 19.7301 8.67004 18.8201"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                  ></path>
+                </svg>
+              </span>
+
+              <div id="user_notifications" class="user_notifications">
+                <div class="user_notifications_wrapper">
+                  <h3 class="user_notifications_title">
+                    notificationsfications
+                  </h3>
+                  <a href="" class="user_notifications_link">
+                    <div class="user_notifications_img">
+                      <img src="../images/1.jpeg" />
+                    </div>
+                    <div class="user_notifications_content">
+                      <p class="user_notifications_name">Leo Kante</p>
+                      <p class="user_notifications_text">
+                        Keep track of your growth
+                      </p>
+                      <p class="user_notifications_time">3 minutes ago</p>
+                    </div>
+                    <span class="user_notifications_details"></span>
+                  </a>
+
+                  <a href="" class="user_notifications_link">
+                    <div class="user_notifications_img">
+                      <img src="../images/1.jpeg" />
+                    </div>
+                    <div class="user_notifications_content">
+                      <p class="user_notifications_name">Leo Kante</p>
+                      <p class="user_notifications_text">
+                        Keep track of your growth
+                      </p>
+                      <p class="user_notifications_time">3 minutes ago</p>
+                    </div>
+                    <span class="user_notifications_details"></span>
+                  </a>
+
+                  <a href="" class="user_notifications_link">
+                    <div class="user_notifications_img">
+                      <img src="../images/1.jpeg" />
+                    </div>
+                    <div class="user_notifications_content">
+                      <p class="user_notifications_name">Leo Kante</p>
+                      <p class="user_notifications_text">
+                        Keep track of your growth
+                      </p>
+                      <p class="user_notifications_time">3 minutes ago</p>
+                    </div>
+                    <span class="user_notifications_details"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="header_icon">
+              <span id="header_user_icon">
+                <svg
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M20.5899 22C20.5899 18.13 16.7399 15 11.9999 15C7.25991 15 3.40991 18.13 3.40991 22"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </span>
+
+              <div id="user_menu" class="user_menu">
+                <div class="user_menu_wrapper">
+                  <div class="user_menu_profile">
+                    <div class="user_menu_profile_picture">
+                      <img src="../images/9.jpeg" class="user_menu_img" />
+                    </div>
+                    <div class="user_menu_profile_info">
+                      <h4>Eden Smith</h4>
+                      <p>Los Angeles, CA</p>
+                    </div>
+                  </div>
+
+                  <span class="user_menu_details">
+                    <span></span>
+                  </span>
+
+                  <div class="user_menu_section">
+                    <a href="" class="user_menu_link">
+                      <div class="user_menu_link_icon">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12.1601 10.87C12.0601 10.86 11.9401 10.86 11.8301 10.87C9.45006 10.79 7.56006 8.84 7.56006 6.44C7.56006 3.99 9.54006 2 12.0001 2C14.4501 2 16.4401 3.99 16.4401 6.44C16.4301 8.84 14.5401 10.79 12.1601 10.87Z"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M7.15997 14.56C4.73997 16.18 4.73997 18.82 7.15997 20.43C9.90997 22.27 14.42 22.27 17.17 20.43C19.59 18.81 19.59 16.17 17.17 14.56C14.43 12.73 9.91997 12.73 7.15997 14.56Z"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+
+                      <div class="user_menu_link_text">
+                        <p>My Account</p>
+                      </div>
+                    </a>
+
+                    <a href="" class="user_menu_link">
+                      <div class="user_menu_link_icon">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M8 12.2H15"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M8 16.2H12.38"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M10 6H14C16 6 16 5 16 4C16 2 15 2 14 2H10C9 2 8 2 8 4C8 6 9 6 10 6Z"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M16 4.02002C19.33 4.20002 21 5.43002 21 10V16C21 20 20 22 15 22H9C4 22 3 20 3 16V10C3 5.44002 4.67 4.20002 8 4.02002"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="user_menu_link_text">
+                        <p>My Posts</p>
+                      </div>
+                    </a>
+
+                    <a href="" class="user_menu_link">
+                      <div class="user_menu_link_icon">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="user_menu_link_text">
+                        <p>Wishlist</p>
+                      </div>
+                    </a>
+
+                    <span class="user_menu_details">
+                      <span></span>
+                    </span>
+
+                    <div class="user_menu_link change_theme">
+                      <div class="user_menu_link_icon">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12.0001 7.88989L10.9301 9.74989C10.6901 10.1599 10.8901 10.4999 11.3601 10.4999H12.6301C13.1101 10.4999 13.3001 10.8399 13.0601 11.2499L12.0001 13.1099"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M8.30011 18.0399V16.8799C6.00011 15.4899 4.11011 12.7799 4.11011 9.89993C4.11011 4.94993 8.66011 1.06993 13.8001 2.18993C16.0601 2.68993 18.0401 4.18993 19.0701 6.25993C21.1601 10.4599 18.9601 14.9199 15.7301 16.8699V18.0299C15.7301 18.3199 15.8401 18.9899 14.7701 18.9899H9.26011C8.16011 18.9999 8.30011 18.5699 8.30011 18.0399Z"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M8.5 22C10.79 21.35 13.21 21.35 15.5 22"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="user_menu_link_text">
+                        <p>Dark theme</p>
+                      </div>
+                    </div>
+
+                    <a href="" class="user_menu_link">
+                      <div class="user_menu_link_icon">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.97 22C17.4928 22 21.97 17.5228 21.97 12C21.97 6.47715 17.4928 2 11.97 2C6.44715 2 1.97 6.47715 1.97 12C1.97 17.5228 6.44715 22 11.97 22Z"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5Z"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M4.89999 4.92993L8.43999 8.45993"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M4.89999 19.07L8.43999 15.54"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M19.05 19.07L15.51 15.54"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M19.05 4.92993L15.51 8.45993"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="user_menu_link_text">
+                        <p>Help</p>
+                      </div>
+                    </a>
+
+                    <a href="" class="user_menu_link">
+                      <div class="user_menu_link_icon">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.90002 7.55999C9.21002 3.95999 11.06 2.48999 15.11 2.48999H15.24C19.71 2.48999 21.5 4.27999 21.5 8.74999V15.27C21.5 19.74 19.71 21.53 15.24 21.53H15.11C11.09 21.53 9.24002 20.08 8.91002 16.54"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M15 12H3.62"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M5.85 8.6499L2.5 11.9999L5.85 15.3499"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="user_menu_link_text">
+                        <p>Log out</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER -->
+    <!-- ######################## -->
+    <!-- ######################## -->
+
     <section id="show_music" class="show_music">
       <div class="global_wrapper">
         <div class="show_music_wrapper">
@@ -577,118 +1825,78 @@
           <div class="section_music_grid">
             <div class="section_music_item section_music_card">
               <a href="" class="mg_card_picture">
-                <img
-                  src="../images/pexels-photo-6843304.jpeg"
-                  alt=""
-                  class="mg_card_image"
-                />
+                <img src="../images/pexels-photo-6843304.jpeg" alt="" class="mg_card_image" />
               </a>
-
+  
               <div class="mg_card_label">
-                <a href="bacs" class="section_label_link section_label-purpule"
-                  >Jewelry</a
-                >
+                <a href="bacs" class="section_label_link section_label-yellow">Jewelry</a>
               </div>
-
+  
               <div class="mg_card_body">
                 <div class="mg_card_play">
                   <div class="mg_card_music">
                     <img src="../images/musicWave.png" alt="" />
                   </div>
-
-                  <div class="mg_card_play_btn">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="ms-0.5 w-8 h-8 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+  
+                  <div
+                    class="mg_card_play_btn musicPlayer_global_play"
+                    data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                    data-music-img="../images/pexels-photo-6843304.jpeg"
+                    data-music-title="Lenovo’s smarter devices"
+                    data-music-label="Aenean"
+                    data-music-link="#"
+                  >
+                    <svg class="mg_card_play_btn-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="ms-0.5 w-8 h-8 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="mg_card_play_btn-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </div>
                 </div>
-
+  
                 <div class="mg_card_info">
                   <a class="mg_card_title">Lenovo’s smarter devices</a>
                   <p class="mg_card_text">
                     Aenean lectus. Pellentesque eget nunc. Donec quis orci eget
                     orci vehicula condimentum.
                   </p>
-
+  
                   <div class="section_actions">
                     <button class="section_actions_link">
-                      <svg
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1"
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="1"
                           d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
-                          clip-rule="evenodd"
-                        ></path>
+                          clip-rule="evenodd"></path>
                       </svg>
                       <span>38</span>
                     </button>
-                    <a href="" class="section_actions_link"
-                      ><svg
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                    <a href="" class="section_actions_link"><svg width="24" height="24" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                           stroke-width="1"
-                          d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z"
-                        ></path>
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z"
-                        ></path>
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z"
-                        ></path>
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z"
-                        ></path>
+                          d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z">
+                        </path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z">
+                        </path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z">
+                        </path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z">
+                        </path>
                       </svg>
-                      <span>110</span></a
-                    >
+                      <span>110</span></a>
                     <button class="section_actions_link">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        fill="none"
-                        stroke="currentColor"
-                        class="w-[18px] h-[18px]"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-                        ></path>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"
+                        fill="none" stroke="currentColor" class="w-[18px] h-[18px]">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z">
+                        </path>
                       </svg>
                     </button>
                   </div>
@@ -698,118 +1906,78 @@
 
             <div class="section_music_item section_music_card">
               <a href="" class="mg_card_picture">
-                <img
-                  src="../images/pexels-photo-6843304.jpeg"
-                  alt=""
-                  class="mg_card_image"
-                />
+                <img src="../images/pexels-photo-6843304.jpeg" alt="" class="mg_card_image" />
               </a>
-
+  
               <div class="mg_card_label">
-                <a href="bacs" class="section_label_link section_label-purpule"
-                  >Jewelry</a
-                >
+                <a href="bacs" class="section_label_link section_label-yellow">Jewelry</a>
               </div>
-
+  
               <div class="mg_card_body">
                 <div class="mg_card_play">
                   <div class="mg_card_music">
                     <img src="../images/musicWave.png" alt="" />
                   </div>
-
-                  <div class="mg_card_play_btn">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="ms-0.5 w-8 h-8 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+  
+                  <div
+                    class="mg_card_play_btn musicPlayer_global_play"
+                    data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                    data-music-img="../images/pexels-photo-6843304.jpeg"
+                    data-music-title="Lenovo’s smarter devices"
+                    data-music-label="Aenean"
+                    data-music-link="#"
+                  >
+                    <svg class="mg_card_play_btn-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="ms-0.5 w-8 h-8 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="mg_card_play_btn-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </div>
                 </div>
-
+  
                 <div class="mg_card_info">
                   <a class="mg_card_title">Lenovo’s smarter devices</a>
                   <p class="mg_card_text">
                     Aenean lectus. Pellentesque eget nunc. Donec quis orci eget
                     orci vehicula condimentum.
                   </p>
-
+  
                   <div class="section_actions">
                     <button class="section_actions_link">
-                      <svg
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1"
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="1"
                           d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
-                          clip-rule="evenodd"
-                        ></path>
+                          clip-rule="evenodd"></path>
                       </svg>
                       <span>38</span>
                     </button>
-                    <a href="" class="section_actions_link"
-                      ><svg
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                    <a href="" class="section_actions_link"><svg width="24" height="24" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                           stroke-width="1"
-                          d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z"
-                        ></path>
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z"
-                        ></path>
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z"
-                        ></path>
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z"
-                        ></path>
+                          d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z">
+                        </path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z">
+                        </path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z">
+                        </path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z">
+                        </path>
                       </svg>
-                      <span>110</span></a
-                    >
+                      <span>110</span></a>
                     <button class="section_actions_link">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        fill="none"
-                        stroke="currentColor"
-                        class="w-[18px] h-[18px]"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-                        ></path>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"
+                        fill="none" stroke="currentColor" class="w-[18px] h-[18px]">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z">
+                        </path>
                       </svg>
                     </button>
                   </div>
@@ -819,118 +1987,78 @@
 
             <div class="section_music_item section_music_card">
               <a href="" class="mg_card_picture">
-                <img
-                  src="../images/pexels-photo-6843304.jpeg"
-                  alt=""
-                  class="mg_card_image"
-                />
+                <img src="../images/pexels-photo-6843304.jpeg" alt="" class="mg_card_image" />
               </a>
-
+  
               <div class="mg_card_label">
-                <a href="bacs" class="section_label_link section_label-purpule"
-                  >Jewelry</a
-                >
+                <a href="bacs" class="section_label_link section_label-yellow">Jewelry</a>
               </div>
-
+  
               <div class="mg_card_body">
                 <div class="mg_card_play">
                   <div class="mg_card_music">
                     <img src="../images/musicWave.png" alt="" />
                   </div>
-
-                  <div class="mg_card_play_btn">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="ms-0.5 w-8 h-8 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+  
+                  <div
+                    class="mg_card_play_btn musicPlayer_global_play"
+                    data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                    data-music-img="../images/pexels-photo-6843304.jpeg"
+                    data-music-title="Lenovo’s smarter devices"
+                    data-music-label="Aenean"
+                    data-music-link="#"
+                  >
+                    <svg class="mg_card_play_btn-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="ms-0.5 w-8 h-8 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="mg_card_play_btn-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </div>
                 </div>
-
+  
                 <div class="mg_card_info">
                   <a class="mg_card_title">Lenovo’s smarter devices</a>
                   <p class="mg_card_text">
                     Aenean lectus. Pellentesque eget nunc. Donec quis orci eget
                     orci vehicula condimentum.
                   </p>
-
+  
                   <div class="section_actions">
                     <button class="section_actions_link">
-                      <svg
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1"
+                      <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="1"
                           d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
-                          clip-rule="evenodd"
-                        ></path>
+                          clip-rule="evenodd"></path>
                       </svg>
                       <span>38</span>
                     </button>
-                    <a href="" class="section_actions_link"
-                      ><svg
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                    <a href="" class="section_actions_link"><svg width="24" height="24" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                           stroke-width="1"
-                          d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z"
-                        ></path>
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z"
-                        ></path>
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z"
-                        ></path>
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z"
-                        ></path>
+                          d="M4.75 6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V14.25C19.25 15.3546 18.3546 16.25 17.25 16.25H14.625L12 19.25L9.375 16.25H6.75C5.64543 16.25 4.75 15.3546 4.75 14.25V6.75Z">
+                        </path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          d="M9.5 11C9.5 11.2761 9.27614 11.5 9 11.5C8.72386 11.5 8.5 11.2761 8.5 11C8.5 10.7239 8.72386 10.5 9 10.5C9.27614 10.5 9.5 10.7239 9.5 11Z">
+                        </path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          d="M12.5 11C12.5 11.2761 12.2761 11.5 12 11.5C11.7239 11.5 11.5 11.2761 11.5 11C11.5 10.7239 11.7239 10.5 12 10.5C12.2761 10.5 12.5 10.7239 12.5 11Z">
+                        </path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          d="M15.5 11C15.5 11.2761 15.2761 11.5 15 11.5C14.7239 11.5 14.5 11.2761 14.5 11C14.5 10.7239 14.7239 10.5 15 10.5C15.2761 10.5 15.5 10.7239 15.5 11Z">
+                        </path>
                       </svg>
-                      <span>110</span></a
-                    >
+                      <span>110</span></a>
                     <button class="section_actions_link">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        fill="none"
-                        stroke="currentColor"
-                        class="w-[18px] h-[18px]"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-                        ></path>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"
+                        fill="none" stroke="currentColor" class="w-[18px] h-[18px]">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z">
+                        </path>
                       </svg>
                     </button>
                   </div>
@@ -947,37 +2075,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -987,37 +2111,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1027,37 +2147,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1067,37 +2183,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1107,37 +2219,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1147,37 +2255,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1187,37 +2291,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1227,37 +2327,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1267,37 +2363,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1307,37 +2399,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1347,37 +2435,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1387,37 +2471,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1427,37 +2507,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1467,37 +2543,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1507,37 +2579,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1547,37 +2615,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1587,37 +2651,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1627,37 +2687,33 @@
             <div class="section_listen_item">
               <div class="section_listen_mask">
                 <a href="" class="section_listen_picture">
-                  <img
-                    src="../images/pexels-photo-844923.jpeg"
-                    alt=""
-                    class="section_listen_img"
-                  />
+                  <img src="../images/pexels-photo-844923.jpeg" alt="" class="section_listen_img" />
                 </a>
               </div>
-
+  
               <div class="section_listen_content">
                 <h3 class="section_listen_title">
                   <a href="">To cool datacenter servers</a>
                 </h3>
-                <span class="section_listen_desc"
-                  >40 Episode · 110 minutes</span
+                <span class="section_listen_desc">40 Episode · 110 minutes</span>
+  
+                <button 
+                  class="section_listen_btn musicPlayer_global_play"
+                  data-music-src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+                  data-music-img="../images/pexels-photo-844923.jpeg"
+                  data-music-title="To cool datacenter servers"
+                  data-music-label="40 Episode"
+                  data-music-link="#"
                 >
-
-                <button class="section_listen_btn">
                   <span class="section_listen_play">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      class="w-5 h-5 rtl:rotate-180"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                    <svg class="section_listen_play-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      aria-hidden="true" class="w-5 h-5 rtl:rotate-180">
+                      <path fill-rule="evenodd"
                         d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                        clip-rule="evenodd"
-                      ></path>
+                        clip-rule="evenodd"></path>
                     </svg>
+  
+                    <svg class="section_listen_play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-8 h-8"><path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd"></path></svg>
                   </span>
                   <span>Listen now</span>
                 </button>
@@ -1670,7 +2726,11 @@
           <div class="section_pagination">
             <ul class="section_pagination_list">
               <li>
-                <a href="" class="section_pagination_page section_pagination_page-active">1</a>
+                <a
+                  href=""
+                  class="section_pagination_page section_pagination_page-active"
+                  >1</a
+                >
               </li>
               <li><a href="" class="section_pagination_page">2</a></li>
               <li><a href="" class="section_pagination_page">3</a></li>
@@ -1682,5 +2742,592 @@
         </div>
       </div>
     </section>
+
+    <!-- ########################## -->
+    <!-- ########################## -->
+    <!-- music PLAYER -->
+    <section id="musicPlayer" class="musicPlayer">
+      <div class="musicPlayer_wrapper">
+        <button class="musicPlayer_subMenu" id="musicPlayer_subMenu">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+              class="w-4 h-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 15.75l7.5-7.5 7.5 7.5"
+              ></path>
+            </svg>
+          </div>
+        </button>
+
+        <div class="musicPlayer_progress_bar">
+          <input
+            id="musicPlayer_progress"
+            min="0"
+            max="0.999999"
+            step="any"
+            type="range"
+            value="0"
+          />
+
+          <div class="musicPlayer_progress_bar_line"></div>
+
+          <div class="musicPlayer_progresSlider" id="musicPlayer_progresSlider">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="musicPlayer_main">
+          <div class="musicPlayer_main_left">
+            <a
+              href="/single-audio/this-is-single-slug"
+              class="musicPlayer_info"
+            >
+              <div class="musicPlayer_image">
+                <img src="" id="musicPlayer_image" />
+              </div>
+
+              <div class="musicPlayer_info_content">
+                <h3 class="musicPlayer_title" id="musicPlayer_title"></h3>
+                <span class="musicPlayer_label" id="musicPlayer_label"></span>
+              </div>
+            </a>
+
+            <div class="musicPlayer_actions">
+              <button class="like_action">
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path
+                    fill-rule="evenodd"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M11.995 7.23319C10.5455 5.60999 8.12832 5.17335 6.31215 6.65972C4.49599 8.14609 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13046 17.6779 6.65972C15.8305 5.18899 13.4446 5.60999 11.995 7.23319Z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+
+                <span class="">34</span>
+              </button>
+
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  fill="none"
+                  stroke="currentColor"
+                  class="w-[18px] h-[18px]"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="musicPlayer_main_center">
+            <div class="musicPlayer_controls">
+              <div style="width: 3rem"></div>
+
+              <button
+                class="musicPlayer_controls_salt musicPlayer_backward"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="display: none"
+                >
+                  <path
+                    d="M13.98 4.46997L12 2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M19.0899 7.79999C20.1999 9.27999 20.8899 11.11 20.8899 13.11C20.8899 18.02 16.9099 22 11.9999 22C7.08988 22 3.10986 18.02 3.10986 13.11C3.10986 8.19999 7.08988 4.21997 11.9999 4.21997C12.6799 4.21997 13.3399 4.31002 13.9799 4.46002"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M9.54004 15.92V10.5801L8.04004 12.2501"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M14 10.5801C15.1 10.5801 16 11.4801 16 12.5801V13.9301C16 15.0301 15.1 15.9301 14 15.9301C12.9 15.9301 12 15.0301 12 13.9301V12.5801C12 11.4701 12.9 10.5801 14 10.5801Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M9.54004 15.92V10.5801L8.04004 12.2501"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M10.02 4.46997L12 2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M4.91 7.79999C3.8 9.27999 3.10999 11.11 3.10999 13.11C3.10999 18.02 7.09 22 12 22C16.91 22 20.89 18.02 20.89 13.11C20.89 8.19999 16.91 4.21997 12 4.21997C11.32 4.21997 10.66 4.31002 10.02 4.46002"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M14 10.5801C15.1 10.5801 16 11.4801 16 12.5801V13.9301C16 15.0301 15.1 15.9301 14 15.9301C12.9 15.9301 12 15.0301 12 13.9301V12.5801C12 11.4701 12.9 10.5801 14 10.5801Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+
+              <div class="musicPlayer_controls_play musicPlayer_play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  class="musicPlayer_play-play"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  class="w-10 h-10 musicPlayer_play-pause"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+
+              <button
+                class="musicPlayer_controls_salt musicPlayer_forward"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="display: none"
+                >
+                  <path
+                    d="M15.96 10.8301H12.9L12.14 13.1201H14.43C15.27 13.1201 15.96 13.8001 15.96 14.6501C15.96 15.4901 15.28 16.1801 14.43 16.1801H12.14"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M9.54004 16.17V10.8301L8.04004 12.5001"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M10.02 4.46997L12 2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M4.90997 7.79999C3.79997 9.27999 3.10999 11.11 3.10999 13.11C3.10999 18.02 7.09 22 12 22C16.91 22 20.89 18.02 20.89 13.11C20.89 8.19999 16.91 4.21997 12 4.21997C11.32 4.21997 10.66 4.31002 10.02 4.46002"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M15.9601 10.8301H12.9001L12.1401 13.1201H14.4301C15.2701 13.1201 15.9601 13.8001 15.9601 14.6501C15.9601 15.4901 15.2801 16.1801 14.4301 16.1801H12.1401"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M9.54004 16.17V10.8301L8.04004 12.5001"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M13.98 4.46997L12 2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M19.0899 7.79999C20.1999 9.27999 20.8899 11.11 20.8899 13.11C20.8899 18.02 16.9099 22 11.9999 22C7.08988 22 3.10986 18.02 3.10986 13.11C3.10986 8.19999 7.08988 4.21997 11.9999 4.21997C12.6799 4.21997 13.3399 4.31002 13.9799 4.46002"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+
+              <div class="musicPlayer_controls_wrap">
+                <button
+                  class="musicPlayer_changeSpeed musicPlayer_changeSpeed-show"
+                  data-speed="1.5"
+                >
+                  1.0x
+                </button>
+                <button class="musicPlayer_changeSpeed" data-speed="2.0">
+                  1.5x
+                </button>
+                <button class="musicPlayer_changeSpeed" data-speed="1.0">
+                  2.0x
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="musicPlayer_main_rigth">
+            <div class="musicPlayer_vol">
+              <button class="musicPlayer_vol_icon" id="musicPlayer_mute">
+                <svg
+                  class="w-5 h-5 flex-shrink-0 musicPlayer_mute-on"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M2 10V14C2 16 3 17 5 17H6.43C6.8 17 7.17 17.11 7.49 17.3L10.41 19.13C12.93 20.71 15 19.56 15 16.59V7.41003C15 4.43003 12.93 3.29003 10.41 4.87003L7.49 6.70003C7.17 6.89003 6.8 7.00003 6.43 7.00003H5C3 7.00003 2 8.00003 2 10Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  ></path>
+                  <path
+                    d="M18 8C19.78 10.37 19.78 13.63 18 16"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M19.83 5.5C22.72 9.35 22.72 14.65 19.83 18.5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+
+                <svg
+                  class="w-5 h-5 flex-shrink-0 musicPlayer_mute-off"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M15 8.37003V7.41003C15 4.43003 12.93 3.29003 10.41 4.87003L7.49 6.70003C7.17 6.89003 6.8 7.00003 6.43 7.00003H5C3 7.00003 2 8.00003 2 10V14C2 16 3 17 5 17H7"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M10.41 19.13C12.93 20.71 15 19.56 15 16.59V12.95"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M18.81 9.41992C19.71 11.5699 19.44 14.0799 18 15.9999"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M21.15 7.80005C22.62 11.29 22.18 15.37 19.83 18.5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M22 2L2 22"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+
+              <div class="musicPlayer_vol_input">
+                <input
+                  min="0"
+                  max="0.999999"
+                  step="any"
+                  type="range"
+                  value="0.8"
+                  id="musicPlayer_volumeSlider"
+                />
+                <div class="musicPlayer_vol_bar"></div>
+                <div class="musicPlayer_vol_value" id="musicPlayer_volumeBar">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="musicPlayer_time">
+              <div id="musicPlayer_time-current">00:00</div>
+              /
+              <div id="musicPlayer_time-total">00:00</div>
+            </div>
+
+            <div class="musicPlayer_play_mobile musicPlayer_play">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                class="musicPlayer_play-play"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                class="w-10 h-10 musicPlayer_play-pause"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+
+            <button class="musicPlayer_close" id="musicPlayer_close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="musicPlayer_mobile_menu">
+          <div class="musicPlayer_mobile_wrapper">
+            <div class="musicPlayer_mobile-item">
+              <button class="musicPlayer_mobile_book">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+
+            <button class="musicPlayer_mobile_backward musicPlayer_backward">
+              <svg
+                class="w-6 h-6 block rtl:hidden"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M9.54004 15.92V10.5801L8.04004 12.2501"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M10.02 4.46997L12 2"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4.91 7.79999C3.8 9.27999 3.10999 11.11 3.10999 13.11C3.10999 18.02 7.09 22 12 22C16.91 22 20.89 18.02 20.89 13.11C20.89 8.19999 16.91 4.21997 12 4.21997C11.32 4.21997 10.66 4.31002 10.02 4.46002"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14 10.5801C15.1 10.5801 16 11.4801 16 12.5801V13.9301C16 15.0301 15.1 15.9301 14 15.9301C12.9 15.9301 12 15.0301 12 13.9301V12.5801C12 11.4701 12.9 10.5801 14 10.5801Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+
+            <div class="musicPlayer_controls_play musicPlayer_play">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                class="musicPlayer_play-play"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                class="w-10 h-10 musicPlayer_play-pause"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+
+            <button class="musicPlayer_mobile_forward musicPlayer_forward">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M15.9601 10.8301H12.9001L12.1401 13.1201H14.4301C15.2701 13.1201 15.9601 13.8001 15.9601 14.6501C15.9601 15.4901 15.2801 16.1801 14.4301 16.1801H12.1401"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M9.54004 16.17V10.8301L8.04004 12.5001"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M13.98 4.46997L12 2"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M19.0899 7.79999C20.1999 9.27999 20.8899 11.11 20.8899 13.11C20.8899 18.02 16.9099 22 11.9999 22C7.08988 22 3.10986 18.02 3.10986 13.11C3.10986 8.19999 7.08988 4.21997 11.9999 4.21997C12.6799 4.21997 13.3399 4.31002 13.9799 4.46002"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+
+            <div>
+              <div class="musicPlayer_controls_wrap">
+                <button
+                  class="musicPlayer_changeSpeed musicPlayer_changeSpeed-show"
+                  data-speed="1.5"
+                >
+                  1.0x
+                </button>
+                <button class="musicPlayer_changeSpeed" data-speed="2.0">
+                  1.5x
+                </button>
+                <button class="musicPlayer_changeSpeed" data-speed="1.0">
+                  2.0x
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="">
+          <audio
+            id="musicPlayer_audio"
+            src="https://chisnghiax.com/ncmaz_mp3/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3"
+            preload="auto"
+            controls=""
+            style="width: 100%; height: 100%"
+          ></audio>
+        </div>
+      </div>
+    </section>
+    <!-- music PLAYER -->
+    <!-- ########################## -->
+    <!-- ########################## -->
+
+    <script src="../js/script.js"></script>
   </body>
 </html>

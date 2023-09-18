@@ -1727,7 +1727,8 @@ footer ul {
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
-  background-color: rgb(255 255 255/1);
+  background-color: var(--bg-basic);
+  color: var(--neutral-900);
   border-radius: 9999px;
   display: flex;
   justify-content: center;
@@ -1763,8 +1764,12 @@ footer ul {
   padding: 1rem;
 }
 
+body[data-theme="dark"]  .sm_menu_input:checked ~ .show_music_modal {
+  background-color: rgba(17, 24, 39, 0.8);
+}
+
 .sm_modal_content {
-  background-color: #ffffff;
+  background-color: var(--bg-basic);
   border-radius: 1rem;
   padding: 0 !important;
   max-width: 1280px;
@@ -1773,6 +1778,11 @@ footer ul {
   overflow-y: hidden;
   display: flex;
   flex-direction: column;
+  border: 1px solid var(--neutral-200);
+}
+
+body[data-theme="dark"] .sm_modal_content {
+  background-color: var(--bg-main);
 }
 
 .sm_modal_header {
@@ -1782,10 +1792,14 @@ footer ul {
   border-bottom: 1px solid var(--neutral-100);
 }
 
+body[data-theme="dark"] .sm_modal_header {
+  border-bottom: 1px solid var(--neutral-200);
+}
+
 .sm_modal_close {
   position: absolute;
   left: 1.5rem;
-  color: rgba(var(--c-neutral-700), var(--tw-text-opacity));
+  color: var(--neutral-700);
   border-radius: 9999px;
   display: flex;
   justify-content: center;
@@ -1904,12 +1918,16 @@ footer ul {
   padding-bottom: 0.625rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  color: rgb(82 82 82/1);
+  color: #525252;
   font-size: 0.875rem;
   line-height: 1.25rem;
   border-radius: 0.5rem;
   display: inline-block;
   text-decoration: none;
+}
+
+body[data-theme="dark"] .sm_modal_tags a {
+  color: var(--neutral-600);
 }
 
 .sm_modal_tags a:hover {
@@ -1925,7 +1943,7 @@ footer ul {
 .show_music_select {
   position: absolute;
   top: 100%;
-  z-index: 5;
+  z-index: 50;
   right: 0;
   visibility: hidden;
   opacity: 0;
@@ -1953,7 +1971,7 @@ footer ul {
 .sm_menu_list {
   font-size: 0.875rem;
   line-height: 1.25rem;
-  background-color: #ffffff;
+  background-color: var(--bg-basic);
   border-radius: 0.75rem;
   overflow: auto;
   width: 13rem;
@@ -1974,11 +1992,17 @@ footer ul {
   flex-direction: row-reverse;
   justify-content: flex-end;
   gap: 0.5rem;
+  color: var(--neutral-800);
 }
 
 .sm_menu_list_item:hover {
   color: var(--primary-700);
   background-color: var(--primary-50);
+}
+
+body[data-theme="dark"] .sm_menu_list_item:hover {
+  color: var(--neutral-900);
+  background-color: var(--neutral-200);
 }
 /* */
 .section_pagination {
@@ -2003,7 +2027,7 @@ footer ul {
   justify-content: center;
   align-items: center;
   color: var(--neutral-600);
-  background-color: rgb(255 255 255/1);
+  background-color: var(--bg-basic);
   border: 1px solid var(--neutral-200);
   border-radius: 9999px;
   width: 2.75rem;
