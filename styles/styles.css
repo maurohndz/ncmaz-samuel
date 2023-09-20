@@ -324,6 +324,14 @@ body[data-theme="dark"] .section_listen_play {
 .section_listen_btn.musicPlayer-playing .section_listen_play-pause {
   display: flex;
 }
+
+.section_listen_btn.musicPlayer-playing-pause .section_listen_play-play {
+  display: flex;
+}
+
+.section_listen_btn.musicPlayer-playing-pause .section_listen_play-pause {
+  display: none;
+}
 /* SECTION LISTEN */
 /* ********************************** */
 
@@ -2581,6 +2589,14 @@ body[data-theme="dark"] .editorPicks_comment_link:hover {
   display: flex;
 }
 
+.mg_card_play_btn.musicPlayer-playing-pause > .mg_card_play_btn-play {
+  display: flex;
+}
+
+.mg_card_play_btn.musicPlayer-playing-pause > .mg_card_play_btn-pause {
+  display: none;
+}
+
 .mg_card_info {
   padding: 1.25rem;
   margin-top: 1.25rem;
@@ -2798,6 +2814,14 @@ body[data-theme="dark"] .lp_list_item {
 
 .lp_list_play.musicPlayer-playing > .lp_list_play-pause {
   display: flex;
+}
+
+.lp_list_play.musicPlayer-playing-pause > .lp_list_play-play {
+  display: flex;
+}
+
+.lp_list_play.musicPlayer-playing-pause > .lp_list_play-pause {
+  display: none;
 }
 /* LISTEN PODCASTS */
 /* ********************************** */
@@ -4715,6 +4739,14 @@ body[data-theme="dark"] .singleAudio_hero.section_main::before {
   display: flex;
 }
 
+*.musicPlayer-playing-pause .singleAudio_hero_playing {
+  display: none;
+}
+
+*.musicPlayer-playing-pause .singleAudio_hero_play svg {
+  display: flex;
+}
+
 .singleAudio_hero_disc {
   object-fit: cover;
   border-radius: 9999px;
@@ -5767,8 +5799,6 @@ body[data-theme="dark"] .lastestVideo {
 }
 
 .musicPlayer_image {
-  animation: myspin 20s linear infinite;
-  animation-play-state: paused;
   width: 3rem;
   height: 3rem;
   transition-property: transform;
@@ -5782,6 +5812,11 @@ body[data-theme="dark"] .lastestVideo {
 
 .musicPlayer_image.musicPlayer-playing {
   animation-play-state: running;
+  animation: myspin 20s linear infinite;
+}
+
+.musicPlayer_image.musicPlayer-playing-pause {
+  animation-play-state: paused;
 }
 
 .musicPlayer_image img {
@@ -6181,6 +6216,11 @@ body[data-theme="dark"] .lastestVideo {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 0.15s;
   animation: myspin 20s linear infinite;
+}
+
+*.musicPlayer-playing-pause.musicPlayer-playing-efect,
+*.musicPlayer-playing-pause *.musicPlayer-playing-efect {
+  animation-play-state: paused;
 }
 
 .musicPlayer_mobile_menu {
@@ -8488,7 +8528,7 @@ body[data-theme="dark"] .lastestVideo {
   /* ********************************** */
   /* CATEGORIES */
   .sm_menu_select {
-    padding: 0.8rem .8rem;
+    padding: 0.8rem 0.8rem;
     font-size: 0.7rem;
     line-height: 1rem;
   }

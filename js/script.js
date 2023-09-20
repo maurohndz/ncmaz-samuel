@@ -4,6 +4,7 @@
 /* music PLAYER */
 const MUTE = "musicPlayer-mute";
 const PLAYING = "musicPlayer-playing";
+const PLAYING_PAUSE = "musicPlayer-playing-pause";
 const SPEED = "musicPlayer_changeSpeed-show";
 const MUSIC_OPEN = "musicPlayer-open";
 const MUSIC_OPEN_SUBMENU = "musicPlayer-open-subMenu";
@@ -132,6 +133,9 @@ class musicPlayer {
   togglePlay() {
     if (this.audio.paused) {
       this.audio.play();
+      this.effectDisc.classList.remove(PLAYING_PAUSE);
+      this.currentButton.classList.remove(PLAYING_PAUSE);
+
       this.effectDisc.classList.add(PLAYING);
       this.currentButton.classList.add(PLAYING);
 
@@ -140,8 +144,8 @@ class musicPlayer {
       this.audio.addEventListener("timeupdate", () => this.updateProgress());
     } else {
       this.audio.pause();
-      this.effectDisc.classList.remove(PLAYING);
-      this.currentButton.classList.remove(PLAYING);
+      this.effectDisc.classList.add(PLAYING_PAUSE);
+      this.currentButton.classList.add(PLAYING_PAUSE);
 
       Array.from(this.playButtons).forEach((btn) =>
         btn.classList.remove(PLAYING)
@@ -278,7 +282,13 @@ class musicPlayer {
     event.preventDefault();
     event.stopPropagation();
 
-    this.currentButton?.classList.remove(PLAYING);
+    if (event?.currentTarget === this.currentButton) {
+      this.togglePlay();
+      return;
+    }
+
+    this.effectDisc?.classList.remove(PLAYING_PAUSE);
+    this.effectDisc?.classList.remove(PLAYING);
 
     this.currentButton = event?.currentTarget;
     this.dataset = this.currentButton?.dataset;
@@ -384,8 +394,9 @@ function main() {
   function closeUserMenu(event) {
     const menu = document.getElementById("user_menu");
 
-    console.log(!menu.contains(event.target) &&
-    !headerUserIcon.contains(event.target))
+    console.log(
+      !menu.contains(event.target) && !headerUserIcon.contains(event.target)
+    );
     if (
       !menu.contains(event.target) &&
       !headerUserIcon.contains(event.target)
@@ -428,7 +439,7 @@ function main() {
   }
 
   function hideNotificationsAction(event) {
-     if (window?.innerWidth <= 639) {
+    if (window?.innerWidth <= 639) {
       notifications.classList.remove(OPEN_NOTIFICATIONS);
       document.removeEventListener("click", closeUserMenu);
     }
@@ -633,7 +644,6 @@ function main() {
   /* ************************** */
   /* ************************** */
 
-
   /* ************************** */
   /* ************************** */
   /* ************************** */
@@ -654,11 +664,11 @@ function main() {
         allowfullscreen
       ></iframe>
     </div>
-    ` ;
+    `;
   }
 
   function showIframe(container, iframe) {
-    container?.classList.add(SHOW_IFRAME)
+    container?.classList.add(SHOW_IFRAME);
     iframe?.removeEventListener("load", showIframe);
   }
 
@@ -678,7 +688,7 @@ function main() {
 
     const iframe = iframeVideo(video?.dataset?.url) ?? null;
 
-    video?.insertAdjacentHTML('beforeend', iframe);
+    video?.insertAdjacentHTML("beforeend", iframe);
     loadIframe(video);
   }
 
@@ -686,14 +696,14 @@ function main() {
     const iframe = video?.querySelector(".video_iframe");
 
     if (iframe) {
-      video?.removeChild(iframe)
+      video?.removeChild(iframe);
     }
   }
 
   Array.from(videos).forEach((video) => {
     video.addEventListener("mouseenter", () => focusVideo(video));
     video.addEventListener("mouseleave", () => leaveVideo(video));
-  })
+  });
   /* GRID VIDEOS */
   /* ************************** */
   /* ************************** */
@@ -720,8 +730,8 @@ function main() {
   }
 
   Array.from(themeButtons).forEach((button) => {
-    button.addEventListener("click", changeTheme)
-  })
+    button.addEventListener("click", changeTheme);
+  });
   /* CHANGE THEME */
   /* ************************** */
   /* ************************** */
