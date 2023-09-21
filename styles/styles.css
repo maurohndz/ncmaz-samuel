@@ -1510,6 +1510,12 @@ body[data-theme="dark"] header {
   border-bottom: 1px solid rgb(51 65 85/1);
 }
 
+#header_search_modal .section_modal_content,
+#header_search_modal input {
+  background-color: rgb(255, 255, 255);
+  color: rgb(51, 65, 85);
+}
+
 #header_search_modal.section_modal-open {
   display: block;
 }
@@ -1640,6 +1646,7 @@ body[data-theme="dark"] header {
   width: auto;
   display: block;
   border-radius: 0;
+  color: rgb(51, 65, 85);
 }
 
 .header_search_subList span:hover {
@@ -1717,7 +1724,7 @@ body[data-theme="dark"] header {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   --tw-text-opacity: 1;
-  color: var(--neutral-900);
+  color: rgb(51, 65, 85);
   padding-left: 0.375rem;
   padding-right: 0.375rem;
   --tw-bg-opacity: 1;
