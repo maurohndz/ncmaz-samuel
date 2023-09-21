@@ -260,27 +260,25 @@
               </div>
 
               <div class="header_main_menu">
-                <nav class="header_main_menu_nav">
+                <ul class="header_main_menu_nav">
                   <li>
                     <div class="header_menu_item">
                       <a href="#" class="header_main_menu_link">
                         <span class="header_main_menu_text">Homes</span>
 
-                        <span class="header_main_menu_arrow">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                            aria-hidden="true"
-                            class="ms-1 -me-1 h-4 w-4 text-slate-400"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
-                              clip-rule="evenodd"
-                            ></path>
-                          </svg>
-                        </span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          class="header_main_menu_arrow"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
                       </a>
                     </div>
 
@@ -851,7 +849,7 @@
                       </ul>
                     </div>
                   </li>
-                </nav>
+                </ul>
               </div>
 
               <div class="section_hide-desktop header_main_foo">
@@ -864,7 +862,7 @@
 
           <div class="header_icon_menu">
             <div class="header_icon">
-              <a href="" class="header_icon_main">
+              <span class="header_icon_main" id="header_icon_search">
                 <svg
                   width="22"
                   height="22"
@@ -887,7 +885,247 @@
                     stroke-linejoin="round"
                   ></path>
                 </svg>
-              </a>
+              </span>
+
+              <div class="section_modal" id="header_search_modal">
+                <div class="section_modal_content">
+                  <form action="" class="header_search">
+                    <div class="header_search_top">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        class=""
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                        ></path></svg
+                      >
+                      <input
+                        placeholder="Search..."
+                      />
+                    </div>
+
+                    <ul class="header_search_list">
+                      <li>
+                        <h2 class="header_search_list_title">Posts</h2>
+                        <ul class="header_search_subList">
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                              class=""
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                              ></path>
+                            </svg>
+                            <span>Lenovo’s smarter devices stoke professional passions</span>
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                              class=""
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                              ></path>
+                            </svg>
+                            <span>How AI and Teams are benefitting littlest of patients</span>
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                              class=""
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                              ></path>
+                            </svg>
+                            <span
+                              >DIYer and TV host Trisha Hershberger’s through gaming keeps
+                              evolving</span
+                            >
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                              class=""
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                              ></path>
+                            </svg>
+                            <span>New tools for Black pregnant and mothers to savelives</span>
+                          </li>
+                        </ul>
+                      </li>
+                    
+                      <li>
+                        <h2 class="header_search_list_title">Categories</h2>
+                        <ul class="header_search_subList">
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                              class=""
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+                              ></path>
+                            </svg>
+                            <span>Garden</span>
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                              class=""
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+                              ></path>
+                            </svg>
+                            <span>Industrial</span>
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                              class=""
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+                              ></path>
+                            </svg>
+                            <span>Automotive</span>
+                          </li>
+                          <li>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                              class=""
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+                              ></path>
+                            </svg>
+                            <span>Health</span>
+                          </li>
+                        </ul>
+                      </li>
+                    
+                      <li>
+                        <h2 class="header_search_list_title">Authors</h2>
+                        <ul class="header_search_subList">
+                          <li>
+                            <img src="../images/1.jpeg" />
+                            <span>Truelock Alric</span>
+                          </li>
+                          <li>
+                            <img src="../images/1.jpeg" />
+                            <span>Birrell Chariot</span>
+                          </li>
+                          <li>
+                            <img src="../images/1.jpeg" />
+                            <span>Foulcher Nathanil</span>
+                          </li>
+                          <li>
+                            <img src="../images/1.jpeg" />
+                            <span>Falconar Agnes</span>
+                          </li>
+                          <li>
+                            <img src="../images/1.jpeg" />
+                            <span>Tousy Vita</span>
+                          </li>
+                          <li>
+                            <img src="../images/1.jpeg" />
+                            <span>Friar Donna</span>
+                          </li>
+                          <li>
+                            <img src="../images/1.jpeg" />
+                            <span>Royal Sergei</span>
+                          </li>
+                          <li>
+                            <img src="../images/1.jpeg" />
+                            <span>Sleite Claudetta</span>
+                          </li>
+                          <li>
+                            <img src="../images/1.jpeg" />
+                            <span>Pillifant Vern</span>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <div class="header_search_bottom">
+                      Type
+                      <kbd>#</kbd>
+                      <span>for projects,</span><span>to access projects,</span><kbd>&gt;</kbd>
+                      for users,
+                      <kbd>?</kbd>
+                      for help, or
+                      <a href="/search">Go to search page</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
 
             <div class="header_icon header_icon-comments">
