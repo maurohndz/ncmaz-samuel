@@ -460,6 +460,37 @@ function main() {
   /* ************************** */
   /* ************************** */
   /* ************************** */
+  /* HEADER MENU SEARCH */
+  const SHOW_MODAL = "section_modal-open";
+  const iconSearch = document.getElementById("header_icon_search");
+  const searchModal = document.getElementById("header_search_modal");
+
+  function hideSearchModal(event) {
+    const content = searchModal.querySelector(".section_modal_content");
+
+    if (
+      !content?.contains(event.target) &&
+      !iconSearch?.contains(event.target)
+    ) {
+      searchModal.classList.remove(SHOW_MODAL);
+      document.removeEventListener("click", hideSearchModal);
+    }
+  }
+
+  function openSearchModal(event) {
+    searchModal?.classList.add(SHOW_MODAL);
+    document.addEventListener("click", hideSearchModal);
+  }
+
+  iconSearch.addEventListener("click", openSearchModal)
+  /* HEADER MENU SEARCH */
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
   /* HERO */
   const OPEN_VIDEO_MODAL = "open_video_modal";
   const videoBtn = document.getElementById("video_modal_btn");
