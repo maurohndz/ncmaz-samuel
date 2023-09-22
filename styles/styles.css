@@ -5691,11 +5691,11 @@ body[data-theme="dark"] .editorsPick_mask {
 @keyframes SliderShow {
   0% {
     opacity: 0;
-    transform: scale(1.05);
+    transform: scale(1.05) translateY(30px);
   }
   100% {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1) translateY(0px);
   }
 }
 
