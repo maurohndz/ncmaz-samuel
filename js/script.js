@@ -767,6 +767,62 @@ function main() {
   /* ************************** */
   /* ************************** */
   /* ************************** */
+
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
+  /* EDITOR'S PICK */
+  const SHOW_ITEM = "editorsPick_slider_item-active";
+  const IMG_ANIMATION = "editorsPick_slider_animated";
+  const editorsPickPrev = document.getElementById("editorsPick_btns-prev");
+  const editorsPickNext = document.getElementById("editorsPick_btns-next");
+  const editorsPickImage = document.getElementById("editorsPick_slider_image");
+  const editorsPickItems = Array.from(document.querySelectorAll(".editorsPick_slider_item" ?? []));
+  
+  function changeSlide(value) {
+    const totalIndex = editorsPickItems.length - 1;
+    let currentIndex = null;
+    let nextIndex = null;
+
+    //
+    editorsPickItems.find((item, index) => {
+      if (item.classList.contains(SHOW_ITEM)) {
+        currentIndex = index;
+        return item;
+      }
+    });
+
+    //
+    nextIndex = currentIndex + value;
+    if (nextIndex < 0) {
+      nextIndex = totalIndex;
+    } else if (nextIndex > totalIndex) {
+      nextIndex = 0
+    }
+
+    //
+    editorsPickItems.forEach((item) => item.classList.remove(SHOW_ITEM));
+    editorsPickImage?.classList?.remove(IMG_ANIMATION)
+
+    //
+    const nextElement = editorsPickItems[nextIndex];
+
+    //
+    editorsPickImage.src = nextElement?.dataset?.img;
+    nextElement?.classList?.add(SHOW_ITEM)
+    editorsPickImage?.classList?.add(IMG_ANIMATION)
+
+    setTimeout(() => {
+      editorsPickImage?.classList?.remove(IMG_ANIMATION)
+    }, 600)
+  }
+
+  editorsPickPrev?.addEventListener("click", () => changeSlide(-1));
+  editorsPickNext?.addEventListener("click", () => changeSlide(1));
+  /* EDITOR'S PICK */
+  /* ************************** */
+  /* ************************** */
+  /* ************************** */
 }
 
 window.addEventListener("load", main);

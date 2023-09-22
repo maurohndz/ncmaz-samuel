@@ -5530,6 +5530,12 @@ body[data-theme="dark"] .singleAudio_hero.section_main::before {
   line-height: inherit;
   color: inherit;
   text-decoration: none;
+  display: -webkit-box;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .editorsPick_mask {
@@ -5680,6 +5686,30 @@ body[data-theme="dark"] .editorsPick_mask {
   bottom: 0;
   color: transparent;
   object-fit: cover;
+}
+
+@keyframes SliderShow {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.editorsPick_slider_item {
+  display: none;
+}
+
+.editorsPick_slider_animated {
+  animation: SliderShow .7s;
+}
+
+.editorsPick_slider_item-active {
+  display: block;
+  animation: SliderShow .8s;
 }
 /* EDITOR'S PICK */
 /* ********************************** */
