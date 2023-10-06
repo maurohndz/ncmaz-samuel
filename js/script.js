@@ -2,6 +2,7 @@
 /* ************************** */
 /* ************************** */
 /* music PLAYER */
+var musicPlayer = null;
 const MUTE = "musicPlayer-mute";
 const PLAYING = "musicPlayer-playing";
 const PLAYING_PAUSE = "musicPlayer-playing-pause";
@@ -9,7 +10,7 @@ const SPEED = "musicPlayer_changeSpeed-show";
 const MUSIC_OPEN = "musicPlayer-open";
 const MUSIC_OPEN_SUBMENU = "musicPlayer-open-subMenu";
 
-class musicPlayer {
+class MusicPlayer {
   constructor(container) {
     this.globalsPlay = document.querySelectorAll(".musicPlayer_global_play");
     //
@@ -41,6 +42,10 @@ class musicPlayer {
 
     this.getSeedButtons();
     this.loadActions();
+  }
+
+  restart() {
+    this.globalsPlay = document.querySelectorAll(".musicPlayer_global_play");
   }
 
   openSubMenu() {
@@ -652,7 +657,7 @@ function main() {
   const music = document.getElementById("musicPlayer");
 
   if (music) {
-    new musicPlayer(music);
+    musicPlayer = new MusicPlayer(music);
   }
   /* music PLAYER */
   /* ************************** */
